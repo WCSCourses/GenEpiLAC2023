@@ -4,3 +4,7 @@
 # Genomics and Epidemiological Surveillance of Bacterial Pathogens - Latin America and the Caribbean
 
 Learn how to apply genomics to epidemiological surveillance of bacterial pathogens and public health in Latin America
+
+## Course Overview
+
+[Course Website](https://coursesandconferences.wellcomeconnectingscience.org/event/genomics-and-epidemiological-surveillance-of-bacterial-pathogens-latin-america-and-the-caribbean-20230416/)
