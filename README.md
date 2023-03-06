@@ -11,11 +11,11 @@ Learn how to apply genomics to epidemiological surveillance of bacterial pathoge
 
 ## Instructors
 
-- [Josefina Campos](https://www.researchgate.net/profile/Josefina-Campos-2), INEI ANLIS “Dr. Carlos G. Malbrán, Argentina
+- [Josefina Campos](https://www.researchgate.net/profile/Josefina-Campos-2), CNGB ANLIS “Dr. Carlos G. Malbrán, Argentina
 - [Matt Holden](https://risweb.st-andrews.ac.uk/portal/en/persons/matthew-holden(029e1abe-7829-4bc3-accf-9d9e392f274c).html), University of St Andrews, Scotland
 - Natalie Weiler Gustafson, Central Laboratory of Public Health Asunción, Paraguay
 - [Julio Diaz Caballero](https://www.pathogensurveillance.net/team/), Centre for Genomic Pathogen Surveillance, University of Oxford, UK
 - [Mathew Beale](https://www.sanger.ac.uk/person/beale-mathew/), Wellcome Sanger Institute, UK
 - [Matthew Dorman](https://www.sanger.ac.uk/person/dorman-matthew/), Wellcome Sanger Institute, UK
 - [Caterina Guzman Verri](https://scholar.google.com/citations?user=S1GNAC8AAAAJ&hl=en), PIET, Veterinary School, Universidad Nacional, Costa Rica
-- [Tomas Poklepovich](https://www.researchgate.net/profile/Tomas-Poklepovich), INEI ANLIS “Dr. Carlos G. Malbrán, Argentina
+- [Tomas Poklepovich](https://www.researchgate.net/profile/Tomas-Poklepovich), CNGB ANLIS “Dr. Carlos G. Malbrán, Argentina
