@@ -10,8 +10,7 @@ date: "March 14, 2023"
 <br>
 
     
-# Table of contents
-- [Table of contents](#table-of-contents)
+# Table of contents <!-- omit in toc -->
 - [Module Overview and Aims](#module-overview-and-aims)
 - [Introduction](#introduction)
   - [Mapping to reference genome](#mapping-to-reference-genome)
@@ -40,7 +39,7 @@ date: "March 14, 2023"
 
 <br>
 
-When we sequencing a genome, we aim to capture information about: 
+When we sequence a genome, we aim to capture information about: 
 *  Single Nucleotide Polymorphisms (SNPs)
 *  Insertions and Deletions (INDELs) 
 *  Copy Number Variations (CNVs)
@@ -118,7 +117,7 @@ We often use a tool called `samtools` to manage and view these large and complex
 
 <br>
 
-![Samtool Image](SAM-explainer1.svg)
+![Samtool Image](SAM-explainer1.png)
 
 <br>
 
