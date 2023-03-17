@@ -10,3 +10,6 @@
 - [Practical Exercise](#practical-exercise)
 
 ## Module Overview and Aims
+- Become familiar with Linux Operating System and understand why it is widely used in bioinformatics
+- Understand Linux command line and the directory structure of the file system
+- Learn how to manipulate files/directories
