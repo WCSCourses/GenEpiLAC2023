@@ -4,4 +4,6 @@
 - [Module Overview and Aims](#module-overview-and-aims)
 - [Introduction](#introduction)
   - [Linux](#linux)
-  - [The terminal]
+  - [The terminal](#the-terminal)
+  - [The command line](#the-command-line)
+  - [Useful commands](#useful-commands)
