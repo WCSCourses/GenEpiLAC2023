@@ -29,9 +29,13 @@ During this course, we will work on a local Linux machine running Ubuntu but mos
 We use the terminal (command line interface) to interact with the operating system. The terminal by default runs one of the “shells”. Shell is a program that sits between the user and the kernel and translates user commands into machine code. There are some advantages of using the command line when working with genome analysis such as greater control and flexibility over the system or software, and multiple commands can be saved in a file and executed as a program. 
 
 The most common shells are:
+
 Bourne Shell
+
 Bourne Again Shell – BASH (variant is Z Shell)
+
 C Shell (variant is T Shell)
+
 K Shell
 
 Among these Bourne Again Shell (BASH) is the most popular one. This is the default shell on the
