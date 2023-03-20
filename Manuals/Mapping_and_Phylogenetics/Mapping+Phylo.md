@@ -336,7 +336,7 @@ Now lets look at this new genome in context with a collection.
 
 We can add this genome to a collection of genomes mapped using `snippy-core`. First, let’s extract the old `snippy` runs from our archive file
 ```
-tar -zxf old.snippy.runs.tar.gz
+tar -zxf old.snippy.runs.2023.tar.gz
 ```
 We can see that we now have a new directory `old.snippy.runs`
 ```
@@ -616,16 +616,62 @@ Phandango should automatically display blocks of recombination in <span style="c
 ### Clustering genomes using `fastBAPS`
 We can cluster genomes for epidemiology in a variety of ways, depending on the goal and genetic distances involved. Here will use `fastBAPS`, which is an optimised  implementation of the original `hierBAPS` algorithm for hierarchical partitioning and Bayesian clustering of genomes. `fastBAPS` can be run in `R` as well as from the command line.
 
+In the command below, we:
+* specify a set of SNPs/alleles for use by the model 
+  * `-i gubbins.filtered_polymorphic_sites.fasta`
+* specify the name of the output file 
+  * `-o fastbaps.clusters.csv`
+* specify that we want hierarchical clustering at two different levels (i.e. BAPS will attempt to subdivide "level 1 clusters" to form "level 2 clusters") 
+  * `--levels 2`
+```
+run_fastbaps -i gubbins.filtered_polymorphic_sites.fasta -o fastbaps.clusters --levels 2
+```
+
+We can view the output using `head`
+
+![fastbaps.command](run-fastbaps.png)
+
+<br>
+
+Now that we have clusters, let’s see how they look against the phylogenetic tree we made earlier. 
+
+<br>
+First, we'll need to make the `csv` file with our clusters compatible with `microreact`. We need to change the header of the first column from `Isolates` to `ID`. We'll use some simple code on the command line to do this:
 
 ```
-run_fastbaps 
+sed s/Isolates/ID/ fastbaps.clusters.csv > fastbaps.clusters.fixid.csv
+
+head fastbaps.clusters.fixid.csv
 ```
-![fastbaps.command](run-fastbaps.png)
+
+![fastbaps.fixid.code](fastbaps.fixid.png)
+
+
+
 
 
 <br>
 
-Now that we have clusters, let’s see how they look against the phylogenetic tree we made earlier
+Go to the `microreact` webpage, and try uploading the new gubbins filtered tree and the fastbaps clusters
+
+![microreact.fastbaps.upload](microreact.fastbaps.upload.png)
+
+<br>
+
+![microreact.fastbaps.upload2](microreact.fastaps.upload2.png)
+
+You can see that the first column has been correctly identified as the 'ID' - this will be linked to the taxa in the tree
 
 
+Click `Continue`
 
+You should now see a tree coloured by your fastbaps groups. You can use the toggles to change the colouring and to add metadata blocks.
+
+![microreact.fastbaps.final](microreact.fastbaps.finaltree.png)
+
+
+<br>
+
+<br>
+
+END
