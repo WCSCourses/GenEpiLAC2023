@@ -19,6 +19,7 @@ Learn how to apply genomics to epidemiological surveillance of bacterial pathoge
 - [Matthew Dorman](https://www.sanger.ac.uk/person/dorman-matthew/), Wellcome Sanger Institute, UK
 - [Caterina Guzman Verri](https://scholar.google.com/citations?user=S1GNAC8AAAAJ&hl=en), PIET, Veterinary School, Universidad Nacional, Costa Rica
 - [Tomas Poklepovich](https://www.researchgate.net/profile/Tomas-Poklepovich), CNGB ANLIS “Dr. Carlos G. Malbrán, Argentina
+- [Maria Sol Haim](https://www.researchgate.net/profile/Maria-Sol-Haim), CNGB ANLIS “Dr. Carlos G. Malbrán, Argentina
 
 Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
 
