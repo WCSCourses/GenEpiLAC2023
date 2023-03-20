@@ -53,6 +53,17 @@ Typing any command (e.g. ls, mv or cd) at the prompt with the appropriate variab
 Directories are the equivalent of folders on a PC or Mac. They are organised in a hierarchy, so directories can have sub-directories and so on. Directories are very useful for organising your work and keeping your account tidy. For example, if you have more than one project, you can organise the files for each project into different directories to keep them separate. You can think of directories as rooms in a house. You can only be in one room (directory) at a time. When you are in a room you can see everything in that room easily. To see things in other rooms, you have to go to the appropriate door and crane your head around. Linux works in a similar manner, moving from directory to directory to access files. 
 
 ## [Useful commands](#useful-commands)
+All Linux commands are single words (can be alpha-numeric), with optional parameters followed by arguments. For historical reasons, some of the early commands are only two-letter long and case sensitive. Most of the command options are single letters. They should be specified after the command before giving any input. For example:
+```
+ls /home/manager/Linux
+```
+
+All Linux commands have manual pages. To check these manuals, use man or info command. The manual page gives a detailed explanation of the command, all available options and sometimes, also provides examples. For example, to view the manual page for `ls` command type: 
+```
+man ls 
+```
+
+Below you can find a list of frequently used commands for you to start familiarising with them: 
 
 | Command | What it does |
 | ------ | ------------ |
@@ -73,6 +84,8 @@ Directories are the equivalent of folders on a PC or Mac. They are organised in 
 | wc  | Counts the lines, words, characters, and bytes in a file  |
 | kill | Stops a process  |
 | jobs | Lists the processes that are running  |
+
+# [Practical Exercise](#practical-exercise)
 
 	
 	
