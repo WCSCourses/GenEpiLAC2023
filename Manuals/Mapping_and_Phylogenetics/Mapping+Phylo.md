@@ -531,19 +531,19 @@ run_gubbins -c 4 -p gubbins clean.full.aln
 NB. If gubbins takes more than 10 mins to complete, we have already run it for you - the files are available at `~/Module_5_Mapping_and_Phylogeny/gubbins_backups/`. 
 
 ```
+ls -lh gubbins_backups/
 cp gubbins_backups/* ./
-ls -lh gubbins*
 ```
-![gubbins.backup.files](gubbins_backup_files.png)
 
 <br>
-
 
 Lets look at what gubbins has done
 ```
 ls -l gubbins.*
 ```
-![gubbins.2](xx)
+
+![gubbins.backup.files](gubbins_backup_files.png)
+
 
 <br>
 
@@ -553,7 +553,7 @@ For example `gubbins.recombination_predictions.gff` is a `gff` file that contain
 head gubbins.recombination_predictions.gff
 ```
 
-![gubbins.3](xx)
+![gubbins.3](gubbins_view-gff.png)
 
 <br>
 
@@ -561,7 +561,7 @@ head gubbins.recombination_predictions.gff
 ```
 head gubbins.filtered_polymorphic_sites.fasta
 ```
-![gubbins.4](xx)
+![gubbins.4](gubbins_polymorphic-sites.png)
 
 <br>
 
@@ -608,16 +608,20 @@ Drag and drop the recombination gff file `gubbins.recombination_predictions.gff`
 
 Phandango should automatically display blocks of recombination in <span style="color:red"> *red* </span> (ancestral) and <span style="color:blue"> *blue* </span>(specific to a sample)
 
-![phandango.1](phandango.gubbins.plot.png)
+![phandango.1](gubbins-phandango-plot.png)
 
 <br>
 <br>
 
 ### Clustering genomes using `fastBAPS`
 We can cluster genomes for epidemiology in a variety of ways, depending on the goal and genetic distances involved. Here will use `fastBAPS`, which is an optimised  implementation of the original `hierBAPS` algorithm for hierarchical partitioning and Bayesian clustering of genomes. `fastBAPS` can be run in `R` as well as from the command line.
+
+
 ```
-fastbaps command
+run_fastbaps 
 ```
+![fastbaps.command](run-fastbaps.png)
+
 
 <br>
 
