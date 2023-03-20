@@ -443,11 +443,16 @@ ls -lh clean.full.*
 
 <br>
 
-Our maximum likelihood tree is labelled `clean.full.SNPs.aln.treefile`
+Our maximum likelihood tree is labelled `clean.full.SNPs.aln.treefile`. The `treefile` suffix is not always correctly identified by many tools, so we'll relabel this as something else:
+
+```
+cp clean.full.SNPs.aln.treefile clean.full.SNPs.aln.tre
+```
+
 
 We can look at the raw text 
 ```
-cat clean.full.SNPs.aln.treefile
+cat clean.full.SNPs.aln.tre
 ```
 ![iqtree.4](iqtree_less-newick-file.png)
 
@@ -455,7 +460,7 @@ But this is not very helpful - it's just raw text in 'newick' format.
 
 Instead, we can visualise this using `figtree`
 ```
-figtree clean.full.SNPs.aln.treefile &
+figtree clean.full.SNPs.aln.tre &
 ```
 
 ![figtree.1](figtree_launch.png)
@@ -470,24 +475,34 @@ You should now have a visualisation of the tree we just generated
 
 <br>
 
-Or using `Microreact`
+We can also visualise our tree using a webtool called `Microreact`
 
  - Open Firefox and navigate to https://microreact.org/
  - Click 'upload'
 
 ![microreact.1](Microreact-front-page.png)
 
- 
- - Drag the tree file `clean.full.SNPs.aln.treefile` onto the upload screen and 
+ <br>
+
+ - Select the file upload, or drag the tree file `clean.full.SNPs.aln.tre` onto the upload screen
 
 ![microreact.2](Microreact-upload.png)
 
-Microreact will recognise that the file is a tree in `newick` format. Note that we can also use this screen to add metadata in `csv` format. 
+
+<br>
+
+Microreact may not recognise the file, so let's tell micoreact this this is a tree in `newick` format. Note that we can also use this screen to add metadata in `csv` format.
+
+![microreact.3](microreact-specify-file-type.png)
+
+<br>
 
 Click `continue` to view the tree
 
-![microreact.3](xx)
+![microreact.4](microreact-my-first-tree.png)
 
+
+<br>
 <br>
 
 ### Accounting for recombination with `gubbins`
@@ -497,7 +512,7 @@ We can use `gubbins` to infer recombining sites by looking for increased SNP den
 run_gubbins -h
 ```
 
-![gubbins.1](xx)
+![gubbins.1](gubbins-help.png)
 
 <br>
 
@@ -505,11 +520,22 @@ The following command runs `gubbins` on standard settings, with 4 CPUs.
 
 Note: the `-c` option tells the program to use 4 CPUs. Note: the `-p` option tells the program to name all files with the prefix `gubbins`
 This command can take a few minutes to run.
+
 ```
 run_gubbins -c 4 -p gubbins clean.full.aln
 ```
 
+![run_gubbins_hanging](gubbins-run-hanging-screen.png)
 <br>
+
+NB. If gubbins takes more than 10 mins to complete, we have already run it for you - the files are available at 
+```
+///
+cp // ./
+```
+
+<br>
+
 
 Lets look at what gubbins has done
 ```
