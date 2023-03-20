@@ -528,11 +528,13 @@ run_gubbins -c 4 -p gubbins clean.full.aln
 ![run_gubbins_hanging](gubbins-run-hanging-screen.png)
 <br>
 
-NB. If gubbins takes more than 10 mins to complete, we have already run it for you - the files are available at 
+NB. If gubbins takes more than 10 mins to complete, we have already run it for you - the files are available at `~/Module_5_Mapping_and_Phylogeny/gubbins_backups/`. 
+
 ```
-///
-cp // ./
+cp gubbins_backups/* ./
+ls -lh gubbins*
 ```
+![gubbins.backup.files](gubbins_backup_files.png)
 
 <br>
 
