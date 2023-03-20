@@ -54,8 +54,8 @@ Directories are the equivalent of folders on a PC or Mac. They are organised in 
 
 ## [Useful commands](#useful-commands)
 
-| Command | | What it does |
-| ------- | ------------ |
+| Command | What it does |
+| ------ | ------------ |
 | ls | Lists the contents of the current directory  |
 | mkdir  | Makes a new directory  |
 | mv | Moves or renames a file  |
