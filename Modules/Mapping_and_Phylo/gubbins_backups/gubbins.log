@@ -1,0 +1,6 @@
+Process,Algorithm,Version,Citation
+Overall,Gubbins,3.2.1,https://doi.org/10.1093/nar/gku1196
+Tree constructor (1st iteration),raxmlHPC-PTHREADS,8.2.12,https://doi.org/10.1093/bioinformatics/btu033
+Model fitter (1st iteration),raxmlHPC-PTHREADS,8.2.12,https://doi.org/10.1093/bioinformatics/btu033
+Tree constructor (later iterations),raxmlHPC-PTHREADS,8.2.12,https://doi.org/10.1093/bioinformatics/btu033
+Model fitter (later iterations),raxmlHPC-PTHREADS,8.2.12,https://doi.org/10.1093/bioinformatics/btu033

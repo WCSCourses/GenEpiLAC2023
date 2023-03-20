@@ -1,0 +1,693 @@
+Warning, you specified a working directory via "-w"
+Keep in mind that RAxML only accepts absolute path names, not relative ones!
+
+RAxML can't, parse the alignment file as phylip file 
+it will now try to parse it as FASTA file
+
+
+
+Using BFGS method to optimize GTR rate parameters, to disable this specify "--no-bfgs" 
+
+
+This is the RAxML Master Pthread
+
+This is RAxML Worker Pthread Number: 3
+
+This is RAxML Worker Pthread Number: 2
+
+This is RAxML Worker Pthread Number: 1
+
+
+This is RAxML version 8.2.12 released by Alexandros Stamatakis on May 2018.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Sarah Lutteropp   (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+Charlie Taylor    (UF)
+
+
+Alignment has 416 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 2.80%
+
+RAxML Model Optimization up to an accuracy of 0.100000 log likelihood units
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+All free model parameters will be estimated by RAxML
+GAMMA model of rate heterogeneity, ML estimate of alpha-parameter
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 416
+Name: No Name Provided
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+RAxML was called as follows:
+
+raxmlHPC-PTHREADS -T 4 -safe -m GTRGAMMA -s clean.full.aln.snp_sites.aln -n clean.full.iteration_1_reconstruction -t /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/tmpytq0mwc1/clean.full.iteration_1.tre.rooted -f e -w /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/tmpytq0mwc1 
+
+
+
+WARNING the alpha parameter with a value of 12.060910 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 26.190713 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 58.731793 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 133.832721 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 297.995268 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 676.980185 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 1000.000000 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 1000.000000 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+Model parameters (binary file format) written to: /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/tmpytq0mwc1/RAxML_binaryModelParameters.clean.full.iteration_1_reconstruction
+0.735544 -10586.243973
+
+
+Overall Time for Tree Evaluation 0.738061
+Final GAMMA  likelihood: -10586.243973
+
+Number of free parameters for AIC-TEST(BR-LEN): 46
+Number of free parameters for AIC-TEST(NO-BR-LEN): 9
+
+
+Model Parameters of Partition 0, Name: No Name Provided, Type of Data: DNA
+alpha: 1000.000000
+Tree-Length: 2.599543
+rate A <-> C: 0.966021
+rate A <-> G: 7.884981
+rate A <-> T: 1.046729
+rate C <-> G: 0.230187
+rate C <-> T: 8.043624
+rate G <-> T: 1.000000
+
+freq pi(A): 0.256693
+freq pi(C): 0.247984
+freq pi(G): 0.253417
+freq pi(T): 0.241906
+
+Final tree written to:                 /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/tmpytq0mwc1/RAxML_result.clean.full.iteration_1_reconstruction
+Execution Log File written to:         /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/tmpytq0mwc1/RAxML_log.clean.full.iteration_1_reconstruction
+
+--- Gubbins 3.2.1 ---
+
+Croucher N. J., Page A. J., Connor T. R., Delaney A. J., Keane J. A., Bentley S. D., Parkhill J., Harris S.R. "Rapid phylogenetic analysis of large samples of recombinant bacterial whole genome sequences using Gubbins". Nucleic Acids Res. 2015 Feb 18;43(3):e15. doi: 10.1093/nar/gku1196.
+
+Checking dependencies and input files...
+
+Checking input alignment file...
+
+Filtering input alignment...
+...done. Run time: 3.03 s
+
+Running Gubbins to detect SNPs...
+gubbins /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/tmpytq0mwc1/clean.full.aln
+...done. Run time: 4.84 s
+
+Entering the main loop.
+
+*** Iteration 1 ***
+
+Constructing the phylogenetic tree with raxmlHPC-PTHREADS...
+raxmlHPC-PTHREADS -T 4 -safe -m GTRGAMMA -f d -p 1 -s /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/clean.full.aln.phylip -n clean.full.iteration_1 > /dev/null 2>&1
+...done. Run time: 5.97 s
+
+Reconstructing ancestral sequences with pyjar...
+
+Fitting substitution model to tree...
+raxmlHPC-PTHREADS -T 4 -safe -m GTRGAMMA -s clean.full.aln.snp_sites.aln -n clean.full.iteration_1_reconstruction -t /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/tmpytq0mwc1/clean.full.iteration_1.tre.rooted -f e -w /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/tmpytq0mwc1
+
+Running joint ancestral reconstruction with pyjar
+Warning, you specified a working directory via "-w"
+Keep in mind that RAxML only accepts absolute path names, not relative ones!
+
+RAxML can't, parse the alignment file as phylip file 
+it will now try to parse it as FASTA file
+
+
+
+Using BFGS method to optimize GTR rate parameters, to disable this specify "--no-bfgs" 
+
+
+This is the RAxML Master Pthread
+
+This is RAxML Worker Pthread Number: 3
+
+This is RAxML Worker Pthread Number: 2
+
+This is RAxML Worker Pthread Number: 1
+
+
+This is RAxML version 8.2.12 released by Alexandros Stamatakis on May 2018.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Sarah Lutteropp   (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+Charlie Taylor    (UF)
+
+
+Alignment has 416 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 2.80%
+
+RAxML Model Optimization up to an accuracy of 0.100000 log likelihood units
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+All free model parameters will be estimated by RAxML
+GAMMA model of rate heterogeneity, ML estimate of alpha-parameter
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 416
+Name: No Name Provided
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+RAxML was called as follows:
+
+raxmlHPC-PTHREADS -T 4 -safe -m GTRGAMMA -s clean.full.aln.snp_sites.aln -n clean.full.iteration_2_reconstruction -t /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/tmpytq0mwc1/clean.full.iteration_2.tre.rooted -f e -w /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/tmpytq0mwc1 
+
+
+
+WARNING the alpha parameter with a value of 11.974332 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 25.977224 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 58.218581 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 132.619249 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 295.143251 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 670.378288 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 1000.000000 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 1000.000000 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+Model parameters (binary file format) written to: /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/tmpytq0mwc1/RAxML_binaryModelParameters.clean.full.iteration_2_reconstruction
+0.378474 -10592.061241
+
+
+Overall Time for Tree Evaluation 0.381376
+Final GAMMA  likelihood: -10592.061241
+
+Number of free parameters for AIC-TEST(BR-LEN): 46
+Number of free parameters for AIC-TEST(NO-BR-LEN): 9
+
+
+Model Parameters of Partition 0, Name: No Name Provided, Type of Data: DNA
+alpha: 1000.000000
+Tree-Length: 2.599303
+rate A <-> C: 0.953006
+rate A <-> G: 7.785435
+rate A <-> T: 1.031211
+rate C <-> G: 0.224478
+rate C <-> T: 7.962934
+rate G <-> T: 1.000000
+
+freq pi(A): 0.256693
+freq pi(C): 0.247984
+freq pi(G): 0.253417
+freq pi(T): 0.241906
+
+Final tree written to:                 /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/tmpytq0mwc1/RAxML_result.clean.full.iteration_2_reconstruction
+Execution Log File written to:         /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/tmpytq0mwc1/RAxML_log.clean.full.iteration_2_reconstruction
+
+Transferring pyjar results onto original recombination-corrected tree
+
+Done transfer
+...done. Run time: 12.28 s
+
+Running Gubbins to detect recombinations...
+gubbins -r -v clean.full.aln.gaps.vcf -a 100 -b 10000 -f /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/tmpytq0mwc1/clean.full.aln -t clean.full.iteration_1.tre -m 3 -p 0.05 -i 1.0 /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/tmpytq0mwc1/clean.full.iteration_1.internal.joint.aln
+...done. Run time: 18.02 s
+
+Checking for convergence...
+...done. Run time: 18.02 s
+
+*** Iteration 2 ***
+
+Constructing the phylogenetic tree with raxmlHPC-PTHREADS...
+raxmlHPC-PTHREADS -T 4 -safe -m GTRGAMMA -f d -p 1 -s /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/clean.full.iteration_1.tre.phylip -n clean.full.iteration_2 -t /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/clean.full.iteration_1.tre > /dev/null 2>&1
+...done. Run time: 18.92 s
+
+Reconstructing ancestral sequences with pyjar...
+
+Fitting substitution model to tree...
+raxmlHPC-PTHREADS -T 4 -safe -m GTRGAMMA -s clean.full.aln.snp_sites.aln -n clean.full.iteration_2_reconstruction -t /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/tmpytq0mwc1/clean.full.iteration_2.tre.rooted -f e -w /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/tmpytq0mwc1
+
+Running joint ancestral reconstruction with pyjar
+Warning, you specified a working directory via "-w"
+Keep in mind that RAxML only accepts absolute path names, not relative ones!
+
+RAxML can't, parse the alignment file as phylip file 
+it will now try to parse it as FASTA file
+
+
+
+Using BFGS method to optimize GTR rate parameters, to disable this specify "--no-bfgs" 
+
+
+This is the RAxML Master Pthread
+
+This is RAxML Worker Pthread Number: 3
+
+This is RAxML Worker Pthread Number: 2
+
+This is RAxML Worker Pthread Number: 1
+
+
+This is RAxML version 8.2.12 released by Alexandros Stamatakis on May 2018.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Sarah Lutteropp   (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+Charlie Taylor    (UF)
+
+
+Alignment has 416 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 2.80%
+
+RAxML Model Optimization up to an accuracy of 0.100000 log likelihood units
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+All free model parameters will be estimated by RAxML
+GAMMA model of rate heterogeneity, ML estimate of alpha-parameter
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 416
+Name: No Name Provided
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+RAxML was called as follows:
+
+raxmlHPC-PTHREADS -T 4 -safe -m GTRGAMMA -s clean.full.aln.snp_sites.aln -n clean.full.iteration_3_reconstruction -t /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/tmpytq0mwc1/clean.full.iteration_3.tre.rooted -f e -w /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/tmpytq0mwc1 
+
+
+
+WARNING the alpha parameter with a value of 11.974332 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 25.977224 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 58.218581 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 132.619249 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 295.143251 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 670.378288 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 1000.000000 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 1000.000000 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+Model parameters (binary file format) written to: /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/tmpytq0mwc1/RAxML_binaryModelParameters.clean.full.iteration_3_reconstruction
+0.334665 -10592.061241
+
+
+Overall Time for Tree Evaluation 0.337233
+Final GAMMA  likelihood: -10592.061241
+
+Number of free parameters for AIC-TEST(BR-LEN): 46
+Number of free parameters for AIC-TEST(NO-BR-LEN): 9
+
+
+Model Parameters of Partition 0, Name: No Name Provided, Type of Data: DNA
+alpha: 1000.000000
+Tree-Length: 2.599303
+rate A <-> C: 0.953006
+rate A <-> G: 7.785435
+rate A <-> T: 1.031211
+rate C <-> G: 0.224478
+rate C <-> T: 7.962934
+rate G <-> T: 1.000000
+
+freq pi(A): 0.256693
+freq pi(C): 0.247984
+freq pi(G): 0.253417
+freq pi(T): 0.241906
+
+Final tree written to:                 /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/tmpytq0mwc1/RAxML_result.clean.full.iteration_3_reconstruction
+Execution Log File written to:         /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/tmpytq0mwc1/RAxML_log.clean.full.iteration_3_reconstruction
+
+Transferring pyjar results onto original recombination-corrected tree
+
+Done transfer
+...done. Run time: 24.50 s
+
+Running Gubbins to detect recombinations...
+gubbins -r -v clean.full.aln.gaps.vcf -a 100 -b 10000 -f /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/tmpytq0mwc1/clean.full.aln -t clean.full.iteration_2.tre -m 3 -p 0.05 -i 1.0 /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/tmpytq0mwc1/clean.full.iteration_2.internal.joint.aln
+...done. Run time: 30.25 s
+
+Checking for convergence...
+...done. Run time: 30.25 s
+
+*** Iteration 3 ***
+
+Constructing the phylogenetic tree with raxmlHPC-PTHREADS...
+raxmlHPC-PTHREADS -T 4 -safe -m GTRGAMMA -f d -p 1 -s /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/clean.full.iteration_2.tre.phylip -n clean.full.iteration_3 -t /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/clean.full.iteration_2.tre > /dev/null 2>&1
+...done. Run time: 32.60 s
+
+Reconstructing ancestral sequences with pyjar...
+
+Fitting substitution model to tree...
+raxmlHPC-PTHREADS -T 4 -safe -m GTRGAMMA -s clean.full.aln.snp_sites.aln -n clean.full.iteration_3_reconstruction -t /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/tmpytq0mwc1/clean.full.iteration_3.tre.rooted -f e -w /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/tmpytq0mwc1
+
+Running joint ancestral reconstruction with pyjar
+Warning, you specified a working directory via "-w"
+Keep in mind that RAxML only accepts absolute path names, not relative ones!
+
+RAxML can't, parse the alignment file as phylip file 
+it will now try to parse it as FASTA file
+
+
+
+Using BFGS method to optimize GTR rate parameters, to disable this specify "--no-bfgs" 
+
+
+This is the RAxML Master Pthread
+
+This is RAxML Worker Pthread Number: 3
+
+This is RAxML Worker Pthread Number: 2
+
+This is RAxML Worker Pthread Number: 1
+
+
+This is RAxML version 8.2.12 released by Alexandros Stamatakis on May 2018.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Sarah Lutteropp   (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+Charlie Taylor    (UF)
+
+
+Alignment has 416 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 2.80%
+
+RAxML Model Optimization up to an accuracy of 0.100000 log likelihood units
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+All free model parameters will be estimated by RAxML
+GAMMA model of rate heterogeneity, ML estimate of alpha-parameter
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 416
+Name: No Name Provided
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+RAxML was called as follows:
+
+raxmlHPC-PTHREADS -T 4 -safe -m GTRGAMMA -s clean.full.aln.snp_sites.aln -n clean.full.iteration_4_reconstruction -t /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/tmpytq0mwc1/clean.full.iteration_4.tre.rooted -f e -w /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/tmpytq0mwc1 
+
+
+
+WARNING the alpha parameter with a value of 11.974332 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 25.977224 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 58.218581 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 132.619249 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 295.143251 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 670.378288 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 1000.000000 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+WARNING the alpha parameter with a value of 1000.000000 estimated by RAxML for partition number 0 with the name "No Name Provided"
+is larger than 10.000000. You should do a model test and confirm that you actually need to incorporate a model of rate heterogeneity!
+You can run inferences with a plain substitution model (without rate heterogeneity) by specifyng the CAT model and the "-V" option!
+
+
+Model parameters (binary file format) written to: /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/tmpytq0mwc1/RAxML_binaryModelParameters.clean.full.iteration_4_reconstruction
+0.386728 -10592.061241
+
+
+Overall Time for Tree Evaluation 0.389005
+Final GAMMA  likelihood: -10592.061241
+
+Number of free parameters for AIC-TEST(BR-LEN): 46
+Number of free parameters for AIC-TEST(NO-BR-LEN): 9
+
+
+Model Parameters of Partition 0, Name: No Name Provided, Type of Data: DNA
+alpha: 1000.000000
+Tree-Length: 2.599303
+rate A <-> C: 0.953006
+rate A <-> G: 7.785435
+rate A <-> T: 1.031211
+rate C <-> G: 0.224478
+rate C <-> T: 7.962934
+rate G <-> T: 1.000000
+
+freq pi(A): 0.256693
+freq pi(C): 0.247984
+freq pi(G): 0.253417
+freq pi(T): 0.241906
+
+Final tree written to:                 /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/tmpytq0mwc1/RAxML_result.clean.full.iteration_4_reconstruction
+Execution Log File written to:         /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/tmpytq0mwc1/RAxML_log.clean.full.iteration_4_reconstruction
+
+Transferring pyjar results onto original recombination-corrected tree
+
+Done transfer
+...done. Run time: 38.05 s
+
+Running Gubbins to detect recombinations...
+gubbins -r -v clean.full.aln.gaps.vcf -a 100 -b 10000 -f /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/tmpytq0mwc1/clean.full.aln -t clean.full.iteration_3.tre -m 3 -p 0.05 -i 1.0 /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/tmpytq0mwc1/clean.full.iteration_3.internal.joint.aln
+...done. Run time: 43.74 s
+
+Checking for convergence...
+...done. Run time: 43.76 s
+
+*** Iteration 4 ***
+
+Constructing the phylogenetic tree with raxmlHPC-PTHREADS...
+raxmlHPC-PTHREADS -T 4 -safe -m GTRGAMMA -f d -p 1 -s /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/clean.full.iteration_3.tre.phylip -n clean.full.iteration_4 -t /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/clean.full.iteration_3.tre > /dev/null 2>&1
+...done. Run time: 44.44 s
+
+Reconstructing ancestral sequences with pyjar...
+
+Fitting substitution model to tree...
+raxmlHPC-PTHREADS -T 4 -safe -m GTRGAMMA -s clean.full.aln.snp_sites.aln -n clean.full.iteration_4_reconstruction -t /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/tmpytq0mwc1/clean.full.iteration_4.tre.rooted -f e -w /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/tmpytq0mwc1
+
+Running joint ancestral reconstruction with pyjar
+
+Transferring pyjar results onto original recombination-corrected tree
+
+Done transfer
+...done. Run time: 49.95 s
+
+Running Gubbins to detect recombinations...
+gubbins -r -v clean.full.aln.gaps.vcf -a 100 -b 10000 -f /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/tmpytq0mwc1/clean.full.aln -t clean.full.iteration_4.tre -m 3 -p 0.05 -i 1.0 /lustre/scratch125/pam/teams/team216/mb29/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins/tmpytq0mwc1/clean.full.iteration_4.internal.joint.aln
+...done. Run time: 55.68 s
+
+Checking for convergence...
+Convergence after 4 iterations: Tree observed before.
+
+Exiting the main loop.
+
+Creating the final output...
+...finished. Total run time: 55.80 s
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@node-13-19>
+Subject: Job 18484438: <gubbins.paraguay2023_rebuild> in cluster <farm5> Done
+
+Job <gubbins.paraguay2023_rebuild> was submitted from host <farm5-head1> by user <mb29> in cluster <farm5> at Mon Mar 20 15:58:06 2023
+Job was executed on host(s) <4*node-13-19>, in queue <normal>, as user <mb29> in cluster <farm5> at Mon Mar 20 15:59:15 2023
+</nfs/users/nfs_m/mb29> was used as the home directory.
+</data/pam/team216/mb29/scratch/Vibrio/Paraguay_phylo_practical_2023/snippy_multi_rerun_03-2023/gubbins> was used as the working directory.
+Started at Mon Mar 20 15:59:15 2023
+Terminated at Mon Mar 20 16:00:37 2023
+Results reported at Mon Mar 20 16:00:37 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+run_gubbins.py -c 4 -p gubbins clean.full.aln
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   83.80 sec.
+    Max Memory :                                 361 MB
+    Average Memory :                             168.83 MB
+    Total Requested Memory :                     8000.00 MB
+    Delta Memory :                               7639.00 MB
+    Max Swap :                                   -
+    Max Processes :                              11
+    Max Threads :                                47
+    Run time :                                   63 sec.
+    Turnaround time :                            151 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <gubbins.paraguay2023_rebuild.e> for stderr output of this job.
+
