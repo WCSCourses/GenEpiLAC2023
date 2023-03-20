@@ -338,41 +338,49 @@ We can add this genome to a collection of genomes mapped using `snippy-core`. Fi
 ```
 tar -zxf old.snippy.runs.tar.gz
 ```
-We can see that we now have an extra 17 folders, each containing a separate genome
+We can see that we now have a new directory `old.snippy.runs`
 ```
 ls -lh
 ```
-![snippy-context.tar.ls](xx)
-
-Now lets use `snippy-core` to summarise all these genomes and create a multiple sequence alignment
+![snippy-context.tar.ls1](untar.old-snippy-files.ls.png)
 
 ```
-snippy-core --ref new-sample-1/ref.fa 0034_L008_R1 16244_7#50 16244_8#7 26237_7#137 26237_7#173 26237_7#178 26237_7#179 26237_7#86 26268_1#207 26268_1#46 CNRVC030096_GCCAAT CNRVC090182 CNRVC961005_CACTCA_L002 ERR579049 ERR579075 M66 SRR308704 new-sample-1 new-sample-2
+ls -lh old.snippy.runs
 ```
-![snippy-core.run1](xx)
+![snippy-context.tar.ls2](untar.old-snippy-files.ls2.png)
+
+<br>
+
+Now lets use `snippy-core` to summarise all these genomes along with the new ones and create a multiple sequence alignment
+
+```
+snippy-core --ref new-sample-1/ref.fa old.snippy.runs/* new-sample-1 new-sample-2
+```
+![snippy-core.run1](snippy-core-run.png)
 
 `Snippy` has now created a number of files, including a ‘core SNP alignment’
 ```
 ls -l core.*
 ```
-![snippy-core.run2](xx)
+![snippy-core.run2](snippy-core.ls1.png)
 
 We have various files that summarise our variants, e.g.
 ```
 head core.tab 
 ```
-![snippy-core.run3](xx)
+![snippy-core.run3](snippy-core_head-tab.png)
 
 And our multiple sequence alignment containing all genomes:
 ```
 head core.full.aln
 ```
-![snippy-core.run4](xx)
+![snippy-core.run4](snippy-core_head.core.aln.png)
 
-This file masks sequences with low confidence in different ways, but for some applications we want everything masked in the same way. Let’s change that so anything uncertain is marked as ’N’ using the `snipp-clean_full_aln` script that comes with `snippy`.
+This file masks sequences with low confidence in different ways, but for some applications we want everything masked in the same way. Let’s change that so anything uncertain is marked as ’N’ using the `snippy-clean_full_aln` script that comes with `snippy`.
 ```
 snippy-clean_full_aln core.full.aln > clean.full.aln
 ```
+![snippy-core.run5](snippy-core_clean.aln.png)
 
 <br>
 
@@ -388,7 +396,7 @@ We will use `snp-sites` to do this. You can view the options for `snp-sites`
 ```
 snp-sites
 ```
-![snp-sites.1](xx)
+![snp-sites.1](snp-sites.help.png)
 
 First, remove all the invariant sites and create a SNP-only multiple sequence alignment.
 ```
@@ -398,7 +406,7 @@ We can see how many invariant sites were removed (and what proportion of A, T, G
 ```
 snp-sites -C clean.full.aln
 ```
-![snp-sites.2](xx)
+![snp-sites.2](snp-sites_run.png)
 
 <br>
 
@@ -407,7 +415,7 @@ We can look at the options for `IQ-TREE` below
 ```
 iqtree -h
 ```
-![iqtree.1](xx)
+![iqtree.1](iqtree-help.png)
 
 <br>
 
@@ -423,7 +431,7 @@ In the command below, we:
 iqtree -s clean.full.SNPs.aln -fconst $( snp-sites -C clean.full.aln ) -m GTR+F+I -T 2 -mem 2G -B 1000 -o M66
 ```
 
-![iqtree.2](xx)
+![iqtree.2](iqtree-run.1.png)
 
 <br>
 
@@ -431,18 +439,34 @@ Look at folder
 ```
 ls -lh clean.full.*
 ```
-![iqtree.3](xx)
+![iqtree.3](iqtree_-ls-after.png)
 
 <br>
 
 Our maximum likelihood tree is labelled `clean.full.SNPs.aln.treefile`
 
-We can visualise this using `figtree`
+We can look at the raw text 
+```
+cat clean.full.SNPs.aln.treefile
+```
+![iqtree.4](iqtree_less-newick-file.png)
+
+But this is not very helpful - it's just raw text in 'newick' format. 
+
+Instead, we can visualise this using `figtree`
 ```
 figtree clean.full.SNPs.aln.treefile &
 ```
 
-![figtree.1](xx)
+![figtree.1](figtree_launch.png)
+
+Ignore the java error messages. The popup box is asking you how to describe the 'bootstrap values'. You can click 'OK' here.
+
+You should now have a visualisation of the tree we just generated
+
+
+![figtree.2](figtree_initial.tree.png)
+
 
 <br>
 
