@@ -25,7 +25,7 @@ Learn how to apply genomics to epidemiological surveillance of bacterial pathoge
 <br>
 <br>
 
-## Link to [Course Manual]([GenEpiLAC2023/Manuals/README.md](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/README.md)
+## Link to [Course Manual](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/README.md)
  
  <br>
  <br>
