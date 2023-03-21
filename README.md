@@ -21,6 +21,20 @@ Learn how to apply genomics to epidemiological surveillance of bacterial pathoge
 - [Tomas Poklepovich](https://www.researchgate.net/profile/Tomas-Poklepovich), CNGB ANLIS “Dr. Carlos G. Malbrán, Argentina
 - [Maria Sol Haim](https://www.researchgate.net/profile/Maria-Sol-Haim), CNGB ANLIS “Dr. Carlos G. Malbrán, Argentina
 
+
+<br>
+<br>
+
+## Link to [Course Manual](GenEpiLAC2023/Manuals/README.md)
+ 
+ <br>
+ <br>
+
+
+
+
+
+
 Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
 
 This work is licensed under a
