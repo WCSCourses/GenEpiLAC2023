@@ -1,7 +1,8 @@
+<img src="https://coursesandconferences.wellcomeconnectingscience.org/wp-content/themes/wcc_courses_and_conferences/dist/assets/svg/logo.svg" width="200" height="200">
+
 # Introduction to Linux - Paraguay 2023 <!-- omit in toc -->
 
 ## Table of contents <!-- omit in toc -->
-- [Module Overview and Aims](#module-overview-and-aims)
 - [Introduction](#introduction)
   - [Linux Operating System](#linux-operating-system)
   - [The terminal](#the-terminal)
