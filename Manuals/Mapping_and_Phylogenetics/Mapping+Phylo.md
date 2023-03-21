@@ -1,10 +1,5 @@
 <img src="https://coursesandconferences.wellcomeconnectingscience.org/wp-content/themes/wcc_courses_and_conferences/dist/assets/svg/logo.svg" width="200" height="200">
 
----
-title: "WAC Mapping and Phylogenetics"
-author: "Mat Beale"
-date: "March 21, 2023"
----
 
 # Mapping and Phylogenetics - Paraguay 2023 <!-- omit in toc -->
 
