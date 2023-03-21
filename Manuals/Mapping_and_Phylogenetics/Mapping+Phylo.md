@@ -636,6 +636,7 @@ We can view the output using `head`
 Now that we have clusters, let’s see how they look against the phylogenetic tree we made earlier. 
 
 <br>
+
 First, we'll need to make the `csv` file with our clusters compatible with `microreact`. We need to change the header of the first column from `Isolates` to `ID`. We'll use some simple code on the command line to do this:
 
 ```
