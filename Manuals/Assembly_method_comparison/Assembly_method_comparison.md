@@ -85,7 +85,7 @@ unicycler -t 4 -1 S_aureus_JKD6159_Illumina.ds500000-reads_1.fastq.gz -2 S_aureu
 <br>
 
 ## Long read only assembly (Unicycler)
-For assembly of long reads, `Unicycler` switches to the long read assembler `miniasm` - this is a very rapid assembler, but is not particularly accurate, and can often introduce errors and mistakes into it's outputs.
+For assembly of long reads, `Unicycler` switches to the long read assembler `miniasm` - this is a very rapid assembler, but is not particularly accurate, and can often introduce errors and mistakes into its outputs.
 
 <br>
 
