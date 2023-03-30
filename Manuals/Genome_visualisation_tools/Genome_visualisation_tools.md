@@ -166,4 +166,77 @@ Click on the `Graph` menu to see all those available. Perhaps some of the most u
 
 `ADD FIGURE`
 
+Notice how several of the plots show a marked deviation around the region you are currently looking at. To fully appreciate how anomalous this region is move the genome view by scrolling to the left and right of this region. The apparent unusual nucleotide content of this region is indicative of laterally acquired DNA that has inserted into the genome.
 
+Your Artemis window should now look similar to the one shown.
+
+As well as looking at the characteristics of small regions of the genome, it is possible to zoom out and look at the characteristics of the genome as a whole. To view the entire genome you can use the sliders indicated below. However, be careful zooming out quickly with all the features being displayed, as this may temporarily lock up the computer.
+
+1- To make this process faster and clearer, switch off stop codons by clicking with the right mouse button in the main view panel. A menu will appear with
+an option to de-select "Stop Codons" (see below).
+
+2. You will also need to temporarily remove all of the annotated features from the Artemis display window. In fact if you leave them on, which you can, they would be too small to see when you zoomed out to display the entire genome. To remove the annotation click on the S_typhi.tab entry button on the grey entry line of the Artemis window shown above.
+
+`ADD FIGURES`
+
+3. One final tip is to adjust the scaling for each graph displayed before zooming out. This increases the maximum window size over which a single point for each plot is calculated. To adjust the scaling click with the right mouse button over a particular graph window. A menu will appear with an option "Set the Window size" (see above), set the window size to ‘20000’. You should do this for each graph displayed (if you get an error message press continue).
+
+4. You are now ready to zoom out by dragging or clicking the slider indicated above. Once you have zoomed out fully to see the entire genome you will need to adjust the smoothing of the graphs using the vertical graph sliders as before, to have a similar view to that shown below.
+
+`ADD FIGURE`
+
+## [Artemis exercise 3](#artemis-exercise-3)
+
+There are many examples where anomalous regions of DNA within a genome have been shown to carry laterally acquired DNA. In this part of the exercise we are going to
+look at several of these regions in more detail. Starting with the whole genome view, note down the approximate positions and characteristics of the three regions indicated above. Remember the locations of the peaks are given in the graph window if you click the left mouse button within it.
+
+`ADD FIGURES`
+
+We will now zoom back into the genome to look in more detail at the first of these three peaks. Using the left mouse button, highlight the anomalous region of the graph - this will also highlight the region in the main display. You can then use the right mouse button menu in the main display to `Zoom to selection` - you may need to zoom out from there. Remember that in order to see the CDS features lying within this region you will need to turn the annotation (S_typhi.tab) entry back on.
+
+The region you should be looking at is shown below and is a classical example of a *Salmonella* pathogenicity island (SPI). The definitions of what constitutes a
+pathogenicity island are quite diverse. However, below is a list of characteristics which are commonly seen within these regions, as described by Hacker et al., 1997.
+
+1. Often inserted alongside stable RNAs
+
+2. Atypical G+C contents.
+
+3. Carry virulence-related functions
+
+4. Often carry genes encoding transposase or integrase-like proteins
+
+5. Unstable and self-mobilisable
+
+6. Of limited phylogenetic distribution
+
+Have a look in and around this region and look for some of these features
+
+`ADD FIGURE`
+
+Next go to Region 2.
+
+`ADD FIGURE`
+
+As with region 1, this region is also defined as a *Salmonella* pathogenicity island (SPI). SPI-7, or the major Vi pathogenicity island, is ~134 kb in length and contains ~30 kb of integrated bacteriophage. Have a look at the CDSs within this region. As before notice any stable RNAs that may have acted as the phage integration site.
+
+## [Artemis exercise 4](#artemis-exercise-4)
+
+Continuing on from the analysis of Region 2 or SPI-7 (the major Vi-antigen pathogenicity island) we are going to extract this region from the whole genome sequence and perform some more detailed analysis on it. We will aim to write and save new EMBL format files which will include just the annotations and DNA for this region.
+Follow the numbers on the figure below to complete the task:
+
+`ADD FIGURE`
+
+A new Artemis window will appear displaying only the region that you highlighted:
+
+`ADD FIGURE`
+
+Note that the two entries on the grey "Entry" line are now denoted "no name". They represent the same information in the same order as the original Artemis window but
+simply have no assigned "Entry" names. As the sub-sequence is now viewed in a new Artemis session, this prevents the original files (S_typhi.dna and S_typhi.tab) from
+being over-written.
+
+We will save the new files with relevant names to avoid confusion. So click on `File > Save An Entry As > New File`. Another menu will ask you to choose one of the entries listed. At this point they will both be called "no name". Left click on the top entry in the list. A window will appear asking you to give this file
+a name. Save this file as spi7.dna
+
+Do the same again for the second unnamed entry and save it as spi7.tab
+
+`ADD FIGURE`
