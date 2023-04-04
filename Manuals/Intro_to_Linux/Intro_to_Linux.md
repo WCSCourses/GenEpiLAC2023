@@ -4,27 +4,17 @@
 
 ## Table of contents <!-- omit in toc -->
 - [Introduction](#introduction)
-  - [Linux Operating System](#linux-operating-system)
   - [The terminal](#the-terminal)
   - [The command line](#the-command-line)
   - [Useful commands](#useful-commands)
 - [Practical Exercise](#practical-exercise)
 
 ## Module Overview and Aims
-- Become familiar with Linux Operating System and understand why it is widely used in bioinformatics
-- Understand Linux command line and the directory structure of the file system
-- Learn how to manipulate files/directories
+
+The aim of this module is to recap some of the concepts you´ve learnt in the pre-course "Introduction to Linux for biologists April 23" and to practice a bit more the use of Linux command line, directory structure of the file system and manipulation of files/directories.
 
 # [Introduction](#introduction)
 
-## [Linux Operating System](#linux-operating-system)
-Linux is an open-source operating system (OS) based on the kernel created by Linus Benedict Torvalds and was first released in 1991. An OS is a computer program which manages how you connect to various pieces of hardware (screen, keyboard, mouse etc.) and also manages your files and allows you to run software applications.
-
-Linux is a powerful, robust and stable operating system that allows dozens of people to run programs on the same computer at the same time. It runs on all kinds of machines, from desktop PCs, mobile phones to supercomputers.
-
-Increasingly, the output of lab-based biology exists as large text files, for example the data files from sequencing machines. Linux has a range of powerful and flexible commands which can be used to edit and manipulate these files. This is why it is the preferred operating system for large-scale scientific computing.
-
-During this course, we will work on a local Linux machine running Ubuntu but most of the commands specified in this manual can be used in any other distribution (i.e. CentOS, Debian, etc) of Linux OS. 
 
 ## [The terminal](#the-terminal)
 We use the terminal (command line interface) to interact with the operating system. The terminal by default runs one of the “shells”. Shell is a program that sits between the user and the kernel and translates user commands into machine code. There are some advantages of using the command line when working with genome analysis such as greater control and flexibility over the system or software, and multiple commands can be saved in a file and executed as a program. 
@@ -39,8 +29,7 @@ The most common shells are:
 
 - K Shell
 
-Among these Bourne Again Shell (BASH) is the most popular one. This is the default shell on the
-system, and we will be using it throughout this course. 
+Among these Bourne Again Shell (BASH) is the most popular one. This is the default shell on the system, and we will be using it throughout this course. 
 
 You should see a window labelled "Terminal" which will be empty except for a '$' character at the top left. The '$' character is the prompt, similar to "C:\" in DOS. 
 You can type commands directly into the terminal at the prompt. 
@@ -64,7 +53,7 @@ All Linux commands have manual pages. To check these manuals, use man or info co
 man ls 
 ```
 
-Below you can find a list of frequently used commands for you to start familiarising with them: 
+Below you can find a list of frequently used commands for you to become familiar with them: 
 
 | Command | What it does |
 | ------ | ------------ |
@@ -88,68 +77,231 @@ Below you can find a list of frequently used commands for you to start familiari
 
 # [Practical Exercise](#practical-exercise)
 
-Open a terminal window, type the command below into your command line to make sure we are all working in the same directory. 
-cd Linux
-Don't forget to press the [Enter] key: commands are not sent to the computer until this is done.
-The location or directory you are currently in is called the current working directory.
-Type: pwd
-This will show the path of the current working directory:
-/home/manager/Linux
-Try typing: ls
-How many files do you see in this directory?
-Do you see different colors for each file? What do you think each color means?
-On the other hand, the location or “full pathname” of a file  named “reference_Ss046.fasta” in the Linux directory can be expressed as: 
+Open a terminal window and go to the following directory /home/manager/Linux. Do you remember how to do this? Use the `cd` command. Don't forget to press the [Enter] key for running a command: commands are not sent to the computer until this is done!
+
+**How many files do you see in this directory?**
+
+**Do you see different colors for each file? What do you think each color means?**
+
+We will start working with the fasta file reference_Ss046.fasta. The location or “full pathname” of this file in the Linux directory can be expressed as: 
 /home/manager/Linux/reference_Ss046.fasta
-Now try:
-ls -lrt
--lrt is the option for long listing, detailed and alphabetically ordered, which is optional in this case. Without the input, ls shows the contents of the current directory.
 
-total 919724
--rw-rw-r-- 1 manager manager 25782 Oct 6 18:17 Metadata.csv
--rw-rw-r-- 1 manager manager 4894250 Oct 6 18:17 reference_Ss046.fasta
--rw-rw-r-- 1 manager manager 32961 Oct 6 18:17 Ssonei.txt
--rw-rw-r-- 1 manager manager 72731 Oct 7 11:38 ARIMSS995-11_1.fastq.gz
--rw-rw-r-- 1 manager manager 68323 Oct 7 11:38 ARIMSS995-11_2.fastq.gz
--rw-rw-r-- 1 manager manager 105276395 Oct 7 11:38 ERR1009125_1.fastq.gz
--rw-rw-r-- 1 manager manager 110927682 Oct 7 11:38 ERR1009125_2.fastq.gz
--rw-rw-r-- 1 manager manager 82680247 Oct 7 11:38 ERR1009142_1.fastq.gz
--rw-rw-r-- 1 manager manager 87069685 Oct 7 11:38 ERR1009142_2.fastq.gz
--rw-rw-r-- 1 manager manager 150495691 Oct 7 11:38 ERR200457_1.fastq.gz
--rw-rw-r-- 1 manager manager 154641675 Oct 7 11:38 ERR200457_2.fastq.gz
--rw-rw-r-- 1 manager manager 114076641 Oct 7 11:38 untrimmed_1.fastq.gz
--rw-rw-r-- 1 manager manager 131506868 Oct 7 11:38 untrimmed_2.fastq.gz
+If we were interested in cutting a section from this file, we would use the command `cut`.
 
- Information (from left to right): 
-●	File permissions 
-●	Number of links 
-●	Owner’s name 
-●	Group’s name 
-●	Number of bytes 
-●	Last modified time 
-●	File/Directory name 
+Remember you could see a command’s options using the man command, in this case:  
 
-Try typing:
-cd ..
-And then:
-pwd
+`man cut`
 
-Now you are at the previous directory in the hierarchical order: /home/manager
-Let’s move to our working directory. To practice, try: cd L and use the Tab key to auto-complete the typing of the word “Linux”
+Press q when you are ready to close the help manual for the command cut.
 
-	
-	
-	
-	
-	
-	
-	
+To cut a section of a file use "-c" (characters). In the following example, the option “-c1-10” will output the first 10 characters of each line from the input file. 
 
-	
-	
-	
-	
-	
+Type: 
+
+`cut -c1-10 reference_Ss046.fasta`
+
+Depending on the window size you are working, something similar to this will show up in your screen: 
+
+```
+GTTAAGAATT
+AGAAGAGTGG
+GGCGCGGGCA
+GCCACCCGCT
+AATCGTTACA
+CACGCCAGTA
+GGTCGCGAAG
+TGGCGGATTA
+ACAACAACCG
+GCATTGCTGA
+TTTTAGAGCA
+AAAAACGCCT
+```
+
+Let´s take a look at another file named “Ssonei.txt” with some information regarding Latin American *Shigella sonnei* genome sequences. These fields are separated by “|” symbol. 
+
+**How would you see the first 10 lines of “Ssonei.txt” file?** 
+
+You should see something like this:
+
+```
+|Sample name|ID |Accession (run) number |Accession (sample) number|Assembly accessions|Study |Year|Country
+3626STDY6095476|53827|ERR1009118|ERS710307|FTXR01000001-FTXR01000440|Latin America|1998|Venezuela
+3626STDY6095485|61034|ERR1009127|ERS710316|FTXZ01000001-FTXZ01000442|Latin America|2000|Venezuela
+3626STDY6095486|60903|ERR1009128|ERS710317|FTYA01000001-FTYA01000402|Latin America|1999|Venezuela
+3626STDY6095487|61015|ERR1009129|ERS710318|FTYC01000001-FTYC01000438|Latin America|2000|Venezuela
+3626STDY6095488|61017|ERR1009130|ERS710319|FTYB01000001-FTYB01000442|Latin America|2000|Venezuela
+3626STDY6095489|61022|ERR1009131|ERS710320|FTYD01000001-FTYD01000459|Latin America|2000|Venezuela
+3626STDY6095490|61026|ERR1009132|ERS710321|FTYE01000001-FTYE01000432|Latin America|2000|Venezuela
+3626STDY6095491|61027|ERR1009133|ERS710322|FTYF01000001-FTYF01000428|Latin America|2000|Venezuela
+3626STDY6095493|61046|ERR1009134|ERS710324|FTYG01000001-FTYG01000426|Latin America|2000|Venezuela
+```
+
+Let’s say we need to order this file according to the year in which the sequences were uploaded. As you´ve seen previously, the sort command is used to sort the input content. 
+
+Type: 
+
+`sort -t “|” -nrk7 Ssonei.txt`
+
+You should get something like this:
+
+```
+3626STDY6095526|844948|ERR1009158|ERS710357|FTZE01000001-FTZE01000440|Latin America|2014|Venezuela
+3626STDY6095524|844939|ERR1009157|ERS710355|FTZD01000001-FTZD01000384|Latin America|2014|Venezuela
+sh1347|sh1347_5735439|ERR212327|ERS157983|FTZF01000001-FTZF01000424|Latin America|2012|Peru
+2090STDY5488137|ETA_160 7212449|ERR316394|ERS222732|FTXJ01000001-FTXJ01000381|Latin America|2012|Guatemala
+2090STDY5488135|ETA_156 7212520|ERR316392|ERS222730|FTXI01000001-FTXI01000508|Latin America|2012|Guatemala
+2090STDY5488134|ETA_152 7212508|ERR316391|ERS222729|FTXH01000001-FTXH01000377|Latin America|2012|Guatemala
+2090STDY5488133|ETA_149 7212496|ERR316390|ERS222728|FTXG01000001-FTXG01000410|Latin America|2012|Guatemala
+2090STDY5488132|ETA_53 7212484|ERR316389|ERS222727|FTXF01000001-FTXF01000367|Latin America|2012|Guatemala
+2090STDY5488131|ETA_52 7212472|ERR316388|ERS222726|FTXE01000001-FTXE01000373|Latin America|2012|Guatemala
+```
+
+**How did we order the information?**
+
+Let's assume that for our project, we need from this list of sequences, only the ones submitted from Paraguay, that appear with the word “Paraguay” in the text file. We will need a command that searches the input for a given pattern, in this case, the word “Paraguay”. **Do you remember which one?**
+
+**How many *S. sonnei* genome sequences from Paraguay are in this dataset?**
+
+This dataset is part of a joint effort between several Latin American countries and the Sanger Institute,  aimed to demonstrate the possibility and advantages of transitioning to whole-genome sequencing (WGS) for surveillance within existing networks across the continent, where *S. sonnei* is endemic. The publication, named “Whole-genome sequencing of *Shigella sonnei* through PulseNet Latin America and Caribbean: advancing global surveillance of foodborne illnesses” can be accessed here: https://www.clinicalmicrobiologyandinfection.com/article/S1198-743X(17)30190-8/fulltext
+
+Let’s take a look at the the Metadata.csv file. 
+
+Type:
+
+`head Metadata.csv`
+
+And also, type:
+
+`tail Metadata.csv`
+
+```
+Pipes: piping in Linux is a very powerful and efficient way to combine commands. They act as connecting links between commands. Pipe redirects output of the first command as an input to the next command. We can nest as many commands as we want using pipes. They ensure smooth running of the command flow and reduce the execution time.
+```
+
+For your project, you also need to extract the accession run number of each *S. sonnei* sequence present in the “Ssonei.txt” file. Let’s use the previously learned cut command to do it. 
+
+Type: 
+
+`sed '1d' Ssonei.txt | cut -d "|" -f3`
+
+```
+ERR1009118
+ERR1009127
+ERR1009128
+ERR1009129
+ERR1009130
+ERR1009131
+ERR1009132
+ERR1009133
+ERR1009134
+ERR1009135
+ERR1009119
+ERR1009136
+ERR1009137
+ERR1009138
+ERR1009139
+ERR1009140
+```
+
+Let’s take a closer look to these commands:
+
+The ```sed``` command is used to perform basic text transformations on a file. The parameter ‘1d’ tells the sed command to apply the ‘d’ (delete) action on line number ‘1’ (to avoid headers and just keep the accession run numbers that we are interested in).
+Considering the following cut command, the -d option is used to cut based on a delimiter, in this case the pipe “|”. 
+The -f is use for the field number, in the “Ssonei.txt” file the accession run number was on field 3 separated by “|”.
+Going back to the Metadata.csv file, if we want to know how many sequences were submitted, we can count the lines. We will use the wc command for that. 
+The command wc can be used in 3 ways: counting lines, words or characters. 
+Type: 
+wc -l Metadata.csv 
+323 Metadata.csv
+So we know we have 322 metadata from genome sequences of Latin American Shigella sonnei within this dataset (the first line contains thes  header).
+We can also have the number of lines using two commands. Type:
+cat Metadata.csv | wc -l
+323
+Now, let’s say we want to know which countries have reported sequences in this dataset. We will use the uniq command that extracts unique lines from the input. It is usually used in combination with sort to count unique values in the input. 
+Type: 
+sed ‘1d’ Metadata.csv|cut -f3 -d ";"|sort| uniq
+
+Other text processing commands worth looking at are: tr, rev and paste. 
+ 
+Input/Output control in Linux 
+When you run a command, the output is usually sent to standard output (stdout), that is to say, the terminal. However, we can redirect the standard output to a file using “>”. 
+Let’s say we want a new file with a list of the file names present in the Linux directory.
+Type: 
+ls > list
+The command creates a new file called “list” with all the file names in the directory. If a file named “list” already exists, it will be overwritten with the output of the command. 
+You can check if the file was created by typing:
+ls
+Now, to see the list of file names present in the file “list”, type:
+cat list 
+ARIMSS995-11_1.fastq.gz
+ARIMSS995-11_2.fastq.gz
+ERR1009125_1.fastq.gz
+ERR1009125_2.fastq.gz
+ERR1009142_1.fastq.gz
+ERR1009142_2.fastq.gz
+ERR200457_1.fastq.gz
+ERR200457_2.fastq.gz
+list
+Metadata.csv
+reference_Ss046.fasta
+Ssonei.txt
+temp
+temp1
+temp3
+untrimmed_1.fastq.gz
+untrimmed_2.fastq.gz
 
 
 
+
+Process control 
+Some commands take time to finish the assigned job. For example, if you would like to compress a huge file with gzip command that takes a few minutes to finish running, you can run it in the background by appending the command with “&” (Another way is to suspend a command by pressing Ctrl+Z and typing “bg”). The completion of the task is indicated by “Done”. 
+Type: 
+gzip list & 
+We can get the list of currently running jobs in the terminal by using the jobs command. This will give you all the background jobs running in the current terminal. If you want to see all the running processes in the system, use top. You can get user-specific details in top using the “-u” option. 
+Type: 
+top 
+Few of the important columns in top output: 
+PID: Process Id, this is a unique number used to identify the process. 
+COMMAND: Command Name
+S: Process Status: The status of the task can be one of:
+– D = uninterruptible sleep  
+– R = running
+– S = sleeping
+– T = traced or stopped 
+– Z = zombie 
+If you want to stop a running background job use the kill command followed by the process id. kill 1234 
+This command kills the job with the process id 1234. As a user, you can kill only your jobs. You do not have permission to run this command on the process ids of other users. 
+
+
+
+Command line shortcuts 
+●	Up/Down arrows: Previous commands 
+●	!!: Reruns previous command 
+●	Tab: Auto complete 
+●	Tab+Tab: All available options 
+●	Ctrl+a: Move cursor to start of line 
+●	Ctrl+e: Move cursor to end of line 
+●	Alt+: Alternates between terminals 
+●	Ctrl+l: Clear screen (or Command+k on Mac) 
+●	Ctrl+c: Terminates the running program 
+●	Ctrl+z: Suspends the running program 
+●	Ctrl+w: Removes a previous word 
+●	Ctrl+d: Logout 
+●	Ctrl+d(in a command): Removes a character 
+●	Ctrl+u: Removes till the beginning 
+Exercises: 
+1. Open a new terminal and navigate into the Linux directory (/home/manager/Linux/).
+2. Extract first 15 lines from file “reference_Ss046.fasta” and save the output into “output.fa” 
+3. How many files are there in the Linux directory?
+4. Get the list of countries that contributed S. sonnei genome sequences for the publication previously mentioned and save it to countries.txt
+5. Extract the Assembly accessions of the sequences in Ssonei.txt and save it to assemblies.txt. How many are there?
+Quiz: 
+1. Given a file with different sequences of Latin America,how do you count the ones submitted by Chile? (we know they should have the word “CHI” in the line).
+2. .............is the command used to create a new directory.
+3. Command used to create an empty file.
+4. Which is the command used to remove or delete files without a confirmation prompt?
+5. "cat" is the command used to ...................
+6. ............. command is used to count the total number of lines, words and characters in a file. 
+7. Which command would you use to know the location of your current working directory?
 
