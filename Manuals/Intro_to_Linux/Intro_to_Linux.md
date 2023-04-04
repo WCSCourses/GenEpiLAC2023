@@ -8,6 +8,7 @@
   - [The command line](#the-command-line)
   - [Useful commands](#useful-commands)
 - [Practical Exercise](#practical-exercise)
+  - [Additional exercises](#additional-exercises)
 
 ## Module Overview and Aims
 
@@ -184,6 +185,8 @@ Type:
 
 `sed '1d' Ssonei.txt | cut -d "|" -f3`
 
+You should get something like this:
+
 ```
 ERR1009118
 ERR1009127
@@ -205,76 +208,26 @@ ERR1009140
 
 Let’s take a closer look to these commands:
 
-The ```sed``` command is used to perform basic text transformations on a file. The parameter ‘1d’ tells the sed command to apply the ‘d’ (delete) action on line number ‘1’ (to avoid headers and just keep the accession run numbers that we are interested in).
-Considering the following cut command, the -d option is used to cut based on a delimiter, in this case the pipe “|”. 
-The -f is use for the field number, in the “Ssonei.txt” file the accession run number was on field 3 separated by “|”.
-Going back to the Metadata.csv file, if we want to know how many sequences were submitted, we can count the lines. We will use the wc command for that. 
-The command wc can be used in 3 ways: counting lines, words or characters. 
+The ```sed``` command is used to perform basic text transformations on a file. The parameter ‘1d’ tells the sed command to apply the ‘d’ (delete) action on line number ‘1’ (to avoid headers and just keep the accession run numbers that we are interested in). Considering the following cut command, the -d option is used to cut based on a delimiter, in this case the pipe “|”. The -f is used for the field number, in the “Ssonei.txt” file the accession run number was on field 3 separated by “|”.
+
+Going back to the Metadata.csv file, if we want to know how many sequences were submitted, we can count the lines. **Do you remember how to do this?**
+
+So now we know we have 322 metadata from genome sequences of Latin American *Shigella sonnei* within this dataset (the first line contains the headers).
+
+Now, let’s say we want to know which countries have reported sequences in this dataset. We will use the uniq command that extracts unique lines from the input. **Do you remember this command?** It is usually used in combination with sort to count unique values in the input. 
+
 Type: 
-wc -l Metadata.csv 
-323 Metadata.csv
-So we know we have 322 metadata from genome sequences of Latin American Shigella sonnei within this dataset (the first line contains thes  header).
-We can also have the number of lines using two commands. Type:
-cat Metadata.csv | wc -l
-323
-Now, let’s say we want to know which countries have reported sequences in this dataset. We will use the uniq command that extracts unique lines from the input. It is usually used in combination with sort to count unique values in the input. 
-Type: 
-sed ‘1d’ Metadata.csv|cut -f3 -d ";"|sort| uniq
 
-Other text processing commands worth looking at are: tr, rev and paste. 
- 
-Input/Output control in Linux 
-When you run a command, the output is usually sent to standard output (stdout), that is to say, the terminal. However, we can redirect the standard output to a file using “>”. 
-Let’s say we want a new file with a list of the file names present in the Linux directory.
-Type: 
-ls > list
-The command creates a new file called “list” with all the file names in the directory. If a file named “list” already exists, it will be overwritten with the output of the command. 
-You can check if the file was created by typing:
-ls
-Now, to see the list of file names present in the file “list”, type:
-cat list 
-ARIMSS995-11_1.fastq.gz
-ARIMSS995-11_2.fastq.gz
-ERR1009125_1.fastq.gz
-ERR1009125_2.fastq.gz
-ERR1009142_1.fastq.gz
-ERR1009142_2.fastq.gz
-ERR200457_1.fastq.gz
-ERR200457_2.fastq.gz
-list
-Metadata.csv
-reference_Ss046.fasta
-Ssonei.txt
-temp
-temp1
-temp3
-untrimmed_1.fastq.gz
-untrimmed_2.fastq.gz
+`sed ‘1d’ Metadata.csv|cut -f3 -d ";"|sort| uniq`
 
-
-
-
+```
 Process control 
 Some commands take time to finish the assigned job. For example, if you would like to compress a huge file with gzip command that takes a few minutes to finish running, you can run it in the background by appending the command with “&” (Another way is to suspend a command by pressing Ctrl+Z and typing “bg”). The completion of the task is indicated by “Done”. 
 Type: 
 gzip list & 
-We can get the list of currently running jobs in the terminal by using the jobs command. This will give you all the background jobs running in the current terminal. If you want to see all the running processes in the system, use top. You can get user-specific details in top using the “-u” option. 
-Type: 
-top 
-Few of the important columns in top output: 
-PID: Process Id, this is a unique number used to identify the process. 
-COMMAND: Command Name
-S: Process Status: The status of the task can be one of:
-– D = uninterruptible sleep  
-– R = running
-– S = sleeping
-– T = traced or stopped 
-– Z = zombie 
-If you want to stop a running background job use the kill command followed by the process id. kill 1234 
-This command kills the job with the process id 1234. As a user, you can kill only your jobs. You do not have permission to run this command on the process ids of other users. 
+```
 
-
-
+```
 Command line shortcuts 
 ●	Up/Down arrows: Previous commands 
 ●	!!: Reruns previous command 
@@ -290,18 +243,20 @@ Command line shortcuts
 ●	Ctrl+d: Logout 
 ●	Ctrl+d(in a command): Removes a character 
 ●	Ctrl+u: Removes till the beginning 
-Exercises: 
-1. Open a new terminal and navigate into the Linux directory (/home/manager/Linux/).
-2. Extract first 15 lines from file “reference_Ss046.fasta” and save the output into “output.fa” 
-3. How many files are there in the Linux directory?
-4. Get the list of countries that contributed S. sonnei genome sequences for the publication previously mentioned and save it to countries.txt
-5. Extract the Assembly accessions of the sequences in Ssonei.txt and save it to assemblies.txt. How many are there?
-Quiz: 
-1. Given a file with different sequences of Latin America,how do you count the ones submitted by Chile? (we know they should have the word “CHI” in the line).
-2. .............is the command used to create a new directory.
-3. Command used to create an empty file.
-4. Which is the command used to remove or delete files without a confirmation prompt?
-5. "cat" is the command used to ...................
-6. ............. command is used to count the total number of lines, words and characters in a file. 
-7. Which command would you use to know the location of your current working directory?
+```
+
+## [Additional exercises](#additional-exercises)
+
+1. Extract the first 15 lines from file “reference_Ss046.fasta” and save the output into “output.fa” 
+2. How many files are there in the Linux directory? 
+3. Create a new file called “Linux_directory.txt” which contains a list of the file names present in the Linux directory.
+4. Get the list of countries that contributed *S. sonnei* genome sequences for the publication previously mentioned and save it to “countries.txt” 
+5. Extract the Assembly accessions of the sequences in “Ssonei.txt” and save it to “assemblies.txt”. How many are there?
+6. Given a file with different sequences of Latin America, how do you count the ones submitted by Chile? (we know they should have the word “CHI” in the line).
+7.  .............is the command used to create a new directory.
+8. Command used to create an empty file.
+9. Which is the command used to remove or delete files without a confirmation prompt?
+10. "cat" is the command used to ...................
+11. ............. command is used to count the total number of lines, words and characters in a file. 
+12. Which command would you use to know the location of your current working directory?
 
