@@ -95,7 +95,7 @@ Remember you could see a command’s options using the `man` command, in this ca
 man cut
 ```
 
-Press “q” when you are ready to close the help manual for the command cut.
+Press “q” when you are ready to close the help manual for the command `cut`.
 
 To cut a section of a file use "-c" (characters). In the following example, the option “-c1-10” will output the first 10 characters of each line from the input file. 
 
