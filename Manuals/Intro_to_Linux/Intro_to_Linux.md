@@ -141,7 +141,7 @@ You should see something like this:
 3626STDY6095493|61046|ERR1009134|ERS710324|FTYG01000001-FTYG01000426|Latin America|2000|Venezuela
 ```
 
-Let’s say we need to order this file according to the year in which the sequences were uploaded. As you´ve seen previously, the sort command is used to sort the input content. 
+Let’s say we need to order this file according to the year in which the sequences were uploaded. As you´ve seen previously, the `sort` command is used to sort the input content. 
 
 Type: 
 
@@ -222,11 +222,11 @@ Let’s take a closer look to these commands:
 
 The ```sed``` command is used to perform basic text transformations on a file. The parameter ‘1d’ tells the sed command to apply the ‘d’ (delete) action on line number ‘1’ (to avoid headers and just keep the accession run numbers that we are interested in). Considering the following cut command, the -d option is used to cut based on a delimiter, in this case the pipe “|”. The -f is used for the field number, in the “Ssonei.txt” file the accession run number was on field 3 separated by “|”.
 
-Going back to the Metadata.csv file, if we want to know how many sequences were submitted, we can count the lines. **Do you remember how to do this?**
+Going back to the Metadata.csv file, if we want to know how many sequences were submitted, we can count the lines. Do you remember how to do this?
 
 So now we know we have 322 metadata from genome sequences of Latin American *Shigella sonnei* within this dataset (the first line contains the headers).
 
-Now, let’s say we want to know which countries have reported sequences in this dataset. We will use the uniq command that extracts unique lines from the input. **Do you remember this command?** It is usually used in combination with sort to count unique values in the input. 
+Now, let’s say we want to know which countries have reported sequences in this dataset. We will use the `uniq` command that extracts unique lines from the input. Do you remember this command? It is usually used in combination with sort to count unique values in the input. 
 
 Type: 
 
