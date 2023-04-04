@@ -89,17 +89,21 @@ We will start working with the fasta file reference_Ss046.fasta. The location or
 
 If we were interested in cutting a section from this file, we would use the command `cut`.
 
-Remember you could see a command’s options using the man command, in this case:  
+Remember you could see a command’s options using the `man` command, in this case:  
 
-`man cut`
+```
+man cut
+```
 
 Press q when you are ready to close the help manual for the command cut.
 
 To cut a section of a file use "-c" (characters). In the following example, the option “-c1-10” will output the first 10 characters of each line from the input file. 
 
-Type: 
+Type:
 
-`cut -c1-10 reference_Ss046.fasta`
+```
+cut -c1-10 reference_Ss046.fasta
+```
 
 Depending on the window size you are working, something similar to this will show up in your screen: 
 
@@ -141,7 +145,9 @@ Let’s say we need to order this file according to the year in which the sequen
 
 Type: 
 
-`sort -t “|” -nrk7 Ssonei.txt`
+```
+sort -t “|” -nrk7 Ssonei.txt
+```
 
 You should get something like this:
 
@@ -169,11 +175,15 @@ Let’s take a look at the the Metadata.csv file.
 
 Type:
 
-`head Metadata.csv`
+```
+head Metadata.csv
+```
 
 And also, type:
 
-`tail Metadata.csv`
+```
+tail Metadata.csv
+```
 
 ```
 Pipes: piping in Linux is a very powerful and efficient way to combine commands. They act as connecting links between commands. Pipe redirects output of the first command as an input to the next command. We can nest as many commands as we want using pipes. They ensure smooth running of the command flow and reduce the execution time.
@@ -183,7 +193,9 @@ For your project, you also need to extract the accession run number of each *S. 
 
 Type: 
 
-`sed '1d' Ssonei.txt | cut -d "|" -f3`
+```
+sed '1d' Ssonei.txt | cut -d "|" -f3
+```
 
 You should get something like this:
 
@@ -218,7 +230,9 @@ Now, let’s say we want to know which countries have reported sequences in this
 
 Type: 
 
-`sed ‘1d’ Metadata.csv|cut -f3 -d ";"|sort| uniq`
+```
+sed ‘1d’ Metadata.csv|cut -f3 -d ";"|sort| uniq
+```
 
 ```
 Process control 
