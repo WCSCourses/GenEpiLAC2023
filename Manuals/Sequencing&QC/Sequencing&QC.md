@@ -130,8 +130,8 @@ Each single character encodes a score, typically a number between 0 and 40; this
 |40 | 73 | 40
 
 So, in the example above, we can see that most of the positions within the 97-nucleotide sequence have scores in the high 30s, which indicates a high degree of confidence in their accuracy.
-- A score of 30 denotes a 1 in 1000 chance of an error, i.e. 99.9 %accuracy.
-- A score of 40 denotes a 1 in 10,000 chance of an error, i.e. 99.99 %accuracy.
+- A score of 30 denotes a 1 in 1000 chance of an error, i.e. 99.9% accuracy.
+- A score of 40 denotes a 1 in 10,000 chance of an error, i.e. 99.99% accuracy.
 
 You can read more about the FastQ file format and quality scores here:
 
@@ -162,7 +162,7 @@ The meaning of each of these mandatory fields are detailed below:
 
 ## [Quality control for FastQ data](#quality-control-for-FastQ-data)
 
-# [Practical Exercise]
+# [Practical Exercise](#practical-exercise)
 
 Open your terminal window and go to the Linux directory
 
@@ -235,40 +235,87 @@ wc -l ARIMSS995-11_1.fastq
 
 **Does the number of reads in R1 and R2 files match?**
 
-Quality control of obtained fastq files.
-To have an idea of how sequencing files can vary, and the importance of assessing their
-quality, we are going to compare different pair-ended sequencing reads. We will use the
-two fastq files we have been working with and two additional ones located in the same
-directory name Linux. The file names are: untrimmed_1.fastq.gz and
-untrimmed_2.fastq.gz. As with the files we are working with, they need to be
-decompressed. Please do so before proceeding. The instructions are the same as for
-the fastq files you previously decompressed using the command gzip.
-Once you have all four files as fastq files, launch FASTQC
-Type:
-fastqc
-This will launch the main FASTQC window. From there: select File from the menu bar,
-then Open, navigate to the Linux folder and open the two fastq files we have being
-working with (ARIMSS995-11_1.fastq and ARIMSS995-11_2.fastq); hold down the
-control button for selecting both files. FASTQC essentially treats each of the paired files
-separately and will launch a separate tab for each FASTQ file.
-Have a look at the information FASTQC is given for both file contents. Overall, this
-dataset is of good quality.
-Repeat for the second pair of fastq files.
-Besides sequence differences, are there any other differences related to run quality
-between these pair of files and the other file pair?
-Please familiarize yourself with the term “trimming” and why it is important
-to trimm sequences obtained by NGS.
-so we only need to do some minor trimming (quality 25, length 50) using trim_galore,
-as well as checking/removing Illumina adapter sequences.
-First quit FASTQC to regain your command line prompt
-Then run trim_galore:
+Let's examine the quality of these sequence data using a really useful piece of software called [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/). We will use the two fastq files we have been working with and two additional ones located in the same directory name 'Linux'. The file names are: **untrimmed_1.fastq.gz** and **untrimmed_2.fastq.gz**. 
+
+We can launch the graphical interface by simply executing ``fastqc`` on the Terminal command line. However, it is often more convenient to use the software in the command-line mode. Execute the following command in the Terminal:
+
+    fastqc *.fastq.gz
+
+You will see some messages like this on your screen:
+
+    Started analysis of ARIMSS995-11_1.fastq.gz
+    Approx 5% complete for ARIMSS995-11_1.fastq.gz
+    Approx 10% complete for ARIMSS995-11_1.fastq.gz
+    ...
+    Approx 90% complete for ARIMSS995-11_1.fastq.gz
+    Approx 95% complete for ARIMSS995-11_1.fastq.gz
+    Analysis complete for ARIMSS995-11_1.fastq.gz
+    Started analysis of ARIMSS995-11_2.fastq.gz
+    Approx 5% complete for ARIMSS995-11_2.fastq.gz
+    Approx 10% complete for ARIMSS995-11_2.fastq.gz
+    Approx 15% complete for ARIMSS995-11_2.fastq.gz
+    ...
+    Approx 90% complete for ARIMSS995-11_2.fastq.gz
+    Approx 95% complete for ARIMSS995-11_2.fastq.gz
+    Analysis complete for ARIMSS995-11_2.fastq.gz
+
+
+Now, execute the command ``ls -lh`` and you should see some new files have appeared:
+
+```
+corregir esto con lo que realmente se vea
+```
+
+    total 400M
+    -rw-rw-r-- 1 manager manager 1.2K Jul 25 16:20 readME.md
+    -rw-rw-r-- 1 manager manager 199M Jul 31 13:26 SRR19504912_1.fastq
+    -rw-rw-r-- 1 manager manager 666K Jul 31 13:31 SRR19504912_1_fastqc.html
+    -rw-rw-r-- 1 manager manager 378K Jul 31 13:31 SRR19504912_1_fastqc.zip
+    -rw-rw-r-- 1 manager manager 199M Jul 31 13:26 SRR19504912_2.fastq
+    -rw-rw-r-- 1 manager manager 673K Jul 31 13:31 SRR19504912_2_fastqc.html
+    -rw-rw-r-- 1 manager manager 391K Jul 31 13:31 SRR19504912_2_fastqc.zip
+
+
+We are most interested in the HTML files, which contain the FastQC reports for our two fastq files. Let's open them with the following command:
+
+    firefox *.html &
+
+You should then see something like this:
+
+```
+ADD FIGURE
+```
+
+There is a lot of QC information in these reports. Feel free to explore these in your own time and take a look at the [FastQC homepage](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) where you can find the [explanation](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/) to each report FastQC is generating and we recommend you to watch the tutorial video at http://www.youtube.com/watch?v=bz93ReOv87Y.
+
+For now, we are just going to look at
+- Basic statistics
+- Per-base sequence quality 
+- Adapter content
+
+**Analysing FastQC report, how many reads are there? Does this answer match your previous answer (based on ``wc`` command)?**
+
+**With respect to quality scores, which of the two files has better-quality data: *ARIMSS995-11_1.fastq.gz* or *ARIMSS995-11_2.fastq.gz*?**
+
+**Besides sequence differences, are there any other differences related to run quality between the two samples we analysed?**
+
+**Are these datasets contaminated with any Illumina sequencing adapter oligonucleotides?**
+
+Now, we are going to look at how we can remove poor data and contamination by trimming and filtering. We will use [TrimGalore](https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/) by executing the following command on the Terminal:
+
+We will need to do some minor trimming (quality 25, length 50) as well as checking/removing Illumina adapter sequences:
+```
 trim_galore -q 25 --length 50 --paired SRR1553467_1.fastq SRR1553467_2.fastq
+```
+
 -q 25 = trim the 3’ end of the reads – remove nucleotides less than Phred Quality 25
+
 --length 50 = after adapter and quality trimming, remove reads less than length 50bp
+
 --paired = the names of the paired FASTQ files to analyses in order
-If you now do a list of the directory contents:
-ls -lrt
-You should see that two new FASTQ (.fq) files have been created by trim_galore:
+
+Once trim_galore has finished, check the outputs. You should see that two new FASTQ (.fq) files have been created by trim_galore:
 SRR1553467_1_val_1.fq
 SRR1553467_2_val_2.fq
-Question – how many paired reads are left in the sample after trimming
+
+**How many paired reads are left in the sample after trimming**
