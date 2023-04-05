@@ -179,17 +179,24 @@ ARIMSS995-11_1.fastq.gz
 ARIMSS995-11_2.fastq.gz
 ```
 
-As we saw in the introduction, this is the format we will get from the Illumina sequencer. To have a better look at them, we will uncompressed them:
+As we saw in the introduction, this is the format we will get from the Illumina sequencer. To have a better look at their structure, we will uncompressed them:
 ```
 gzip -d ARIMSS995-11_1.fastq.gz
 ```
-wait until the command line is shown again on the screen and then
-Type:
+wait until the command line is shown again on the screen and then type:
+```
 gzip -d ARIMSS995-11_2.fastq.gz
-The files should be decompressed now and ready to work. Let’s have a look at one of
-the fastq files.
-Type:
+```
+
+The files should be decompressed now and ready to work. Let’s have a look at one of the fastq files:
+
+```
 head ARIMSS995-11_1.fastq
+```
+
+You should see something like this:
+
+```
 @M03346:10:000000000-AL260:1:1101:28195:9448 1:N:0:3
 CCTCATCAGCCGCATTGCGACCAACTTCTGGATTAGCGCCAGCGCCCAGTCCTTTG
 GTGATACCGCTACCGATTTGAATCGTCTGTCCAACCGCTGTTTTACGCAGCGCTTGT
@@ -214,25 +221,20 @@ HHBFFHGGFHEEGGGEG?/GHHHHGHFFHH1EEEEGHFHFGE?EBDGFGHDHFFHH
 HGGGHGGHHHHGDHHH?<<GHFHFHHDGHFDGGGGHHDGDGGHFEHHEHHHDDD
 HGHGFCCFCGHHHGGGGGGFGFFFE?E.ADFGG/0.CEFFGGFFF/EEF.AD.DBFFFFF
 FFF/;/FF.;@-ADFE99..;B--;-
-@M03346:10:000000000-AL260:1:1101:15632:28918 1:N:0:3
-GGTTCGCCTGCGGATGCCCCGTCAGCACAATTCGTCGTCCCGGCCATATC
-In the fastq file, each sequence read is represented by 4 lines:
-1. Is the name of the sequence, where /1 or /2 indicates forward and reverse
-(paired ends) reads.
-2. The read sequence
-3. Sequence/quality separator
-4. Sequence quality. There is one character for each nucleotide. The character is
-related to a sequence quality scores on ascii code.
-Now, lets check how many reads we have, and double check we have the same
-number in the R1 and R2 files. We can use the wc command (stands for word count)
-with the -l (letter elle) option to count the number of lines in the file.
-Type
+```
+
+**Remembering the fastq file format, how many reads do you have represented in the previous image?**
+
+Now, let’s check how many reads we have in ARIMSS995-11_1.fastq.gz and ARIMSS995-11_2.fastq.gz, and double check we have the same number in the R1 and R2 files. We can use the `wc` command with the -l (letter elle) option to count the number of lines in the file:
+
+```
 wc -l ARIMSS995-11_1.fastq
-wait for the result and then
-Type
-wc -l ARIMSS995-11_2.fastq
-Question – how many paired reads are in the sample?
-PS: Think about how many lines a single read takes up in FASTQ format
+```
+**How many paired reads are in the sample?**
+>Hint: Think about how many lines a single read takes up in FASTQ format.
+
+**Does the number of reads in R1 and R2 files match?**
+
 Quality control of obtained fastq files.
 To have an idea of how sequencing files can vary, and the importance of assessing their
 quality, we are going to compare different pair-ended sequencing reads. We will use the
