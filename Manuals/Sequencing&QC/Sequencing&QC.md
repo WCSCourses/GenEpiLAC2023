@@ -318,4 +318,4 @@ Once trim_galore has finished, check the outputs. You should see that two new FA
 SRR1553467_1_val_1.fq
 SRR1553467_2_val_2.fq
 
-**How many paired reads are left in the sample after trimming**
+**How many paired reads are left in the sample after trimming?**
