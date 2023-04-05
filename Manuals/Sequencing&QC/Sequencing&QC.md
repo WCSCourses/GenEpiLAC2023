@@ -10,7 +10,7 @@
     - [SAM and BAM](#sam-and-bam)
   - [Quality control for FastQ data](#quality-control-for-FastQ-data)
 - [Practical Exercise](#practical-exercise)
-  - [Additional exercises](#additional-exercises)
+  - [Bonus](#bonus)
 
 ## Module Overview and Aims
 
@@ -319,3 +319,21 @@ SRR1553467_1_val_1.fq
 SRR1553467_2_val_2.fq
 
 **How many paired reads are left in the sample after trimming?**
+
+## [Bonus](#bonus)
+
+#### What if you had a large number of FastQC reports to analyze?
+
+Multiqc (https://multiqc.info/) is a tool that summarizes different types of NGS reports (not just FastQC).
+
+First, install the tool:
+
+    pip install multiqc
+
+In the folder with reports, run:
+
+    multiqc .
+
+See summarized report in a browser:
+
+    firefox multiqc_report.html &
