@@ -247,7 +247,13 @@ wc -l ARIMSS995-11_1.fastq
 
 Let's examine the quality of these sequence data using [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/). We will only use the two fastq files we have been working with and two additional ones located in the same directory name 'Linux'. The file names are: **untrimmed_1.fastq.gz** and **untrimmed_2.fastq.gz**. 
 
-We can launch the graphical interface by simply executing ``fastqc`` on the Terminal command line. However, it is often more convenient to use the software in the command-line mode. Execute the following command in the Terminal:
+First, for the sake of simplicity, let’s compress again the two fastq files belonging to sample ARIMSS995-11:
+
+```
+gzip ARIMSS995-11_*.fastq
+```
+
+Going back to FastqQC, we can launch the graphical interface by simply executing ``fastqc`` on the Terminal command line. However, it is often more convenient to use the software in the command-line mode. Execute the following command in the Terminal:
 
     fastqc *.fastq.gz
     
@@ -282,11 +288,40 @@ Now, execute the command ``ls -lh`` and you should see some new files have appea
     -rw-rw-r-- 1 manager manager 789K Apr 10 16:45 ARIMSS995-11_2_fastqc.html
     -rw-rw-r-- 1 manager manager 525K Apr 10 16:45 ARIMSS995-11_2_fastqc.zip
     -rwxrwx--- 1 manager manager  67K Mar 23 10:09 ARIMSS995-11_2.fastq.gz
+    -rw-rw-r-- 1 manager manager 602K Apr 10 16:45 ERR1009125_1_fastqc.html
+    -rw-rw-r-- 1 manager manager 289K Apr 10 16:45 ERR1009125_1_fastqc.zip
+    -rwxrwx--- 1 manager manager 101M Mar 23 10:10 ERR1009125_1.fastq.gz
+    -rw-rw-r-- 1 manager manager 598K Apr 10 16:45 ERR1009125_2_fastqc.html
+    -rw-rw-r-- 1 manager manager 291K Apr 10 16:45 ERR1009125_2_fastqc.zip
+    -rwxrwx--- 1 manager manager 106M Mar 23 10:09 ERR1009125_2.fastq.gz
+    -rw-rw-r-- 1 manager manager 605K Apr 10 16:46 ERR1009142_1_fastqc.html
+    -rw-rw-r-- 1 manager manager 297K Apr 10 16:46 ERR1009142_1_fastqc.zip
+    -rwxrwx--- 1 manager manager  79M Mar 23 10:09 ERR1009142_1.fastq.gz
+    -rw-rw-r-- 1 manager manager 600K Apr 10 16:46 ERR1009142_2_fastqc.html
+    -rw-rw-r-- 1 manager manager 295K Apr 10 16:46 ERR1009142_2_fastqc.zip
+    -rwxrwx--- 1 manager manager  84M Mar 23 10:09 ERR1009142_2.fastq.gz
+    -rw-rw-r-- 1 manager manager 563K Apr 10 16:46 ERR200457_1_fastqc.html
+    -rw-rw-r-- 1 manager manager 327K Apr 10 16:46 ERR200457_1_fastqc.zip
+    -rwxrwx--- 1 manager manager 144M Mar 23 10:10 ERR200457_1.fastq.gz
+    -rw-rw-r-- 1 manager manager 564K Apr 10 16:46 ERR200457_2_fastqc.html
+    -rw-rw-r-- 1 manager manager 322K Apr 10 16:46 ERR200457_2_fastqc.zip
+    -rwxrwx--- 1 manager manager 148M Mar 23 10:09 ERR200457_2.fastq.gz
+    -rwxrwx--- 1 manager manager  26K Mar 23 10:10 Metadata.csv
+    -rwxrwx--- 1 manager manager 4.7M Mar 23 10:09 reference_Ss046.fasta
+    -rwxrwx--- 1 manager manager  33K Mar 23 10:09 Ssonei.txt
+    -rw-rw-r-- 1 manager manager 656K Apr 10 16:46 untrimmed_1_fastqc.html
+    -rw-rw-r-- 1 manager manager 378K Apr 10 16:46 untrimmed_1_fastqc.zip
+    -rwxrwx--- 1 manager manager 109M Mar 23 10:09 untrimmed_1.fastq.gz
+    -rw-rw-r-- 1 manager manager 664K Apr 10 16:46 untrimmed_2_fastqc.html
+    -rw-rw-r-- 1 manager manager 391K Apr 10 16:46 untrimmed_2_fastqc.zip
+    -rwxrwx--- 1 manager manager 126M Mar 23 10:09 untrimmed_2.fastq.gz
 
 
-We are most interested in the HTML files, which contain the FastQC reports for our two fastq files. Let's open them with the following command:
+We are most interested in the HTML files, which contain the FastQC reports for our fastq files. Let's open the HTML files generated for the two samples we are working with.
 
-    firefox *.html &
+Use the following command as an example:
+
+    firefox ARIMSS995-11_1_fastqc.html &
 
 You should then see something like this:
 
@@ -312,7 +347,7 @@ Now, we are going to look at how we can remove poor data and contamination by tr
 
 We will need to do some minor trimming (quality 25, length 50) as well as checking/removing Illumina adapter sequences:
 ```
-trim_galore -q 25 --length 50 --paired SRR1553467_1.fastq SRR1553467_2.fastq
+trim_galore -q 25 --length 50 --paired ARIMSS995-11_1.fastq.gz ARIMSS995-11_2.fastq.gz
 ```
 
 -q 25 = trim the 3’ end of the reads – remove nucleotides less than Phred Quality 25
@@ -322,10 +357,10 @@ trim_galore -q 25 --length 50 --paired SRR1553467_1.fastq SRR1553467_2.fastq
 --paired = the names of the paired FASTQ files to analyses in order
 
 Once trim_galore has finished, check the outputs. You should see that two new FASTQ (.fq) files have been created by trim_galore:
-SRR1553467_1_val_1.fq
-SRR1553467_2_val_2.fq
+ARIMSS995-11_1_val_1.fq
+ARIMSS995-11_2_val_2.fq
 
-**How many paired reads are left in the sample after trimming?**
+**How many paired reads are left in the sample after trimming? Compare them with the fastq files obtained from the sequencer**
 
 ## [Bonus](#bonus)
 
