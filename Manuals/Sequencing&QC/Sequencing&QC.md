@@ -300,11 +300,11 @@ For now, we are just going to look at
 - Per-base sequence quality 
 - Adapter content
 
-**Analysing FastQC report, how many reads are there? Does this answer match your previous answer (based on ``wc`` command)?**
+**Analysing FastQC reports, how many reads are there? Does this answer match your previous answer for sample ARIMSS995-11 (based on ``wc`` command)?**
 
 **With respect to quality scores, which of the two files has better-quality data: *ARIMSS995-11_1.fastq.gz* or *ARIMSS995-11_2.fastq.gz*?**
 
-**Besides sequence differences, are there any other differences related to run quality between the two samples we analysed (ARIMSS995-11 and untrimmed)**
+**Besides sequence differences, are there any other differences related to run quality between the two samples we analysed (ARIMSS995-11 and untrimmed)?**
 
 **Are these datasets contaminated with any Illumina sequencing adapter oligonucleotides?**
 
