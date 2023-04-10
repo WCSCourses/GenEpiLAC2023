@@ -245,11 +245,13 @@ wc -l ARIMSS995-11_1.fastq
 
 **Does the number of reads in R1 and R2 files match?**
 
-Let's examine the quality of these sequence data using [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/). We will use the two fastq files we have been working with and two additional ones located in the same directory name 'Linux'. The file names are: **untrimmed_1.fastq.gz** and **untrimmed_2.fastq.gz**. 
+Let's examine the quality of these sequence data using [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/). We will only use the two fastq files we have been working with and two additional ones located in the same directory name 'Linux'. The file names are: **untrimmed_1.fastq.gz** and **untrimmed_2.fastq.gz**. 
 
 We can launch the graphical interface by simply executing ``fastqc`` on the Terminal command line. However, it is often more convenient to use the software in the command-line mode. Execute the following command in the Terminal:
 
     fastqc *.fastq.gz
+    
+> With this command we will be running fastqc in all the files that have the `.fastq.gz` extension. Nonetheless we will be focusing only in samples ARIMSS995-11 and untrimmed.
 
 You will see some messages like this on your screen:
 
@@ -270,20 +272,16 @@ You will see some messages like this on your screen:
     Analysis complete for ARIMSS995-11_2.fastq.gz
 
 
-Now, execute the command ``ls -lh`` and you should see some new files have appeared:
+Now, execute the command ``ls -lh`` and you should see some new files have appeared. You should see something like this:
 
-```
-corregir esto con lo que realmente se vea
-```
-
-    total 400M
-    -rw-rw-r-- 1 manager manager 1.2K Jul 25 16:20 readME.md
-    -rw-rw-r-- 1 manager manager 199M Jul 31 13:26 SRR19504912_1.fastq
-    -rw-rw-r-- 1 manager manager 666K Jul 31 13:31 SRR19504912_1_fastqc.html
-    -rw-rw-r-- 1 manager manager 378K Jul 31 13:31 SRR19504912_1_fastqc.zip
-    -rw-rw-r-- 1 manager manager 199M Jul 31 13:26 SRR19504912_2.fastq
-    -rw-rw-r-- 1 manager manager 673K Jul 31 13:31 SRR19504912_2_fastqc.html
-    -rw-rw-r-- 1 manager manager 391K Jul 31 13:31 SRR19504912_2_fastqc.zip
+    
+    total 909M
+    -rw-rw-r-- 1 manager manager 773K Apr 10 16:45 ARIMSS995-11_1_fastqc.html
+    -rw-rw-r-- 1 manager manager 513K Apr 10 16:45 ARIMSS995-11_1_fastqc.zip
+    -rwxrwx--- 1 manager manager  72K Mar 23 10:09 ARIMSS995-11_1.fastq.gz
+    -rw-rw-r-- 1 manager manager 789K Apr 10 16:45 ARIMSS995-11_2_fastqc.html
+    -rw-rw-r-- 1 manager manager 525K Apr 10 16:45 ARIMSS995-11_2_fastqc.zip
+    -rwxrwx--- 1 manager manager  67K Mar 23 10:09 ARIMSS995-11_2.fastq.gz
 
 
 We are most interested in the HTML files, which contain the FastQC reports for our two fastq files. Let's open them with the following command:
@@ -307,7 +305,7 @@ For now, we are just going to look at
 
 **With respect to quality scores, which of the two files has better-quality data: *ARIMSS995-11_1.fastq.gz* or *ARIMSS995-11_2.fastq.gz*?**
 
-**Besides sequence differences, are there any other differences related to run quality between the two samples we analysed?**
+**Besides sequence differences, are there any other differences related to run quality between the two samples we analysed (ARIMSS995-11 and untrimmed)**
 
 **Are these datasets contaminated with any Illumina sequencing adapter oligonucleotides?**
 
