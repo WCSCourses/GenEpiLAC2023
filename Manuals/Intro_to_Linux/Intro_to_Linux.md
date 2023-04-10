@@ -126,7 +126,7 @@ Let´s take a look at another file named “Ssonei.txt” with some information 
 
 **How would you see the first 10 lines of “Ssonei.txt” file?** 
 
-> Use the head command for this
+> Hint: Use the head command for this
 
 You should see something like this:
 
