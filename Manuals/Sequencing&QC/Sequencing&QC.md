@@ -223,7 +223,7 @@ HGHGFCCFCGHHHGGGGGGFGFFFE?E.ADFGG/0.CEFFGGFFF/EEF.AD.DBFFFFF
 FFF/;/FF.;@-ADFE99..;B--;-
 ```
 
-**Remembering the fastq file format, how many reads do you have represented in the previous image?**
+**Remembering the fastq file format, how many reads do you have represented in the previous box?**
 
 Now, let’s check how many reads we have in ARIMSS995-11_1.fastq.gz and ARIMSS995-11_2.fastq.gz, and double check we have the same number in the R1 and R2 files. We can use the `wc` command with the -l (letter elle) option to count the number of lines in the file:
 
