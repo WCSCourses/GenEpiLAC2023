@@ -290,9 +290,8 @@ We are most interested in the HTML files, which contain the FastQC reports for o
 
 You should then see something like this:
 
-```
-ADD FIGURE
-```
+![fastqc1](https://user-images.githubusercontent.com/65819144/230941522-3129125c-9423-4475-b617-1cc868f93786.jpg)
+
 
 There is a lot of QC information in these reports. Feel free to explore these in your own time and take a look at the [FastQC homepage](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) where you can find the [explanation](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/) to each report FastQC is generating and we recommend you to watch the tutorial video at http://www.youtube.com/watch?v=bz93ReOv87Y.
 
