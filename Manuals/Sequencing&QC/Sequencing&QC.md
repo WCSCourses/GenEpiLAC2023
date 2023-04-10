@@ -193,7 +193,7 @@ As we saw in the introduction, this is the format we will get from the Illumina 
 ```
 gzip -d ARIMSS995-11_1.fastq.gz
 ```
-wait until the command line is shown again on the screen and then type:
+Wait until the command line is shown again on the screen and then type:
 ```
 gzip -d ARIMSS995-11_2.fastq.gz
 ```
@@ -245,7 +245,7 @@ wc -l ARIMSS995-11_1.fastq
 
 **Does the number of reads in R1 and R2 files match?**
 
-Let's examine the quality of these sequence data using a really useful piece of software called [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/). We will use the two fastq files we have been working with and two additional ones located in the same directory name 'Linux'. The file names are: **untrimmed_1.fastq.gz** and **untrimmed_2.fastq.gz**. 
+Let's examine the quality of these sequence data using [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/). We will use the two fastq files we have been working with and two additional ones located in the same directory name 'Linux'. The file names are: **untrimmed_1.fastq.gz** and **untrimmed_2.fastq.gz**. 
 
 We can launch the graphical interface by simply executing ``fastqc`` on the Terminal command line. However, it is often more convenient to use the software in the command-line mode. Execute the following command in the Terminal:
 
