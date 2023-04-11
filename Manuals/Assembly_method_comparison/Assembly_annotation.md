@@ -29,7 +29,7 @@
   - [B: Generating a _de novo_ assembly](#generating-a-de-novo-assembly)
   - [C: Ordering the assembly against a reference chromosome](ordering-the-assembly-against-a-reference-chromosome)
   - [D: Mapping reads back to the ordered assembly](#Mapping-reads-back-to-the-ordered-assembly)
-  - [E: Annotation transfer](#Annotation transfer)
+  - [E: Annotation transfer](#Annotation-transfer)
   - [F: Examining the evolution of drug resistance in ST1 _S. aureus_](#Examining-the-evolution-of-drug-resistance-in-ST1-S-aureus)
 
 <br> 
@@ -689,7 +689,7 @@ The non-mapping contigs are indicated by the yellow features. There are 7 contig
 <br>
 
 
-## [E: Annotation transfer](#Annotation transfer)
+## [E: Annotation transfer](#Annotation-transfer)
 
 Now we have the contigs ordered against the reference, and have mapped back the reads to identify a possible mis-assembly, and also identified putative plasmid sequences. However we are still not yet in a position to drill down into the biology of the strain. For this we need to add some annotation to the newly assembled genome. To do this we can transfer the annotation of reference strain we used in ABACAS, as this has been annotated and is clearly highly related. We have developed a tool called `ratt` (Otto et al., 2011, Nucleic Acids Res 39:e57) that can do this. 
 
