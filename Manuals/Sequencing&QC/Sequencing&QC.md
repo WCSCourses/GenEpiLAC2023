@@ -148,7 +148,7 @@ You can read about SAM and BAM formats here:
 We can view BAM files graphically using specialised genome browsers software such as (we will be working with one of them in the Genome Visualization Tools module):
 - [IGV](https://igv.org/)
 - [Tablet](https://ics.hutton.ac.uk/tablet/)
-- [Artemis / BAMview](http://sanger-pathogens.github.io/Artemis/BamView/) 
+- [Artemis / BAMview](http://sanger-pathogens.github.io/Artemis/Artemis/) 
 
 An example **SAM file** is shown in the image below, along with the 11 mandatory fields of this standard:
 
