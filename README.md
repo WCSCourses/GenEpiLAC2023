@@ -7,6 +7,8 @@ Learn how to apply genomics to epidemiological surveillance of bacterial pathoge
 
 ## Course Overview
 
+[Timetable](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Gen_Epi_Paraguay_Final_Timetable%20.pdf)
+
 [Course Website](https://coursesandconferences.wellcomeconnectingscience.org/event/genomics-and-epidemiological-surveillance-of-bacterial-pathogens-latin-america-and-the-caribbean-20230416/)
 
 ## Instructors
