@@ -172,6 +172,8 @@ FastQC can be run in one of two modes. It can either run as a stand alone intera
 
 FastQC will highlight any areas where this library looks unusual and where you should take a closer look. The program is not tied to any specific type of sequencing technique and can be used to look at libraries coming from a large number of different experiment types (Genomic Sequencing, ChIP-Seq, RNA-Seq, BS-Seq etc etc).
 
+It is very common to have some quality metrics fail after running FastQC, and this may or may not be a problem for your downstream application. But don't worry there are softwares developed to filter poor quality reads and trim poor quality bases or adapters from our samples. In this module we will be working with [TrimGalore](https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/).
+
 # [Practical Exercise](#practical-exercise)
 
 Open your terminal window and go to the Linux directory
@@ -343,7 +345,7 @@ For now, we are just going to look at
 
 **Are these datasets contaminated with any Illumina sequencing adapter oligonucleotides?**
 
-Now, we are going to look at how we can remove poor data and contamination by trimming and filtering. We will use [TrimGalore](https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/) by executing the following command on the Terminal:
+Now, we are going to look at how we can remove poor data and adapter contamination by trimming and filtering. We will use [TrimGalore](https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/) by executing the following command on the Terminal:
 
 We will need to do some minor trimming (quality 25, length 50) as well as checking/removing Illumina adapter sequences:
 ```
