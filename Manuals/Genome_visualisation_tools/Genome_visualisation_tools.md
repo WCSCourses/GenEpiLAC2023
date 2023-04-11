@@ -33,21 +33,34 @@ Artemis is a DNA viewer and annotation tool, free to download and use, written b
 
 ### 1. Starting up the Artemis software
 
-To launch Artemis, double click the Artemis icon on the desktop.
+To launch Artemis, open your terminal window and type:
 
-A small start-up window will appear (see figure below). The directory for Module 3 `(?)` contains all files you will need for this module. Please ask if you cannot find it on your computer. Now follow the sequence of numbers in hte figure below to load up the *Salmonella* Typhi chromosome sequence. Ask a demonstrator for help if you have any problems.
+```
+art &
+```
 
-`ADD FIGURE`
+A small start-up window will appear (see figure below). The directory for Module 3 contains all files you will need for this module. Please ask if you cannot find it on your computer. Now follow the sequence of numbers in the figure below to load up the *Salmonella* Typhi chromosome sequence. Ask a demonstrator for help if you have any problems.
+
+![Artemis1](https://user-images.githubusercontent.com/65819144/231214046-58289d81-5d3d-4e9c-9bc9-dfbb49e111c9.png)
+
+![Artemis2](https://user-images.githubusercontent.com/65819144/231215229-7dd5451b-d172-4c1e-8f15-a61727e795e5.png)
+
 
 ### 2. Loading an annotation file (entry) into Artemis
 
 Hopefully you will now have an Artemis window like this! If not, ask a demonstrator for assistance.
 
-`ADD FIGURE`
+![Artemis3](https://user-images.githubusercontent.com/65819144/231216039-4d8d6287-e631-41d3-a4da-be047a4140d6.png)
 
-Now follow the numbers in hte figure below to load the annotation file for the *Salmonella* Typhi chromosome.
+Now follow the numbers in the figure below to load the annotation file for the *Salmonella* Typhi chromosome.
 
-`ADD FIGURE`
+![Artemis4](https://user-images.githubusercontent.com/65819144/231219005-22657063-b697-4c4b-92b3-d76f42b3f9b0.png)
+
+**What is an entry?**
+
+ENTRY=FILE
+
+It’s a file of DNA and/or features which can be overlaid onto the sequence information displayed in the main Artemis view panel.
 
 ### 3. The basics of Artemis
 
