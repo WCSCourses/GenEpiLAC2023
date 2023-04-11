@@ -29,7 +29,15 @@ This exercise acts as a supplement to the main Assembly module, and aims to demo
 
 # Exercise
 
-Since each assembler can take a while to run, each student will pick a different approach to start with, and we will then compare the outputs as a group. 
+Since each assembler can take a while to run, each student will pick a different approach to start with, and we will then compare the outputs as a group. We will also evaluate the effect of using a different number of long reads:
+
+ - Illumina short reads (paired end)
+
+ - Oxford Nanopore long reads
+    - 10,000 reads
+    - 5,000 reads
+    - 2,500 reads
+
 
 First move into the working directory for this exercise:
 ```
@@ -45,12 +53,14 @@ ls -lh
 <br>
 
 
-In this directory, you should have 4 main files:
+In this directory, you should have 6 main files:
  - Illumina short reads (forward and reverse)
     - `S_aureus_JKD6159_Illumina.ds500000-reads_1.fastq.gz`
     - `S_aureus_JKD6159_Illumina.ds500000-reads_2.fastq.gz`
- - Oxford Nanopore long reads
+ - Oxford Nanopore long reads (3 different versions at 10,000, 5,000 and 2,500 reads)
     - `S_aureus_JKD6159_ONT_R10.4_guppy_v6.1.7__filt.ds10000.fastq.gz`
+    - `S_aureus_JKD6159_ONT_R10.4_guppy_v6.1.7__filt.ds5000.fastq.gz`
+    - `S_aureus_JKD6159_ONT_R10.4_guppy_v6.1.7__filt.ds2500.fastq.gz`
  - A Reference genome (for this particular sample) for comparison with our new assemblies
     - `S_aureus_JKD6159.fasta`
 
@@ -169,7 +179,7 @@ In the command below we:
 dragonflye --cpus 4 --ram 8 --reads S_aureus_JKD6159_ONT_R10.4_guppy_v6.1.7__filt.ds10000.fastq.gz --outdir S_aureus_JKD6159.dragonflye.long
 ```
 
-![dragonflye.long.running](xx)
+![dragonflye.long.running](Dragonflye-long.running.png)
 
 
 <br>
@@ -211,7 +221,7 @@ In the command below we:
 dragonflye --cpus 4 --ram 8 --reads S_aureus_JKD6159_ONT_R10.4_guppy_v6.1.7__filt.ds10000.fastq.gz --R1 S_aureus_JKD6159_Illumina.ds500000-reads_1.fastq.gz --R2 S_aureus_JKD6159_Illumina.ds500000-reads_2.fastq.gz --outdir S_aureus_JKD6159.dragonflye.hybrid --pilon 1 --polypolish 1 
 ```
 
-![dragonflye.hybrid.running](xx)
+![dragonflye.hybrid.running](Dragonflye-hybrid.running.png)
 
 <br>
 
@@ -247,9 +257,9 @@ ls -lh
 
 Your outputs will look slightly different, depending on which assembler and type of assembly you performed
 
-![ls.assembly.unicycler](xx)
+![ls.assembly.unicycler](ls.unicycler.dir.png)
 
-![ls.assembly.dragonflye](xx)
+![ls.assembly.dragonflye](ls.dragonflye.dir.png)
 
 <br>
 <br>
@@ -280,7 +290,7 @@ And for `dragonflye`:
 quast.py --threads 4 -R ../S_aureus_JKD6159.fasta --output-dir quast.output contigs.fa
 ```
 
-![quast.run.pic](xx)
+![quast.run.pic](quast.run.png)
 
 <br>
 
@@ -296,13 +306,13 @@ Lets take a look at some of them:
 cat quast.output/report.tsv
 ```
 
-![quast.report.cat](xx)
+![quast.report.cat](quast.output.png)
 
 
 ```
 cat quast.output/contigs_reports/misassemblies_report.tsv
 ```
-![quast.missassemblies.report.cat](xx)
+![quast.missassemblies.report.cat](quast.missassemblies.png)
 
 
 <br>
