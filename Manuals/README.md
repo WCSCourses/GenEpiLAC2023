@@ -8,8 +8,8 @@
 # Manual
 
 - [Module 1](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/Intro_to_Linux/Intro_to_Linux.md), Introduction to UNIX
-- [Module 2](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/Genome_visualisation_tools/Genome_visualisation_tools.md), Genome visualisation tools
   - [Sequencing QC](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/Sequencing%26QC/Sequencing%26QC.md)
+- [Module 2](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/Genome_visualisation_tools/Genome_visualisation_tools.md), Genome visualisation tools
 - [Module 3](), Comparative Genomics
 - [Module 4](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/Mapping_and_Phylogenetics/Mapping%2BPhylo.md), Mapping and Phylogenetics
 - [Module 5](), Genome Assembly and Annotation
