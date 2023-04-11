@@ -359,8 +359,10 @@ trim_galore -q 25 --length 50 --paired ARIMSS995-11_1.fastq.gz ARIMSS995-11_2.fa
 --paired = the names of the paired FASTQ files to analyses in order
 
 Once trim_galore has finished, check the outputs. You should see that two new FASTQ (.fq) files have been created by trim_galore:
-ARIMSS995-11_1_val_1.fq
-ARIMSS995-11_2_val_2.fq
+
+ARIMSS995-11_1_val_1.fq.gz
+
+ARIMSS995-11_2_val_2.fq.gz
 
 **How many paired reads are left in the sample after trimming? Compare them with the fastq files obtained from the sequencer**
 
