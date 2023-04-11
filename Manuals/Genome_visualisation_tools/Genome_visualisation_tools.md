@@ -192,7 +192,7 @@ an option to de-select "Stop Codons" (see below).
 
 ![Artemis10](https://user-images.githubusercontent.com/65819144/231247831-5b341d0b-f61b-48ed-91ef-acfaaee1e51d.png)
 
-![Artemis11](https://user-images.githubusercontent.com/65819144/231250471-5a626ad4-0452-4552-9d51-858f882a2b87.png)
+   ![Artemis11](https://user-images.githubusercontent.com/65819144/231250471-5a626ad4-0452-4552-9d51-858f882a2b87.png)
 
 3. One final tip is to adjust the scaling for each graph displayed before zooming out. This increases the maximum window size over which a single point for each plot is calculated. To adjust the scaling click with the right mouse button over a particular graph window. A menu will appear with an option "Set the Window size" (see above), set the window size to ‘20000’. You should do this for each graph displayed (if you get an error message press continue).
 
@@ -204,11 +204,16 @@ an option to de-select "Stop Codons" (see below).
 ## [Artemis exercise 3](#artemis-exercise-3)
 
 There are many examples where anomalous regions of DNA within a genome have been shown to carry laterally acquired DNA. In this part of the exercise we are going to
-look at several of these regions in more detail. Starting with the whole genome view, note down the approximate positions and characteristics of the three regions indicated above. Remember the locations of the peaks are given in the graph window if you click the left mouse button within it.
+look at several of these regions in more detail. Starting with the whole genome view, note down the approximate positions and characteristics of the two regions indicated below. Remember the locations of the peaks are given in the graph window if you click the left mouse button within it.
 
-`ADD FIGURES`
+![Artemis13](https://user-images.githubusercontent.com/65819144/231256736-e05ab93f-957e-47f4-b821-7d7cba6f5649.png)
 
-We will now zoom back into the genome to look in more detail at the first of these three peaks. Using the left mouse button, highlight the anomalous region of the graph - this will also highlight the region in the main display. You can then use the right mouse button menu in the main display to `Zoom to selection` - you may need to zoom out from there. Remember that in order to see the CDS features lying within this region you will need to turn the annotation (S_typhi.tab) entry back on.
+| Region | Genome location | Characteristics of DNA plots 
+| --|--|--
+| Region 1 | 2,860,000 bps | troughs for G+C and CG deviation
+| Region 2 |  | 
+
+We will now zoom back into the genome to look in more detail at the first of these two peaks. Using the left mouse button, highlight the anomalous region of the graph - this will also highlight the region in the main display. You can then use the right mouse button menu in the main display to `Zoom to selection` - you may need to zoom out from there. Remember that in order to see the CDS features lying within this region you will need to turn the annotation (S_typhi.tab) entry back on.
 
 The region you should be looking at is shown below and is a classical example of a *Salmonella* pathogenicity island (SPI). The definitions of what constitutes a
 pathogenicity island are quite diverse. However, below is a list of characteristics which are commonly seen within these regions, as described by Hacker et al., 1997.
