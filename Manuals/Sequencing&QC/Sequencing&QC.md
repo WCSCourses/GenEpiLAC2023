@@ -366,7 +366,7 @@ ARIMSS995-11_2_val_2.fq.gz
 
 **How many paired reads are left in the sample after trimming? Compare them with the fastq files obtained from the sequencer**
 
-If you have extra time, you could try trimming the ´untrimmed´ sample!
+If you have extra time, you could try trimming the 'untrimmed' sample!
 
 ## [Bonus](#bonus)
 
