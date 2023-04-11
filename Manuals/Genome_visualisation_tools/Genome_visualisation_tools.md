@@ -66,7 +66,7 @@ It’s a file of DNA and/or features which can be overlaid onto the sequence inf
 
 Now you have an Artemis window open let’s look at what is in there:
 
-`ADD FIGURE`
+![Artemis5](https://user-images.githubusercontent.com/65819144/231230135-195b8396-50bd-4a54-8922-d766d5d6b114.png)
 
 1- **Drop-down menus**: There’s lots in there so don’t worry about all the details right now.
 
@@ -98,7 +98,7 @@ The best method depends on what you’re trying to do. Knowing which one to use 
 
 The functions on this menu (below the Navigator option) are shortcuts for getting to locations within a selected feature or for jumping to the start or end of the DNA sequence. This is really intuitive so give it a try!
 
-`ADD FIGURE`
+![Artemis6](https://user-images.githubusercontent.com/65819144/231232221-23289b1d-148e-4b1f-a7af-9974d9e762f7.png)
 
 It may seem that `Goto > Start of Selection` and `Goto > Feature Start` do the same thing.
 Well they do if you have a feature selected but `Goto > Start of Selection` will also work for a region which you have selected by click-dragging in the main window. So yes, give it a try!
@@ -119,7 +119,7 @@ Well they do if you have a feature selected but `Goto > Start of Selection` will
 
 The Navigator panel is fairly intuitive so open it up and give it a try.
 
-`ADD FIGURE`
+![Artemis7](https://user-images.githubusercontent.com/65819144/231233525-c175fd6e-4a50-4f69-9283-e02be74ea98d.png)
 
 **Suggestions about where to go:**
 
@@ -146,7 +146,7 @@ the menus. Hopefully you will find most of them easy to understand.
 
 This part of the exercise uses the files and data you already have loaded into Artemis from Part I. By a method of your choice go to the region from bases 2188349 to 2199512 on the DNA sequence. This region is bordered by the *fbaB* gene which codes for fructose-bisphosphate aldolase. You can use the Navigator function discussed previously to get there. The region you arrive at should look similar to that shown below.
 
-`ADD FIGURE`
+![Artemis8](https://user-images.githubusercontent.com/65819144/231237333-7bab0dc7-4bc1-4ad3-8cff-845d995dea66.png)
 
 Once you have found this region have a look at some of the information available:
 
