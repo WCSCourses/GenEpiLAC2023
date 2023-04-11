@@ -146,7 +146,7 @@ the menus. Hopefully you will find most of them easy to understand.
 
 This part of the exercise uses the files and data you already have loaded into Artemis from Part I. By a method of your choice go to the region from bases 2188349 to 2199512 on the DNA sequence. This region is bordered by the *fbaB* gene which codes for fructose-bisphosphate aldolase. You can use the Navigator function discussed previously to get there. The region you arrive at should look similar to that shown below.
 
-![Artemis8](https://user-images.githubusercontent.com/65819144/231237333-7bab0dc7-4bc1-4ad3-8cff-845d995dea66.png)
+![Artemis8](https://user-images.githubusercontent.com/65819144/231242665-6999b821-b552-4286-8283-8b8332c95a20.png)
 
 Once you have found this region have a look at some of the information available:
 
@@ -177,7 +177,7 @@ The plot information is generated dynamically by Artemis and although this is a 
 
 Click on the `Graph` menu to see all those available. Perhaps some of the most useful plots are the (1) **GC Content (%)** and (2) **GC Deviation** as shown below. To adjust the smoothing of the graph you change the window size over which the points on the graph are calculated, using the sliders shown below. If you are not familiar with any of these please ask.
 
-`ADD FIGURE`
+![Artemis9](https://user-images.githubusercontent.com/65819144/231245658-aecff0f3-2cc7-4739-922d-e2429493e552.png)
 
 Notice how several of the plots show a marked deviation around the region you are currently looking at. To fully appreciate how anomalous this region is move the genome view by scrolling to the left and right of this region. The apparent unusual nucleotide content of this region is indicative of laterally acquired DNA that has inserted into the genome.
 
@@ -190,13 +190,16 @@ an option to de-select "Stop Codons" (see below).
 
 2. You will also need to temporarily remove all of the annotated features from the Artemis display window. In fact if you leave them on, which you can, they would be too small to see when you zoomed out to display the entire genome. To remove the annotation click on the S_typhi.tab entry button on the grey entry line of the Artemis window shown above.
 
-`ADD FIGURES`
+![Artemis10](https://user-images.githubusercontent.com/65819144/231247831-5b341d0b-f61b-48ed-91ef-acfaaee1e51d.png)
+
+![Artemis11](https://user-images.githubusercontent.com/65819144/231250471-5a626ad4-0452-4552-9d51-858f882a2b87.png)
 
 3. One final tip is to adjust the scaling for each graph displayed before zooming out. This increases the maximum window size over which a single point for each plot is calculated. To adjust the scaling click with the right mouse button over a particular graph window. A menu will appear with an option "Set the Window size" (see above), set the window size to ‘20000’. You should do this for each graph displayed (if you get an error message press continue).
 
 4. You are now ready to zoom out by dragging or clicking the slider indicated above. Once you have zoomed out fully to see the entire genome you will need to adjust the smoothing of the graphs using the vertical graph sliders as before, to have a similar view to that shown below.
 
-`ADD FIGURE`
+![Artemis12](https://user-images.githubusercontent.com/65819144/231252764-215fe8ab-3665-4d4e-a24f-24ee233e3e0b.png)
+
 
 ## [Artemis exercise 3](#artemis-exercise-3)
 
