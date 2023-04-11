@@ -232,11 +232,11 @@ pathogenicity island are quite diverse. However, below is a list of characterist
 
 Have a look in and around this region and look for some of these features
 
-`ADD FIGURE`
+![Artemis14](https://user-images.githubusercontent.com/65819144/231262920-12c84002-cdba-46c6-bdc0-d266b93c564b.png)
 
 Next go to Region 2.
 
-`ADD FIGURE`
+![Artemis15](https://user-images.githubusercontent.com/65819144/231268151-f5273258-99de-4df8-a15a-205d75e2fae2.png)
 
 As with region 1, this region is also defined as a *Salmonella* pathogenicity island (SPI). SPI-7, or the major Vi pathogenicity island, is ~134 kb in length and contains ~30 kb of integrated bacteriophage. Have a look at the CDSs within this region. As before notice any stable RNAs that may have acted as the phage integration site.
 
