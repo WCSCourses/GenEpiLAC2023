@@ -3,7 +3,7 @@
 
 # Assembly Method Comparisons - Paraguay 2023 <!-- omit in toc -->
 
-### Module Lead: XX <!-- omit in toc -->
+### Module Leads: Matt Holden & Mat Beale <!-- omit in toc -->
 <br>
 
     
@@ -140,6 +140,18 @@ unicycler -t 4 -1 S_aureus_JKD6159_Illumina.ds500000-reads_1.fastq.gz -2 S_aureu
 
 <br>
 
+To get `dragonflye` running in the virtual machine, it has been installed using a tool called `mamba` (similar to `conda`). We need to 'activate' `mamba` to make `dragonflye` available:
+
+```
+mamba activate dragonflye
+```
+
+<br>
+
+Now we can run `dragonflye`. 
+
+<br>
+
 In the command below we:
 
 - Allocate 4 CPUs to the assembler
@@ -158,12 +170,21 @@ dragonflye --cpus 4 --ram 8 --reads S_aureus_JKD6159_ONT_R10.4_guppy_v6.1.7__fil
 
 ![dragonflye.long.running](xx)
 
+
 <br>
 
 
 
 ## Hybrid assembly (Dragonflye)
 When `Dragonflye` is supplied with both long and short reads, it performs a long read assembly (as above), but then performs additional "polishing" steps using the short reads - these allow errors in the ONT reads to be corrected and is a very effective solution if you have both good long _and_ short reads available.
+
+<br>
+
+As above, to get `dragonflye` working, we need to activate the mambo environment:
+
+```
+mamba activate dragonflye
+```
 
 <br>
 
