@@ -172,7 +172,7 @@ FastQC can be run in one of two modes. It can either run as a stand alone intera
 
 FastQC will highlight any areas where this library looks unusual and where you should take a closer look. The program is not tied to any specific type of sequencing technique and can be used to look at libraries coming from a large number of different experiment types (Genomic Sequencing, ChIP-Seq, RNA-Seq, BS-Seq etc etc).
 
-It is very common to have some quality metrics fail after running FastQC, and this may or may not be a problem for your downstream application. But don't worry there are softwares developed to filter poor quality reads and trim poor quality bases or adapters from our samples. In this module we will be working with [TrimGalore](https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/).
+It is very common to have some quality metrics fail after running FastQC, and this may or may not be a problem for your downstream application. But don't worry there are softwares developed to filter poor quality reads and trim poor quality bases or adapters from our samples. In this module we will be working with **[TrimGalore](https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/).
 
 # [Practical Exercise](#practical-exercise)
 
@@ -365,6 +365,8 @@ ARIMSS995-11_1_val_1.fq.gz
 ARIMSS995-11_2_val_2.fq.gz
 
 **How many paired reads are left in the sample after trimming? Compare them with the fastq files obtained from the sequencer**
+
+If you have extra time, you could try trimming the ´untrimmed´ sample!
 
 ## [Bonus](#bonus)
 
