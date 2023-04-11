@@ -79,7 +79,7 @@ Hybrid assemblies that are more complete have advantages for downstream analysis
 
 <br>
 
-# [Assembly and annotation exercise(#assembly-and-annotation-exercise)
+# [Assembly and annotation exercise](#assembly-and-annotation-exercise)
 
 <br>
 
