@@ -148,7 +148,7 @@ You can read about SAM and BAM formats here:
 We can view BAM files graphically using specialised genome browsers software such as (we will be working with one of them in the Genome Visualization Tools module):
 - [IGV](https://igv.org/)
 - [Tablet](https://ics.hutton.ac.uk/tablet/)
-- [Artemis / BAMview](http://sanger-pathogens.github.io/Artemis/BamView/) 
+- [Artemis / BAMview](http://sanger-pathogens.github.io/Artemis/Artemis/) 
 
 An example **SAM file** is shown in the image below, along with the 11 mandatory fields of this standard:
 
@@ -171,6 +171,8 @@ FastQC can be run in one of two modes. It can either run as a stand alone intera
 ![fastqc](https://user-images.githubusercontent.com/65819144/230931477-4ed32628-11d5-4b1a-bfe6-70633185eeec.png)
 
 FastQC will highlight any areas where this library looks unusual and where you should take a closer look. The program is not tied to any specific type of sequencing technique and can be used to look at libraries coming from a large number of different experiment types (Genomic Sequencing, ChIP-Seq, RNA-Seq, BS-Seq etc etc).
+
+It is very common to have some quality metrics fail after running FastQC, and this may or may not be a problem for your downstream application. But don't worry there are softwares developed to filter poor quality reads and trim poor quality bases or adapters from our samples. In this module we will be working with **[TrimGalore](https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/).
 
 # [Practical Exercise](#practical-exercise)
 
@@ -343,7 +345,7 @@ For now, we are just going to look at
 
 **Are these datasets contaminated with any Illumina sequencing adapter oligonucleotides?**
 
-Now, we are going to look at how we can remove poor data and contamination by trimming and filtering. We will use [TrimGalore](https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/) by executing the following command on the Terminal:
+Now, we are going to look at how we can remove poor data and adapter contamination by trimming and filtering. We will use [TrimGalore](https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/) by executing the following command on the Terminal:
 
 We will need to do some minor trimming (quality 25, length 50) as well as checking/removing Illumina adapter sequences:
 ```
@@ -357,10 +359,14 @@ trim_galore -q 25 --length 50 --paired ARIMSS995-11_1.fastq.gz ARIMSS995-11_2.fa
 --paired = the names of the paired FASTQ files to analyses in order
 
 Once trim_galore has finished, check the outputs. You should see that two new FASTQ (.fq) files have been created by trim_galore:
-ARIMSS995-11_1_val_1.fq
-ARIMSS995-11_2_val_2.fq
+
+ARIMSS995-11_1_val_1.fq.gz
+
+ARIMSS995-11_2_val_2.fq.gz
 
 **How many paired reads are left in the sample after trimming? Compare them with the fastq files obtained from the sequencer**
+
+If you have extra time, you could try trimming the 'untrimmed' sample!
 
 ## [Bonus](#bonus)
 
