@@ -33,7 +33,7 @@ Since each assembler can take a while to run, each student will pick a different
 
 First move into the working directory for this exercise:
 ```
-cd Module_X_Assembly_Comparison_exercise
+cd Module_6_Assembly_Comparison_exercise
 ```
 You can examine the contents of this directory:
 ```
@@ -80,7 +80,7 @@ In the command below we:
 unicycler -t 4 -1 S_aureus_JKD6159_Illumina.ds500000-reads_1.fastq.gz -2 S_aureus_JKD6159_Illumina.ds500000-reads_2.fastq.gz -o S_aureus_JKD6159.unicycler.short
 ```
 
-![unicycler.short.running](xx)
+![unicycler.short.running](Unicycler-short.running.png)
 
 <br>
 
@@ -102,7 +102,8 @@ In the command below we:
 unicycler -t 4 -l S_aureus_JKD6159_ONT_R10.4_guppy_v6.1.7__filt.ds10000.fastq.gz -o S_aureus_JKD6159.unicycler.long
 ```
 
-![unicycler.long.running](xx)
+![unicycler.long.running](Unicycler-long.running.png)
+
 
 <br>
 
@@ -130,7 +131,7 @@ Note, this method may take over an hour to run on the VMs - check with an instru
 unicycler -t 4 -1 S_aureus_JKD6159_Illumina.ds500000-reads_1.fastq.gz -2 S_aureus_JKD6159_Illumina.ds500000-reads_2.fastq.gz -l S_aureus_JKD6159_ONT_R10.4_guppy_v6.1.7__filt.ds10000.fastq.gz -o S_aureus_JKD6159.unicycler.hybrid
 ```
 
-![unicycler.hybrid.running](xx)
+![unicycler.hybrid.running](Unicycler-hybrid.running.png)
 
 <br>
 
