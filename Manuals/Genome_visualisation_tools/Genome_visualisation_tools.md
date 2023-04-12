@@ -245,11 +245,11 @@ As with region 1, this region is also defined as a *Salmonella* pathogenicity is
 Continuing on from the analysis of Region 2 or SPI-7 (the major Vi-antigen pathogenicity island) we are going to extract this region from the whole genome sequence and perform some more detailed analysis on it. We will aim to write and save new EMBL format files which will include just the annotations and DNA for this region.
 Follow the numbers on the figure below to complete the task:
 
-`ADD FIGURE`
+![Artemis16](https://user-images.githubusercontent.com/65819144/231480577-8ef8064e-5caf-4c56-89cf-905b487e0339.png)
 
 A new Artemis window will appear displaying only the region that you highlighted:
 
-`ADD FIGURE`
+![Artemis17](https://user-images.githubusercontent.com/65819144/231489908-12de90c2-48f5-456e-87d9-45e32754f16c.png)
 
 Note that the two entries on the grey "Entry" line are now denoted "no name". They represent the same information in the same order as the original Artemis window but
 simply have no assigned "Entry" names. As the sub-sequence is now viewed in a new Artemis session, this prevents the original files (S_typhi.dna and S_typhi.tab) from
@@ -260,4 +260,20 @@ a name. Save this file as spi7.dna
 
 Do the same again for the second unnamed entry and save it as spi7.tab
 
-`ADD FIGURE`
+![Artemis18](https://user-images.githubusercontent.com/65819144/231491957-b4f46cac-9aeb-45a6-a8d1-ba2b6e821045.png)
+
+We are going to look at this region in more detail and to attempt to define the limits of the bacteriophage that lies within this region. Luckily for us all the phage-related genes within this region have been given a colour code number 12 (pink; for a list of the other numerical values that Artemis will display as colours for features see Appendix VII). We are going to use this information to select all the relevant phage genes using the Feature selector as shown below and then define the limits of the bacteriophage.
+
+First we need to create a new entry (click `Create > New Entry`). Another entry will appear on the entry line called, you guessed it, "no name". We will eventually copy all our phage-related genes into here.
+
+![Artemis19](https://user-images.githubusercontent.com/65819144/231533214-47fad724-e72d-4260-a902-4c69584aafb7.png)
+
+After clicking the "View" button another window will open containing the feature list:
+
+![Artemis20](https://user-images.githubusercontent.com/65819144/231533240-3ca8a544-760c-401c-a462-8bfcb48aed44.png)
+
+The genes listed above are only those fitting your selection criteria. They can be copied or cut/moved in to a new entry so we can view them in isolation from the rest of the information within spi7.tab.
+
+Firstly in the feature window select all of the CDSs shown by clicking on the "Select" menu and then selecting All. All the features listed in this window should now be highlighted. To copy them to another entry (file) click `Edit > Copy Selected Features To > no name`. Close the two smaller feature selector windows and
+return to the SPI-7 Artemis window. You could rename the "no name" entry as phage.tab, as you did before. Temporarily remove the features contained in "spi7.tab" file by left clicking on the entry button on the grey entry line. Only the phage genes should remain.
+
