@@ -274,6 +274,42 @@ After clicking the "View" button another window will open containing the feature
 
 The genes listed above are only those fitting your selection criteria. They can be copied or cut/moved in to a new entry so we can view them in isolation from the rest of the information within spi7.tab.
 
-Firstly in the feature window select all of the CDSs shown by clicking on the "Select" menu and then selecting All. All the features listed in this window should now be highlighted. To copy them to another entry (file) click `Edit > Copy Selected Features To > no name`. Close the two smaller feature selector windows and
-return to the SPI-7 Artemis window. You could rename the "no name" entry as phage.tab, as you did before. Temporarily remove the features contained in "spi7.tab" file by left clicking on the entry button on the grey entry line. Only the phage genes should remain.
+Firstly in the feature window select all of the CDSs shown by clicking on the "Select" menu and then selecting "All". All the features listed in this window should now be highlighted. To copy them to another entry (file) click `Edit > Copy Selected Features To > no name`. Close the two smaller feature selector windows and return to the SPI-7 Artemis window. You could rename the "no name" entry as phage.tab, as you did before. Temporarily remove the features contained in "spi7.tab" file by left clicking on the entry button on the grey entry line. Only the phage genes should remain:
 
+![Artemis22](https://user-images.githubusercontent.com/65819144/231550039-2ff6d91c-7624-4bb5-9917-d75e4e2a99e7.png)
+
+**Additional methods for selecting/extracting features using the Feature Selector** It is worth noting that the Feature Selector can be used in many other ways to select and extract subsets of features from the genome, using e.g. text or amino acid searches: 
+
+![Artemis21](https://user-images.githubusercontent.com/65819144/231546042-b47f4eb6-802c-446d-867c-a63ab6c9cb6f.png)
+
+**Defining the extent of the prophage**
+
+Even from this preliminary analysis it is clear that the prophage occupies a fairly discrete region within SPI-7 (see below). It is often useful to create a new DNA feature to define the limits of this type of genome landmark. To do this use the left mouse button to click and drag over the region that you think defines the prophage:
+
+![Artemis23](https://user-images.githubusercontent.com/65819144/231551194-a7dce887-6f82-4743-8b0e-5ba1636e9263.png)
+
+While the region in highlighted, click on `Create > Create feature from base range`. A feature edit window will appear:
+
+![Artemis24](https://user-images.githubusercontent.com/65819144/231552053-3c799f3b-e16b-4e0a-9406-ee53e0dc7b26.png)
+
+The default Key value given by Artemis when creating a new feature is "CDS". With this Key the newly created feature would automatically be put on the translation line. However, if we change this to "misc_feature" (an option in the Key drop down menu in the top left hand corner of the Edit window), Artemis will place this feature on the DNA line. This is perhaps more appropriate and is easier to visualise. 
+
+
+You can also add a qualifier, such as "/label". To do so, follow the numbers in the figure below:
+
+![Artemis25](https://user-images.githubusercontent.com/65819144/231555919-e7c60a91-8e5f-4adc-94de-e7f5516faccc.png)
+
+To see how well you have done, turn the spi7.tab.
+
+Your final task is to write out the spi7 files in EMBL submission format, and create a merged annotation and sequence file in EMBL submission format. In Artemis you are going to copy the annotation features from the ".tab" file into the ".dna" file, and then save this entry in EMBL format. Don’t worry about error messages popping up. This is because not all entries are accepted by the EMBL database.
+
+![Artemis26](https://user-images.githubusercontent.com/65819144/231558101-4cb50a71-aa5b-4b11-959b-8acd7cfb6677.png)
+
+Now open the EMBL format file that you have just created in Artemis.
+
+![Artemis27](https://user-images.githubusercontent.com/65819144/231563601-05cba0af-7b3f-4832-ad3c-8a0defe9a967.png)
+
+You will see that the colours of the features have now changed. This is because not all the qualifiers in the previous entry are accepted by the EMBL database, so some have not been saved in this format. This includes the "/colour" qualifier, so Artemis displays the features with default colours.
+
+When you download sequence files from EMBL and visualize them in Artemis you will notice that they are displayed using default colours. You can customize your own
+annotation files with the "/colour" qualifier and chosen number (Appendix VII), to differentiate features. To do this you can use the Feature Selector to select certain features and annotate them all using the "Edit", "Change Qualifiers of Selected" function.
