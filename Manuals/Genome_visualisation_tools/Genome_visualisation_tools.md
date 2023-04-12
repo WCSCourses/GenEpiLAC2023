@@ -188,9 +188,9 @@ As well as looking at the characteristics of small regions of the genome, it is 
 1- To make this process faster and clearer, switch off stop codons by clicking with the right mouse button in the main view panel. A menu will appear with
 an option to de-select "Stop Codons" (see below).
 
-2. You will also need to temporarily remove all of the annotated features from the Artemis display window. In fact if you leave them on, which you can, they would be too small to see when you zoomed out to display the entire genome. To remove the annotation click on the S_typhi.tab entry button on the grey entry line of the Artemis window shown above.
+2- You will also need to temporarily remove all of the annotated features from the Artemis display window. In fact if you leave them on, which you can, they would be too small to see when you zoomed out to display the entire genome. To remove the annotation click on the S_typhi.tab entry button on the grey entry line of the Artemis window shown above.
 
-![Artemis10](https://user-images.githubusercontent.com/65819144/231247831-5b341d0b-f61b-48ed-91ef-acfaaee1e51d.png)
+![Artemis10](https://user-images.githubusercontent.com/65819144/231564333-faff1c83-7cb6-4426-8c9e-80155dccc72d.png)
 
    ![Artemis11](https://user-images.githubusercontent.com/65819144/231250471-5a626ad4-0452-4552-9d51-858f882a2b87.png)
 
