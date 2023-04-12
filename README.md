@@ -19,9 +19,10 @@ Learn how to apply genomics to epidemiological surveillance of bacterial pathoge
 - [Julio Diaz Caballero](https://www.pathogensurveillance.net/team/), Centre for Genomic Pathogen Surveillance, University of Oxford, UK
 - [Mathew Beale](https://www.sanger.ac.uk/person/beale-mathew/), Wellcome Sanger Institute, UK
 - [Matthew Dorman](https://www.sanger.ac.uk/person/dorman-matthew/), Wellcome Sanger Institute, UK
-- [Caterina Guzman Verri](https://scholar.google.com/citations?user=S1GNAC8AAAAJ&hl=en), PIET, Veterinary School, Universidad Nacional, Costa Rica
+- [Caterina Guzmán-Verri](https://scholar.google.com/citations?user=S1GNAC8AAAAJ&hl=en), PIET, Veterinary School, Universidad Nacional, Costa Rica
 - [Tomas Poklepovich](https://www.researchgate.net/profile/Tomas-Poklepovich), CNGB ANLIS “Dr. Carlos G. Malbrán, Argentina
 - [Maria Sol Haim](https://www.researchgate.net/profile/Maria-Sol-Haim), CNGB ANLIS “Dr. Carlos G. Malbrán, Argentina
+- [Marcela Suárez-Esquivel](https://www.researchgate.net/profile/Marcela-Suarez-Esquivel), Veterinary School, Universidad Nacional, Costa Rica
 
 
 <br>
