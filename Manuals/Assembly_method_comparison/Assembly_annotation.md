@@ -147,8 +147,8 @@ The folder contains:
 - fasta format files for the chromosomes of MW2 and MSSA476 (`MW2.dna` and `MSSA476.dna`)
 - EMBL format files of the annotation of the chromosomes of MW2 and MSSA476 (`MW2.embl` and `MSSA476.embl`) 
 - EMBL format files of mobile genetic elements of the chromosomes of MW2 and MSSA476 (`MW2_MGEs.tab` and `MSSA476_MGEs.tab`) 
-- a folder containing the EMBL format files of the MSSA476 chromosome and plasmid 
-- a folder containing the EMBL pdf files of the Köser _et al_., Holden _et al_., and Baba _et al_. manuscripts
+- a folder containing the pdf files of the Köser _et al_., Holden _et al_., and Baba _et al_. manuscripts if you want to find out a bit more about the genomes and origins of the isolates
+- a folder containing the annotation database
 
 
 <br>
