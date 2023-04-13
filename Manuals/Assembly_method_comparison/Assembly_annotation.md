@@ -855,7 +855,7 @@ We are now going to load up the three sequences and relevant comparison files in
 If you prefer to do it from the command line you can type:
 
 ```
-act MSSA476.embl MSSA476.dna_vs_16B.ordered.fasta 16B.ordered_staph-55e08.q2c2068.final.embl 16B.ordered.fasta_vs_MW2.dna MW2.embl &
+act MSSA476.embl MSSA476.dna_vs_16B.ordered.fasta 16B.ordered.embl 16B.ordered.fasta_vs_MW2.dna MW2.embl &
 ```
 
 
