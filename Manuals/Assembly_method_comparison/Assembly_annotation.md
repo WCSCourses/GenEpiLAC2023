@@ -157,22 +157,21 @@ The folder contains:
 ## [Examining the resistome of 16B](#examining-the-resistome-of-16B)
 
 <br>
-
+### [Using the genotype to predict phenotype]
 One of the benefits of whole genome sequencing bacterial pathogens is that you capture the genomic inventory of the organism. This has been capitalized on in clinical microbiology for the _in silico_ prediction of antibiotic resistance directly from whole genome sequencing data. This is being developed as a alternative to phenotypic sensitivity testing of microorganisms in the laboratory, where microorganisms are routinely sequenced.
 
 For many microorganisms the genetic basis of antibiotic resistance has been extensively studied. This means that the genes responsible for resistance have been identified and sequenced, and can be used to compile a database of resistance determinants and used to query an organism’s genome and define its resistome. Based on the presence or absence of genes or mutations it is possible to make a prediction of the antibiotic sensitives of an organism. For some species of bacteria this works better than others. For example, _S. aureus_ the correlation between the genotype and phenotype for most commonly used antibiotics is above 99%. However, for other organisms, such as members of the _Enterobacteriaceae_, the concordance is a lot lower, as these organisms have a more extensive array of resistance mechanisms and determinants.
 
-A recent review from a EUCAST subcommittee summarized the current development status of WGS for bacterial antimicrobial susceptibility testing (AST) for a range or organisms:
+A recent review from a EUCAST subcommittee summarized the current development status of WGS for bacterial antimicrobial susceptibility testing (AST) for a range or organisms: Ellington MJ, _et al_., (2017) The role of whole genome sequencing in antimicrobial susceptibility testing of bacteria: report from the EUCAST Subcommittee. Clin Microbiol Infect. 23:2-22. PubMed PMID: 27890457.
 
-Ellington MJ, _et al_., (2017) The role of whole genome sequencing in antimicrobial susceptibility testing of bacteria: report from the EUCAST Subcommittee. Clin Microbiol Infect. 23:2-22. PubMed PMID: 27890457.
-
+### [Resistance phenotype of 16B] 
 From the phenotypic data you have been given you know that 16B exhibits resistance to penicillin, fusidic acid, methicillin and erythromycin, however you do not know what genes are responsible for this is in this isolate. In the first part of this exercise you are going to use a piece of software, `ariba`, and a publicly available curated antibiotic resistance gene database from ResFinder, to rapidly predict the resistome of 16B from the Illumina sequence reads. You will also do this for this other ST1 _S. aureus_ isolates MW2 and MSSA476, and correlate the phenotypic metadata with the genetic information.
 
 <br>
-
+### [Determining the antibiotic resistance genotype]
 `ariba` (Antimicrobial Resistance Identifier by Assembly) is a freely available tool (https://github.com/sanger-pathogens/ariba). This tool required a `FASTA` input of reference sequences, which can be a multifasta file or database of antibiotic resistance genes or non-coding sequences. This database will serve as one of your inputs and the other is paired sequence reads. `ariba` reports which of the reference sequences were found, plus detailed information on the quality of the assemblies and any variants between the sequencing reads and the reference sequences. 
 
-`ResFinder`, is a web resource for the prediction of antibiotic resistances (www.genomicepidemiology.org). It used a curated database of over 2100 acquired antibiotic resistance determinants (Zankari E _et al_., (2012) Identification of acquired antimicrobial resistance genes. J Antimicrob Chemother. 67:2640-4).
+`ResFinder`, is a web resource for the prediction of antibiotic resistances (www.genomicepidemiology.org). It uses a curated database of over 2100 acquired antibiotic resistance determinants (Zankari E _et al_., (2012) Identification of acquired antimicrobial resistance genes. J Antimicrob Chemother. 67:2640-4).
 
 We have installed `ariba` on the virtual machine, and you will use this to download the `ResFinder` database locally to the virtual machine, and then use it with `ariba` to examine the resistome of your isolates. Further information about `ariba` can be found here: https://github.com/sanger-pathogens/ariba/wiki (Hunt M, _et al_., (2017) `ariba`: rapid antimicrobial resistance genotyping directly from sequencing reads. Microb Genom. 3:e000131) 
 
