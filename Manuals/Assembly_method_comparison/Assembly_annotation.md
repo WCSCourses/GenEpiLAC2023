@@ -373,13 +373,13 @@ The first program of the velvet package we are going to use is `velveth`.
 - Specify the the input files are short paired reads 
     - `-shortPaired`
 - Specify the forward and reverse fastq files
-    - `–fastq –separate 16B_1.fastq 16B_2.fastq`
+    - `-fastq -separate 16B_1.fastq 16B_2.fastq`
 
 Other k-mers can be used and can alter the performance of assembly, however for this module we will run it with a value of 49 which will perform adequately.
 
 
 ```
-velveth S_aureus_16B.49 49 -shortPaired –fastq –separate 16B_1.fastq 16B_2.fastq
+velveth S_aureus_16B.49 49 -shortPaired -fastq -separate 16B_1.fastq 16B_2.fastq
 ```
 
 
@@ -498,7 +498,7 @@ To see a complete list the option available you can type the command: `abacas.1.
 
 
 ```
-abacas.1.3.1.pl -r MSSA476.dna –q S_aureus_16B.49/contigs.fa –p nucmer -b -d –a –c –o 16B.ordered
+abacas.1.3.1.pl -r MSSA476.dna -q S_aureus_16B.49/contigs.fa -p nucmer -b -d -a -c -o 16B.ordered
 ```
 
 <br>
@@ -852,14 +852,14 @@ In order to examine the regions of difference in the 16B assembly with MW2 we ar
 At the prompt type and return the command line:
 
 ```
-formatdb -p F –i 16B.ordered.fasta
+formatdb -p F -i 16B.ordered.fasta
 ```
 
 
 Next type and return the command line:
 
 ```
-blastall -p blastn -m 8 –d 16B.ordered.fasta –i MW2.dna –o 16B.ordered.fasta_vs_MW2.dna
+blastall -p blastn -m 8 -d 16B.ordered.fasta -i MW2.dna -o 16B.ordered.fasta_vs_MW2.dna
 ```
 
 
