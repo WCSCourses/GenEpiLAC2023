@@ -23,7 +23,7 @@
   - [Generating a _de novo_ assembly](#generating-a-de-novo-assembly)
   - [Ordering the assembly against a reference chromosome](#ordering-the-assembly-against-a-reference-chromosome)
   - [Mapping reads back to the ordered assembly](#Mapping-reads-back-to-the-ordered-assembly)
-  - [Annotation transfer](#Annotation-transfer)
+  - [Generating Annotation](#generating-annotation)
   - [Examining the evolution of drug resistance in ST1 _S. aureus_](#Examining-the-evolution-of-drug-resistance-in-ST1-S-aureus)
 
 <br> 
@@ -686,66 +686,73 @@ The non-mapping contigs are indicated by the yellow features. There are 7 contig
 <br>
 
 
-## [Annotation transfer](#Annotation-transfer)
+## [Generating Annotation](#generating-annotation)
 
-Now we have the contigs ordered against the reference, and have mapped back the reads to identify a possible mis-assembly, and also identified putative plasmid sequences. However we are still not yet in a position to drill down into the biology of the strain. For this we need to add some annotation to the newly assembled genome. To do this we can transfer the annotation of reference strain we used in ABACAS, as this has been annotated and is clearly highly related. We have developed a tool called `ratt` (Otto et al., 2011, Nucleic Acids Res 39:e57) that can do this. 
+Now we have the contigs ordered against the reference, and have mapped back the reads to identify a possible mis-assembly, and also identified putative plasmid sequences. However we are still not yet in a position to drill down into the biology of the strain. For this we need to add some annotation to the newly assembled genome. 
 
-In the first step the similarity between the two sequences is determined and a synteny map is constructed. This map is used to map the annotation of the reference onto the new sequence. In a second step, it tries to correct gene models. One advantage of `ratt` is that the complete annotation is transferred, including descriptions. Thus careful manual annotation from the reference becomes available in the newly sequenced genome. Obviously, where no synteny exists, no transfer can be done. Let’s see if this will work for our assembly.
+There are a number of ways you can generate annotation for a novel sequence. You can manually annotate sequence by currating the results of bioinformatic analyses of the sequence, but this is time consuming and prone to human bias. If there is a closely related reference sequence and annotation, you can transfer annotation by similarity matching, but this relies on there being a suitable reference. The fastest and most consistant way to generate annotation for novel sequence is to use an automatic annotation software such as `prokka` (Seemann T. (2014) Prokka: rapid prokaryotic genome annotation. Bioinformatics. 30:2068-9. doi: 10.1093/bioinformatics/btu153) or `bakta` (Schwengers O et al., (2021). Bakta: rapid and standardized annotation of bacterial genomes via alignment-free sequence identification. Microbial Genomics, 7(11). https://doi.org/10.1099/mgen.0.000685)
 
-<br>
+Both of these program are installed on the disk image, but we are going to use `bakta` as this is a new tool that generates standardized, taxonomy-independent, high-throughput annotation.
 
-As input for `ratt` we use the reference genome’s annotation (the MSSA476 genome consists of a single chromosome and plasmid therefore are going to use them both) and the output of `abacas` (16B.ordered.fasta). 
+There are two steps in running `bakta`, the first is downloading a database for it to use for annotation, the second is to run the `bakta` annotation on a query sequence using the database. The downloading step takes a while to run (it involves download a file of ~1.6 Gb), so we have already down loaded is for you. 
 
-We will run `ratt`
 
-- Specify the `ratt` script 
-    - `start.ratt.sh`
-- Specify the directory which contains all the EMBL files to be transferred (EMBL files for the MSSA476 chromosome and plasmid, pSAS)
-    - `embl`
-- Specify the multifasta file to which the annotation will be mapped
+### Running `bakta`
+
+
+To run `bakta` to annotate your sequence.
+
+- Specify the database directory
+    - `--db bakta_database/db-light`
+- Specify the multifasta file to be annotated
     - `16B.ordered.fasta`
-- Specify the prefix to give results files
-    - `16B`
-- Specify the Transfer type: Assembly, transfer between different assemblies 
-    - `Assembly`
-- Specify the output summary file
-    - `> out.ratt.txt`
-
 
 
 ```
-start.ratt.sh embl 16B.ordered.fasta 16B Assembly > out.ratt.txt
+bakta --db bakta_database/db-light 16B.ordered.fasta
 ```
 
 <br>
 
-
-`ratt` generates a lot of output, such as synteny block information, which genes were corrected, and most importantly how many genes were transferred. A summary of this is in the file `out.ratt.txt`.
-
-To take a look at the contents of this file type at prompt and return the command line:
-
-```
-more out.ratt.txt
-```
+![bakta 1](bakta_1.png)
 
 
-![ratt output](ratt_output.png)
+The first step of `bakta` is to annotate non-protein encoding regions including tRNAs, tmRNA, rRNA, ncRNA.
 
 
-`ratt` produces an EMBL format file containing the assembly and transferred annotation ending in the suffix .final.embl (e.g. 16B.ordered_staph-55e08.q2c2068.final.embl)
-
-Load this up into ACT with the MSS476 reference chromosome. At the prompt type and return the command line:
-
-```
-act MSSA476.embl MSSA476.dna_vs_16B.ordered.fasta 16B.ordered_staph-55e08.q2c2068.final.embl &
-```
+![bakta 2](bakta_2.png)
 
 
-Once the `act` window loads up, open `16B.ordered.tab` file into the *16B.ordered.fasta* entry by going to the *File* menu, and selecting the *16B.ordered.fasta* option, and right clicking onto the *Read An Entry* option. 
+It then predicts protein coding sequences and annotates these from match to proteins with redicted function, and inlcudes annotation of hypothetical proteins with matches to protein domains
+
+
+![bakta 3](bakta_3.png)
+
+
+Matches to plamids origins of replaication are included where found and provides a summary of the genomic annotation.
+
+
+![bakta 4](bakta_4.png)
+
+
+The results are written to mutiple output files in the directory in which `bakta` was run.
+
+
+![bakta 5](bakta_5.png)
+
 
 <br>
 
-RATT has transferred 2432 gene features to the reference, and if you look in `act` you will see that most of the 16B assembly now has annotation. There are a few regions that do not have annotation, and these mainly coincide with regions that do not share DNA-DNA identity with the reference. We will quickly have a look at these regions.
+
+For more informtion on the annotation generated by `bakta`, the run options and the output it generates see here: https://github.com/oschwengers/bakta   
+
+
+### Visulizing the `bakta` annotation
+
+
+`bakta` has generated a number of output files in different foramt that contain the annotation for 16B ordered assembly. We are going to use the EMBL format file and view it in ACT. 
+
+In ACT, open the `16B.ordered.embl` file into the `16B.ordered.fasta` entry by going to the *File* menu, and selecting the *16B.ordered.fasta* option, and right clicking onto the *Read An Entry* option. 
 
 
 ![ACT 3 regions](ACT_3_regions.png)
@@ -767,7 +774,7 @@ Beyond the origin of replication there is a second region that is a novel indel 
 - What sort of functions do the proteins in this region encode? 
 - Have a look at the annotation of the CDSs in the MSSA476 reference that match this regions. 
 - What do you the identity of this region is?
-- Are there any genes of interest for antibiotic resistance?
+- Can you find any genes of interest for antibiotic resistance that `ariba` identified?
 <br>
 
 
@@ -793,47 +800,7 @@ In this region near at the right hand side of the assembly, we have the non-mapp
 - Have a look at the annotation generated by `bakta` of the CDSs of the contigs in this region. 
 - What sort of functions do the proteins in this encode? 
 - Does the annotation confirm them as plasmids?
-- Are there any genes of interest for antibiotic resistance?
-
-<br>
-
-
-For the regions of difference that do not have any annotation, we can use a useful function of `act` (and also `artemis`) to see what similar regions there are in the public sequence databases. To do this we are going to the run a BLAST search at the NCBI from the *Run* menu in `act`.
-
-Navigate yourself back to Region 1. Select the DNA region in the 16B assembly that is unique (*Right click* and hold, drag the cursor to the end of the region and release). *Left click* the *Create* menu, and move the cursor over the lower entry, and click *Feature From Base Range*. In the pop up feature box, change the *Key* to *misc_feature*, then click *Apply*. 
-
-
-![ACT blast 1](ACT_blast_1.png)
-
-
-Click on the *misc_feature* you have just created. Click the *Run* menu, and move the cursor the over lower entry, then over *NCBI searches*.
-
-
-![ACT blast 2](ACT_blast_2.png)
-
-
-In the NCBI searches sub-menu you will see the various flavours of BLAST that you can run. We are going to run a BLASTN (DNA-DNA comparison) and also a BLASTX (translated DNA-Protein comparison) search for the feature. First click *blastn*. An *Options for blastn* window will appear that allows you to change the blast parameters. We are going to run it with the default settings, therefore click *OK*.
-
-The BLAST job is now sent by ACT to the NCBI, and the Web browser window will open, and the results will appear when they have finished.
-
-<br> 
-
-Look at the BLASTN results and see what matches there are, and how much coverage there is of the region we are interested in.
-
-- What is the identity of some of these sequences?
-
-- Does it correspond to particular type of mobile genetic element (MGE) and what genes would you expect to find on this element?
-
-<br>
-
-Having seen the DNA-DNA matches, we are now going to repeat the NCBI search with BLASTX this time (Click the *Run* menu, and move the cursor over the lower entry, then over *NCBI searches*, and click *blastx*). This will search for protein coding sequences in the region of interest that have BLAST matches to proteins in UniProt.
-
-
-- What is the identity of the matching sequences and their predicted function?
-
-- How does this relate to antibiotic resistance?
-
-- Can you find matches to the genes ARIBA identified?
+- Can you find any genes of interest for antibiotic resistance that `ariba` identified?
 
 
 <br>
@@ -902,68 +869,3 @@ Compare the other regions containing MGEs. How do these regions vary in the thre
 
 <br>
 
-## Annotation from scratch
-
-In the example we have looked at, we are fortunate that we have annotation for a closely related reference sequence that that we can use to transfer to our isolate of interest’s assembly. In this case most of the query isolate’s assembly is covered by the transferred annotation. What if you are not so lucky, and you do not have an appropriate reference which you can use? What options are available to you?
-
-One option would be to use an annotation program such as `prokka` (Seemann T. (2014) Prokka: rapid prokaryotic genome annotation. Bioinformatics. 30:2068-9. doi: 10.1093/bioinformatics/btu153) or `bakta` (Schwengers O et al., (2021). Bakta: rapid and standardized annotation of bacterial genomes via alignment-free sequence identification. Microbial Genomics, 7(11). https://doi.org/10.1099/mgen.0.000685)
-
-Both of these program are installed on the disk image. If you have time why don't you have a go at running them on the 16B.ordered.fasta sequence.
-
-
-<br>
-
-
-To run `prokka`.
-
-- Specify the output directory
-    - `--outdir 16B_prokka`
-- Specify the prefix
-    - `--prefix 16B`
-- Specify the multifasta file to be annotated
-    - `16B.ordered.fasta`
-
-
-```
-prokka --outdir 16B_prokka --prefix 16B 16B.ordered.fasta
-```
-
-
-To visualize the annotation in Artemis type:
-
-
-```
-art 6B_prokka/16B.gff
-```
-
-<br>
-
-To run `bakta` first download the most recent compatible database
-
-
-- Specify the `bakta` program to run
-    - `download`
-- Specify the output directory
-    - `--output bakta_database`
-- Specify the database versions (available as either full or light):
-    - `--type light`
-
-
-```
-bakta_db download --output bakta_database --type light
-```
-
-
-Then run `bakta` to annotate your sequence.
-
-- Specify the database directory
-    - `--db bakta_database/db-light`
-- Specify the multifasta file to be annotated
-    - `16B.ordered.fasta`
-
-
-```
-bakta --db bakta_database/db-light 16B.ordered.fasta
-```
-
-Like for `prokka`, `bakta` produces annotations & sequences in GFF3 format, which can be loaded in `artemis` or `act` and explored.
