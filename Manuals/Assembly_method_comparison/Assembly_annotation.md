@@ -334,7 +334,7 @@ In the browser window the tree is displayed on the left and represents relations
 
 - What are the genes identified, and which antibiotics do they encode resistance for?
 
-To help you understand what what genes ResFinder is using for different antibiotics you can explore here: https://cge.cbs.dtu.dk/services/ResFinder/database.php 
+To help you understand what what genes ResFinder is using for different antibiotics you can explore here: https://cge.food.dtu.dk/services/ResFinder/gene_overview.php
 
 - How do the resistomes predicted for each isolate compare with the phenotypic data?
 
