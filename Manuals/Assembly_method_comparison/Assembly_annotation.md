@@ -317,7 +317,7 @@ The `ariba` summary command generates three files:
 - `out.summary.phandango.tre` - tree based on matches in the out.summary.csv file
 
 
-To visualize the results open up the web browser, and type in the URL: https://jameshadfield.github.io/phandango/
+To visualize the results open up the Firefox web browser, and type in the URL: https://jameshadfield.github.io/phandango/
 
 From a file view window drag and drop the two `phandango` files, `out.summary.phandango.tre` and `out.summary.phandango.csv`, into the browser window.
 
