@@ -300,8 +300,6 @@ Next you need to compile the `ariba` results from the three isolates using the t
     - `out.summary`
 - Specify the report files made by the separate runs of `ariba` for each isolate 
     - `16B_out.run/report.tsv MW2_out.run/report.tsv MSSA476_out.run/report.tsv`
-- Specify the 
-    - ``
 
 
 ```
