@@ -125,10 +125,10 @@ Using a comparative genomic approach we will identify regions of difference, and
 
 
 ## Finding the data 
-Navigate to the `Module_6_Assembly_Analysis` directory
+Navigate to the `Module_6_Genome_Assembly_Analysis` directory
 
 ```
-cd Module_6_Assembly_Analysis
+cd Module_6_Genome_Assembly_Analysis
 ```
 
 We can confirm where we are 
@@ -140,7 +140,7 @@ We can also examine the contents of this file
 ```
 ls -l
 ```
-![directory_contents](Directory_ls_start.png)
+![directory_contents](Terminal_1.png)
 
 <br>
 
@@ -150,10 +150,13 @@ The folder contains:
   - `16B_1.fastq.gz`, `16B_2.fastq.gz`
   - `MSSA476_1.fastq.gz`, `MSSA476_2.fastq.gz`
   - `MW2_1.fastq.gz`, `MW2_2.fastq.gz`
-- a folder containing the EMBL format file of reference genomes
-
-<br>
-
+- fasta format files for the chromosomes of MW2 and MSSA476 (`MW2.dna` and `MSSA476.dna`)
+- EMBL format files of the annotation of the chromosomes of MW2 and MSSA476 (`MW2.embl` and `MSSA476.embl`) 
+- EMBL format files of mobile genetic elements of the chromosomes of MW2 and MSSA476 (`MW2_MGEs.tab` and `MSSA476_MGEs.tab`) 
+- a folder containing the EMBL format files of the MSSA476 chromosome and plasmid 
+- a folder containing the EMBL pdf files of the Köser et al., Holden et al., and Baba et al. manuscripts
+- 
+- <br>
 
 
 ## [A: Examining the resistome of 16B](#examining-the-resistome-of-16B)
