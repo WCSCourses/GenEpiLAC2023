@@ -349,7 +349,7 @@ To generate the _de novo_ assembly you are going to use a assembly package calle
 
 The algorithm at the heart of Velvet is based on de Bruijn graphs (a mathematical structure used to model relationships between objects). When doing assembly with short reads the first step is to find all the possible overlaps between all the reads. One efficient way is to look for k-mers (words/nucleotide patterns of a specific length) in each read. If two reads contain the same k-mer they might also overlap. Each read contains several k-mers, and k-mers from the same read can be connected in a graph. Velvet represents overlaps between k-mers in a de Bruijn graph. By simplifying the graph Velvet can try to generate connected sequences, where k-mers in the graph are connected and thereby it is able to piece together sequences and generate contigs. 
 
-In this module we are not going to explore the options available in Velvet, but are going to run it with basic parameters. If you would like to know more about theory behind Velvet, or the various options, see the Velvet web site (www.ebi.ac.uk/~zerbino/velvet/).
+In this module we are not going to explore the options available in Velvet, but are going to run it with basic parameters. If you would like to know more about theory behind Velvet, or the various options, see the Velvet web site (https://github.com/dzerbino/velvet).
 
 
 <br> 
