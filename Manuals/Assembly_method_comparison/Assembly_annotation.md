@@ -19,18 +19,18 @@
   - [An outbreak sample](#an-outbreak-sample)
   - [Tasks](#tasks)
   - [The research questions](#the-research-questions)
-  - [A: Examining the resistome of 16B](#examining-the-resistome-of-16B)
+  - [Examining the resistome of 16B](#examining-the-resistome-of-16B)
     - [Step 1: Download the `ResFinder` database](#Download-the-resfinder-database)
     - [Step 2: Run `ariba` on 16B](#run-ariba-on-16B)
     - [Step 3: Run `ariba` on MW2](#run-ariba-on-MW2)
     - [Step 3: Run `ariba` on MSSA476](#run-ariba-on-MSSA476)
     - [Step 5: Compile the `ariba` results](#compile-the-ariba-results)
     - [Step 6. Visualize in Phandango](#visualize-in-phandango)
-  - [B: Generating a _de novo_ assembly](#generating-a-de-novo-assembly)
-  - [C: Ordering the assembly against a reference chromosome](ordering-the-assembly-against-a-reference-chromosome)
-  - [D: Mapping reads back to the ordered assembly](#Mapping-reads-back-to-the-ordered-assembly)
-  - [E: Annotation transfer](#Annotation-transfer)
-  - [F: Examining the evolution of drug resistance in ST1 _S. aureus_](#Examining-the-evolution-of-drug-resistance-in-ST1-S-aureus)
+  - [Generating a _de novo_ assembly](#generating-a-de-novo-assembly)
+  - [Ordering the assembly against a reference chromosome](ordering-the-assembly-against-a-reference-chromosome)
+  - [Mapping reads back to the ordered assembly](#Mapping-reads-back-to-the-ordered-assembly)
+  - [Annotation transfer](#Annotation-transfer)
+  - [Examining the evolution of drug resistance in ST1 _S. aureus_](#Examining-the-evolution-of-drug-resistance-in-ST1-S-aureus)
 
 <br> 
 
@@ -160,7 +160,7 @@ The folder contains:
 <br>
 
 
-## [A: Examining the resistome of 16B](#examining-the-resistome-of-16B)
+## [Examining the resistome of 16B](#examining-the-resistome-of-16B)
 
 <br>
 
@@ -339,7 +339,7 @@ To help you understand what what genes ResFinder is using for different antibiot
 
 <br>
 
-## [B: Generating a _de novo_ assembly](#generating-a-de-novo-assembly)
+## [Generating a _de novo_ assembly](#generating-a-de-novo-assembly)
 
 Having identified antibiotic resistance genes using `ariba`, you are now going to continue the exercise exploring the genome of 16B to identify the genomic context of the genes and see if you can find any missing genes. The first step is to generate a _de novo_ assembly of 16B using the `fastq` files. Make sure you are still in the Module 6 directory.  
 
@@ -462,7 +462,7 @@ Looking at the GC Deviation plot in `artemis` of the 16B assembly you can see th
 <br>
 
 
-## [C: Ordering the assembly against a reference chromosome](ordering-the-assembly-against-a-reference-chromosome)
+## [Ordering the assembly against a reference chromosome](ordering-the-assembly-against-a-reference-chromosome)
 
 At the Wellcome Sanger Institute a tool called `abacas` (Assefa _et al_., 2009) was developed to order contigs against a reference sequence. Any spaces between the contigs (gaps) can be filled in with “N” characters to ‘pad’ the sequence with equivalent sized regions to those on the reference that may be missing in the assembly. The result is called a pseudo-molecule. This can be loaded into `act` along with the reference sequence and then be analyzed.
 
@@ -584,7 +584,7 @@ In the `act` figure there are several regions of interest that are worth investi
 
 <br>
 
-## [D: Mapping reads back to the ordered assembly](#Mapping-reads-back-to-the-ordered-assembly)
+## [Mapping reads back to the ordered assembly](#Mapping-reads-back-to-the-ordered-assembly)
 
 In this next exercise you are going to use the same mapping method as you did in Mapping Module, to map the 16B strain forward and reverse reads against the pseudo-molecule that you created using `abacas`. We are then going to look at the aligned mapped reads in `act` by loading the mapped bam file with the `16B.ordered.fasta`.  
 
@@ -688,7 +688,7 @@ The non-mapping contigs are indicated by the yellow features. There are 7 contig
 <br>
 
 
-## [E: Annotation transfer](#Annotation-transfer)
+## [Annotation transfer](#Annotation-transfer)
 
 Now we have the contigs ordered against the reference, and have mapped back the reads to identify a possible mis-assembly, and also identified putative plasmid sequences. However we are still not yet in a position to drill down into the biology of the strain. For this we need to add some annotation to the newly assembled genome. To do this we can transfer the annotation of reference strain we used in ABACAS, as this has been annotated and is clearly highly related. We have developed a tool called `ratt` (Otto et al., 2011, Nucleic Acids Res 39:e57) that can do this. 
 
@@ -829,7 +829,7 @@ Having seen the DNA-DNA matches, we are now going to repeat the NCBI search with
 <br>
 
 
-## [F: Examining the evolution of drug resistance in ST1 _S. aureus_](#Examining-the-evolution-of-drug-resistance-in-ST1-S-aureus)
+## [Examining the evolution of drug resistance in ST1 _S. aureus_](#Examining-the-evolution-of-drug-resistance-in-ST1-S-aureus)
 
 
 Up until now we have compared the 16B assembly to only one other ST1 _S. aureus_ strain, MSSA476. We are now going introduce another strain to the comparison, MW2, and start looking at the genetic differences between the isolates that may impact on their biology. Although MW2 was isolated in a different country (USA), many thousands of miles away from 16B and MSSA476 (both UK), it still belongs to the same clone, and probably share a common ancestor tens rather than hundreds of years ago. A clinically important phenotypic difference between these isolates are their antibiotic resistances:
