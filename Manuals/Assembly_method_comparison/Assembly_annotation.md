@@ -627,7 +627,6 @@ Before we can use it in `act` we have to index is using the `samtools` `index` c
 
 ```
 samtools index 16B_mapping/snps.bam
-
 ```
 
 <br>
