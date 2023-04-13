@@ -768,7 +768,7 @@ The second region lacking annotation spans two contigs. This ~22 kb region, cont
 ### Region 2
 
 
-![Region 2](Region_2.png)
+![Region 2](Region2.png)
 
 
 From the `act` figure it would appear that there is a large insert in the 16B assembly relative to the MSSA476. If you zoom in and look at the sequence you will see that is composed of Ns rather than bases (in the figure you can make out regions with Ns, as they do not have any black lines that indicate stop codons on the forward and reverse translations). In this case ABACAS has mis-predicted a gap in this region, and therefore `ratt` has not transferred annotation.
@@ -778,7 +778,7 @@ From the `act` figure it would appear that there is a large insert in the 16B as
 ### Region 3
 
 
-![Region 3](Region_3.png)
+![Region 3](Region3.png)
 
 
 In this region near at the right hand side of the assembly, we have the non-mapping contigs (yellow). Previously we have seen that the two largest contigs are likely to be separate plasmids. The larger of the contigs has annotation transferred to it, however if you look in `act`, you will see that there it has no `blastn` matches to the MSSA476 chromosome. If you then look at the annotation that has been transferred, you will see that it has come from the MSSA476 plasmid, pSAS, rather than the chromosome, this is because we included EMBL files for both the plasmid and chromosome in the `ratt` transfer. This indicates that 16B contains a similar plasmid to that found in MSSA46.
