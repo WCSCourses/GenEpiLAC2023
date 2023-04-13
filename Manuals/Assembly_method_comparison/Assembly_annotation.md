@@ -98,13 +98,13 @@ _Staphylococcus aureus_ is a bacterial pathogen that has gained notoriety in rec
 
 <br>
 
-In this module we will assemble the genome of a strain of _S. aureus_, 16B, that was sequenced as part of an MRSA outbreak investigation, (Köser et al., 2012, N Engl J Med. 366:2267-75). Using multi locus sequence typing (MLST) the isolate was identified as belonging to sequence type 1 (ST1), a lineage of _S. aureus_ that is more frequently associated with infections in the community rather than in hospitals, and tends to be less resistant to antibiotics than the _S. aureus_ commonly associated with hospital-acquired infection.
+In this module we will assemble the genome of a strain of _S. aureus_, 16B, that was sequenced as part of an MRSA outbreak investigation, (Köser _et al_., 2012, N Engl J Med. 366:2267-75). Using multi locus sequence typing (MLST) the isolate was identified as belonging to sequence type 1 (ST1), a lineage of _S. aureus_ that is more frequently associated with infections in the community rather than in hospitals, and tends to be less resistant to antibiotics than the _S. aureus_ commonly associated with hospital-acquired infection.
 
 ## [Tasks](#tasks)
 
 <br>
 
-We are going to query the resistome of 16B using `ariba` and a resistance gene database. We will generate an assembly and compare it to the chromosomes of 2 other ST1 isolates: MSSA476, which was isolated in the UK (Holden et al., 2004, PNAS. 101:9786-91), and MW2, which was isolated in the USA (Baba et al., 2002, Lancet 359:1819-27). Both MSSA476 and MW2 have been completely sequenced, annotated and deposited in EMBL.
+We are going to query the resistome of 16B using `ariba` and a resistance gene database. We will generate an assembly and compare it to the chromosomes of 2 other ST1 isolates: MSSA476, which was isolated in the UK (Holden _et al_., 2004, PNAS. 101:9786-91), and MW2, which was isolated in the USA (Baba _et al_., 2002, Lancet 359:1819-27). Both MSSA476 and MW2 have been completely sequenced, annotated and deposited in EMBL.
 
 <br>
 
@@ -154,9 +154,10 @@ The folder contains:
 - EMBL format files of the annotation of the chromosomes of MW2 and MSSA476 (`MW2.embl` and `MSSA476.embl`) 
 - EMBL format files of mobile genetic elements of the chromosomes of MW2 and MSSA476 (`MW2_MGEs.tab` and `MSSA476_MGEs.tab`) 
 - a folder containing the EMBL format files of the MSSA476 chromosome and plasmid 
-- a folder containing the EMBL pdf files of the Köser et al., Holden et al., and Baba et al. manuscripts
-- 
-- <br>
+- a folder containing the EMBL pdf files of the Köser _et al_., Holden _et al_., and Baba _et al_. manuscripts
+
+
+<br>
 
 
 ## [A: Examining the resistome of 16B](#examining-the-resistome-of-16B)
