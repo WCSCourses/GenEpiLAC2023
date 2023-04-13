@@ -427,7 +427,7 @@ All of the results are written into the directory you specified, e.g. `S_aureus_
 Use the UNIX `cd` command to move into this directory, and the `ls` command to look at the contents.
 
 
-![velvetg 1](velvetg_1.png)
+![velvetg 2](velvetg_2.png)
 
 
 The final contigs are in `contigs.fa`. This files contains the contigs in multifasta format, i.e. the sequence of each contig is written as a separate fasta sequence, with all the contigs fasta sequences concatenated together. The `stats.txt` file holds some information about each contig, its length, the coverage, etc.. The other files contain information for the assembler.
