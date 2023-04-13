@@ -17,7 +17,7 @@
 - [Assembly and annotation exercise](#assembly-and-annotation-exercise)
   - [Background](#background)
   - [An outbreak sample](#an-outbreak-sample)
-  - [Tasks](#tasks)
+  - [Analyses](#analyses)
   - [The research questions](#the-research-questions)
   - [Examining the resistome of 16B](#examining-the-resistome-of-16B)
   - [Generating a _de novo_ assembly](#generating-a-de-novo-assembly)
@@ -38,9 +38,10 @@ Aims of this exercise
 
 *	Use a resistome prediction tool to identify the genetic determinants for antibiotic resistance from sequencing reads
 *	To show how short-read data can be assembled into a draft genome
-*	Order the draft genome against a reference sequence, and transfer annotation from the reference to the draft genome
+*	Order the draft genome against a reference sequence
+*	Annotate the reordered draft genome
 *	To show how, using comparative genomics, regions of difference that distinguish genomes can identified and analysed
-*	Compare assembled genomes generated from short-read sequence data only, long-read sequence data and combined sort- and long-read sequence data
+*	Identify the genetic basis of resistance and be able to explain the evolution of resistance in the isolates investigated 
 
 <br>
 
@@ -94,7 +95,7 @@ _Staphylococcus aureus_ is a bacterial pathogen that has gained notoriety in rec
 
 In this module we will assemble the genome of a strain of _S. aureus_, 16B, that was sequenced as part of an MRSA outbreak investigation, (Köser _et al_., 2012, N Engl J Med. 366:2267-75). Using multi locus sequence typing (MLST) the isolate was identified as belonging to sequence type 1 (ST1), a lineage of _S. aureus_ that is more frequently associated with infections in the community rather than in hospitals, and tends to be less resistant to antibiotics than the _S. aureus_ commonly associated with hospital-acquired infection.
 
-## [Tasks](#tasks)
+## [Analyses](#analyses)
 
 <br>
 
