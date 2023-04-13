@@ -945,13 +945,13 @@ bakta_db download --output bakta_database --type light
 Then run `bakta` to annotate your sequence.
 
 - Specify the database directory
-    - `--db bakta_database`
+    - `--db bakta_database/db-light`
 - Specify the multifasta file to be annotated
     - `16B.ordered.fasta`
 
 
 ```
-bakta --db bakta_database 16B.ordered.fasta
+bakta --db bakta_database/db-light 16B.ordered.fasta
 ```
 
 Like for `prokka`, `bakta` produces annotations & sequences in GFF3 format, which can be loaded in `artemis` or `act` and explored.
