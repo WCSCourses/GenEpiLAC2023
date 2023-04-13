@@ -156,7 +156,7 @@ The folder contains:
 
 ## [Examining the resistome of 16B](#examining-the-resistome-of-16B)
 
-<br>
+
 ### Using the genonome to predict antibiotic resistance phenotype
 One of the benefits of whole genome sequencing bacterial pathogens is that you capture the genomic inventory of the organism. This has been capitalized on in clinical microbiology for the _in silico_ prediction of antibiotic resistance directly from whole genome sequencing data. This is being developed as a alternative to phenotypic sensitivity testing of microorganisms in the laboratory, where microorganisms are routinely sequenced.
 
@@ -164,10 +164,11 @@ For many microorganisms the genetic basis of antibiotic resistance has been exte
 
 A recent review from a EUCAST subcommittee summarized the current development status of WGS for bacterial antimicrobial susceptibility testing (AST) for a range or organisms: Ellington MJ, _et al_., (2017) The role of whole genome sequencing in antimicrobial susceptibility testing of bacteria: report from the EUCAST Subcommittee. Clin Microbiol Infect. 23:2-22. PubMed PMID: 27890457.
 
+
 ### Resistance phenotype of 16B 
 From the phenotypic data you have been given you know that 16B exhibits resistance to penicillin, fusidic acid, methicillin and erythromycin, however you do not know what genes are responsible for this is in this isolate. In the first part of this exercise you are going to use a piece of software, `ariba`, and a publicly available curated antibiotic resistance gene database from ResFinder, to rapidly predict the resistome of 16B from the Illumina sequence reads. You will also do this for this other ST1 _S. aureus_ isolates MW2 and MSSA476, and correlate the phenotypic metadata with the genetic information.
 
-<br>
+
 ### Determining the antibiotic resistance genotype
 `ariba` (Antimicrobial Resistance Identifier by Assembly) is a freely available tool (https://github.com/sanger-pathogens/ariba). This tool required a `FASTA` input of reference sequences, which can be a multifasta file or database of antibiotic resistance genes or non-coding sequences. This database will serve as one of your inputs and the other is paired sequence reads. `ariba` reports which of the reference sequences were found, plus detailed information on the quality of the assemblies and any variants between the sequencing reads and the reference sequences. 
 
