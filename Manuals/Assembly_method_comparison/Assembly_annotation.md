@@ -632,7 +632,7 @@ samtools index 16B_mapping/snps.bam
 <br>
 
 
-To load the `bam` file into `act, click *File* on the menu and them click the *16B.ordered.fasta* entry, and then the *Read BAM / VCF*.
+To load the `bam` file into `act`, click *File* on the menu and them click the *16B.ordered.fasta* entry, and then the *Read BAM / VCF*.
 
 In the pop-up box click *Select*, select the `snps.bam` file from the `16B_mapping` directory, click *Open*, then click *OK*.
 
