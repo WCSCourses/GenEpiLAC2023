@@ -581,6 +581,7 @@ As before, display the GC Deviation (G-C)/(G+C) plots for both of the sequences 
 
 In the `act` figure there are several regions of interest that are worth investing. The first region we are going to look at is the inverted region in the centre of the assembly that is covered by the hourglass shaped blue matches in the comparison panel. This 130 kb region spans the terminus of replication region, and is present at one end of a contig. At the other end of the putative inverted region there is a contig break. 
 
+![ACT focus region](ACT_focus_region.png)
 
 <br>
 
