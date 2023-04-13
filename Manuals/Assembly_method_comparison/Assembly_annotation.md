@@ -621,10 +621,8 @@ The bam file contains all the mapping positions on the genome for each individua
 Before we can use it in `act` we have to index is using the `samtools` `index` command.
 
 
-- Specify the 
-    - ``
-- Specify the 
-    - ``
+- Specify the bam file to index
+    - `16B_mapping/snps.bam`
 
 
 ```
