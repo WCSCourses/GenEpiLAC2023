@@ -416,9 +416,9 @@ velvetg S_aureus_16B.49 -exp_cov auto -min_contig_lgth 200 -cov_cutoff auto -ins
 
 
 There is a lot of output printed to the screen, but the most important is in the last line:
-Final graph has 250 nodes and n50 of 225963, max 613961, total 2777676, using 3847086/4000000 reads. (Result might differ depending on the velvet version used).
+Final graph has 251 nodes and n50 of 225962, max 557946, total 2777486, using 3846837/4000000 reads. (Result might differ depending on the velvet version used).
 
-This line first gives you a quick idea of the result. 250 nodes (contigs) are in the final graph. An n50 of 225963 means that 50% of the assembly is in contigs of at least 225963 bases. This n50 parameter is most commonly used as an indicator of assembly quality. The higher, the better! max is the length of the longest contig. total is the size of the assembly, here it is 2.78 Mb. The last two numbers tell us how many reads were used from the 4 million pairs.
+This line first gives you a quick idea of the result. 251 nodes (contigs) are in the final graph. An n50 of 225962 means that 50% of the assembly is in contigs of at least 225963 bases. This n50 parameter is most commonly used as an indicator of assembly quality. The higher, the better! max is the length of the longest contig. total is the size of the assembly, here it is 2.78 Mb. The last two numbers tell us how many reads were used from the 4 million pairs.
 
 A typical S. aureus genome is 2.8 Mb in size, therefore the _de novo_ assembly that we have produced should contain over 99% of this isolate’s genome.
 
