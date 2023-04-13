@@ -27,7 +27,7 @@
     - [Step 5: Compile the `ariba` results](#compile-the-ariba-results)
     - [Step 6. Visualize in Phandango](#visualize-in-phandango)
   - [Generating a _de novo_ assembly](#generating-a-de-novo-assembly)
-  - [Ordering the assembly against a reference chromosome](ordering-the-assembly-against-a-reference-chromosome)
+  - [Ordering the assembly against a reference chromosome](#ordering-the-assembly-against-a-reference-chromosome)
   - [Mapping reads back to the ordered assembly](#Mapping-reads-back-to-the-ordered-assembly)
   - [Annotation transfer](#Annotation-transfer)
   - [Examining the evolution of drug resistance in ST1 _S. aureus_](#Examining-the-evolution-of-drug-resistance-in-ST1-S-aureus)
