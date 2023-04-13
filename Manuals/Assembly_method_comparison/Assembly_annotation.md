@@ -858,26 +858,45 @@ If you prefer to do it from the command line you can type:
 act MSSA476.embl MSSA476.dna_vs_16B.ordered.fasta 16B.ordered.embl 16B.ordered.fasta_vs_MW2.dna MW2.embl &
 ```
 
+<br>
+
+
 
 Now that you have included the MW2 sequence to the comparison you should see an `act` view with three DNA panels and two comparison panels separating them. In this zoomed out view, MSSA476 is on the top, 16B is in the middle and MW2 on the bottom. You will also notice that in the `act` menu at the top there are now three entry options. 
+
 
 
 ![ACT 3way 1](ACT_3way_1.png)
 
 
+
+
 To help you with your investigations, we have also provided two additional annotation files that contain misc_features which mark the extent of MGEs identified in the MSSA476 and MW2 chromosomes. These can be loaded into the appropriate entry (from the menu click *File*, the entry you want, then *Read An Entry*). The misc_features are colour coded in the ACT view according to the type of MGE (see legend on on the circular diagram of MSSA476).
+
 
 
 ![ACT 3way 2](ACT_3way_2.png)
 
 
+
+
 Here is the Region 1 that we have looked at previously, now with MW2 at the bottom. The regions of 16B that lacking annotation transferred from MSSA476, contains a matches to a region of the MW2. Does the identity of this MW2 region correspond to what you have seen from the NCBI BLAST searches? What has occurred in this region of the 16B chromosome that could explain the structure of this region in comparison to the other strains?
+
+
 
 
 ![ACT 3way 3](ACT_3way_3.png)
 
 
-Compare the other regions containing MGEs. How do these regions vary in the three strains, and what do they encode? Does this explain the differences in the antibiotics phenotypes of the isolates? Can you find any other important genes associated with MGEs that are vary in the isolates that are clinical relevant (clue, think toxins).
+
+Compare the other regions containing MGEs. 
+
+- How do these regions vary in the three strains, and what do they encode? 
+- Does this explain the differences in the antibiotics phenotypes of the isolates? 
+- Can you find any other important genes associated with MGEs that are vary in the isolates that are clinical relevant (clue, think toxins).
+
+
+
 
 <br>
 
