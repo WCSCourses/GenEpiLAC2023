@@ -178,9 +178,9 @@ From the phenotypic data you have been given you know that 16B exhibits resistan
 
 `ariba` (Antimicrobial Resistance Identifier by Assembly) is a freely available tool (https://github.com/sanger-pathogens/ariba). This tool required a `FASTA` input of reference sequences, which can be a multifasta file or database of antibiotic resistance genes or non-coding sequences. This database will serve as one of your inputs and the other is paired sequence reads. `ariba` reports which of the reference sequences were found, plus detailed information on the quality of the assemblies and any variants between the sequencing reads and the reference sequences. 
 
-`ResFinder`, is a web resource for the prediction of antibiotic resistances (www.genomicepidemiology.org). It used a curated database of over 2100 acquired antibiotic resistance determinants (Zankari E et al., (2012) Identification of acquired antimicrobial resistance genes. J Antimicrob Chemother. 67:2640-4).
+`ResFinder`, is a web resource for the prediction of antibiotic resistances (www.genomicepidemiology.org). It used a curated database of over 2100 acquired antibiotic resistance determinants (Zankari E _et al_., (2012) Identification of acquired antimicrobial resistance genes. J Antimicrob Chemother. 67:2640-4).
 
-We have installed `ariba` on the virtual machine, and you will use this to download the `ResFinder` database locally to the virtual machine, and then use it with `ariba` to examine the resistome of your isolates. Further information about `ariba` can be found here: https://github.com/sanger-pathogens/`ariba`/wiki (Hunt M, et al., (2017) `ariba`: rapid antimicrobial resistance genotyping directly from sequencing reads. Microb Genom. 3:e000131) 
+We have installed `ariba` on the virtual machine, and you will use this to download the `ResFinder` database locally to the virtual machine, and then use it with `ariba` to examine the resistome of your isolates. Further information about `ariba` can be found here: https://github.com/sanger-pathogens/ariba/wiki (Hunt M, _et al_., (2017) `ariba`: rapid antimicrobial resistance genotyping directly from sequencing reads. Microb Genom. 3:e000131) 
 
 The results can then be viewed in `Phandango` (http://jameshadfield.github.io/phandango/), an interactive web tool to visualize your outputs.
 
