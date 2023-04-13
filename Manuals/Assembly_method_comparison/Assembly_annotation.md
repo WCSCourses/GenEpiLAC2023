@@ -462,7 +462,7 @@ Looking at the GC Deviation plot in `artemis` of the 16B assembly you can see th
 <br>
 
 
-## [Ordering the assembly against a reference chromosome](ordering-the-assembly-against-a-reference-chromosome)
+## [Ordering the assembly against a reference chromosome](#ordering-the-assembly-against-a-reference-chromosome)
 
 At the Wellcome Sanger Institute a tool called `abacas` (Assefa _et al_., 2009) was developed to order contigs against a reference sequence. Any spaces between the contigs (gaps) can be filled in with “N” characters to ‘pad’ the sequence with equivalent sized regions to those on the reference that may be missing in the assembly. The result is called a pseudo-molecule. This can be loaded into `act` along with the reference sequence and then be analyzed.
 
