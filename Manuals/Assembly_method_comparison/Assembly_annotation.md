@@ -232,7 +232,7 @@ In the command below we:
 
 
 ```
-ariba prepareref -f out.resfinder.fa –m out.resfinder.tsv out.resfinder.prepareref 
+ariba prepareref -f out.resfinder.fa -m out.resfinder.tsv out.resfinder.prepareref 
 ```
 
 <br>
