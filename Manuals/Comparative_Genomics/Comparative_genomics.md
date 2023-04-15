@@ -194,12 +194,6 @@ You can optimise your image by either removing ‘low scoring’ (or percentage 
 ![act view 6](act_6.png)
 
 
-
-
-![act view 7](act_7.png)
-
-
-
 <br>
 
 
@@ -207,7 +201,12 @@ You can optimise your image by either removing ‘low scoring’ (or percentage 
 # [Things to try out in `act`](#things-to-try-out-in-act)
 <br>
 
-	Load into the top sequence (S.typhi) a ‘.tab’ file  called `laterally.tab`. You will need to use the *File* menu and select the correct genome sequence (*S.typhi.dna*) before you can read in an entry. 
+Load into the top sequence (S.typhi) a ‘.tab’ file  called `laterally.tab`. You will need to use the *File* menu and select the correct genome sequence (*S.typhi.dna*) before you can read in an entry. 
+
+
+![act view 7](act_7.png)
+
+
 
 If you are zoomed out and looking at the whole of both genomes you should see the above. 
 
