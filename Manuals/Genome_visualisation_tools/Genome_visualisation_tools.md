@@ -129,7 +129,7 @@ The Navigator panel is fairly intuitive so open it up and give it a try.
 
 3- Use `Goto Feature With This Qualifier value` to search the contents of all qualifiers for a particular term. For example, using the word "pseudogene" will take you to the next feature with the word "pseudogene" in any of its qualifiers. Note how repeated clicking of the `Goto` button takes you to the following pseudogene in the order that they occur on the chromosome.
 
-4- Look at Appendix VI which is a functional classification scheme used for the annotation of S. Typhi. Each CDS has a class qualifier best describing its function. Use the `Goto Feature With This Qualifier value` search to look for CDSs belonging to a class of interest by searching with the appropriate class values.
+4- Look at Appendix I (https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/Genome_visualisation_tools/Appendix1_ProcaryoteClassification) which is a functional classification scheme used for the annotation of S. Typhi. Each CDS has a class qualifier best describing its function. Use the `Goto Feature With This Qualifier value` search to look for CDSs belonging to a class of interest by searching with the appropriate class values.
 
 5- tRNA genes. Type "tRNA" in the `Goto Feature With This Key`.
 
