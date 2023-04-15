@@ -142,9 +142,6 @@ You should now have a window like this so lets see what is there.
 **5**. Right button click in the Comparison View panel brings up this important `act`-specific menu which we will use later. 
 
 
-
-![act view 2](act_2.png)
-
 <br>
 
 
@@ -154,6 +151,9 @@ You should now have a window like this so lets see what is there.
 
 
 In this first exercise we are going to explore the basic features of `act`. Using the `act` session you have just opened we firstly are going to zoom outwards until we can see the entire _S_. Typhi chromosome compared against the _E. coli_ K12 chromosome. As for the `artemis` exercises we should turn off the stop codons to clear the view and speed up the process of zooming out.
+
+
+![act view 2](act_2.png)
 
 
 The only difference between `act` and `artemis` when applying changes to the sequence views is that in `act` you must click the right mouse button over the specific sequence that you wish to change, as shown above.
