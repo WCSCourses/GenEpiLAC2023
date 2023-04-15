@@ -13,8 +13,8 @@
 - Module 3, Comparative Genomics (lecture only)
 - [Module 4](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/Mapping_and_Phylogenetics/Mapping%2BPhylo.md), Mapping and Phylogenetics
 - [Module 5](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/Assembly_method_comparison/Assembly_annotation.md), Genome Assembly and Annotation
-  - [Assembly Method Comparison](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/Assembly_method_comparison/Assembly_method_comparison.md) 
-- Module 6, World Cafe
+- [Module 6] [Assembly Method Comparison](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/Assembly_method_comparison/Assembly_method_comparison.md) 
+- World Cafe
 - [Module 7](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/Web_tools_for_genomic_epidemiology/manual.md), Web tools for genomic epidemiology
 - Module 8, Group Task
 
