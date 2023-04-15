@@ -1,8 +1,7 @@
-<Appendix VI: Prokaryotic Protein Classification Scheme used within the PSU>
+#Appendix VI: Prokaryotic Protein Classification Scheme used within the PSU
 
 
-This scheme was adapted for in-house use from the Monica Riley’s protein classification
-(http://genprotec.mbl.edu/files/Multifun.html).
+This scheme was adapted for in-house use from the [Monica Riley’s protein classification](http://genprotec.mbl.edu/files/Multifun.html).
 
 More classes can be added depending on the microorganism that is being annotated (e.g secondary metabolites, sigma factors (ECF or non-ECF), etc).
 
