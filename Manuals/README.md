@@ -17,4 +17,5 @@
 - World Cafe
 - [Module 7](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/Web_tools_for_genomic_epidemiology/manual.md), Web tools for genomic epidemiology
 - Module 8, Group Task
+- [Appendices](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/Genome_visualisation_tools/Appendix_Artemis_2023.pdf)
 
