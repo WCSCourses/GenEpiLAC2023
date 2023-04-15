@@ -258,7 +258,9 @@ gzip ARIMSS995-11_*.fastq
 Going back to FastqQC, we can launch the graphical interface by simply executing ``fastqc`` on the Terminal command line. However, it is often more convenient to use the software in the command-line mode. Execute the following command in the Terminal:
 
     fastqc *.fastq.gz
-    
+
+--- Comment: instead of compressing the files again with gzip, you could also include in the fastqc command, both kind of files (zipped and unzipped) by using the command "fastqc *.fastq*") ---
+
 > With this command we will be running fastqc in all the files that have the `.fastq.gz` extension. Nonetheless we will be focusing only in samples ARIMSS995-11 and untrimmed.
 
 You will see some messages like this on your screen:
