@@ -8,12 +8,13 @@
 <br>
 
 # Table of contents <!-- omit in toc -->
-- [Module Overview and Aims](#module-overview-and-aims)
 - [Introduction](#introduction)
 - [Aims](#aims)
+- [Finding the data](#finding-the-data)
 - [Starting up the `act` software](#starting-up-the-ACT-software)
-- 
-
+- [The basics of `act`](#the-basics-of-act)
+- [Exercise](#exercise) 
+- [Things to try out in `act`](#things-to-try-out-in-act)
 <br> 
 
 
@@ -42,8 +43,10 @@ More details on `act` can be found here: http://sanger-pathogens.github.io/Artem
 
 <br>
 
-## Finding the data 
+# [Finding the data](#finding-the-data)
 Navigate to the `Module_5_Comparative_Genomics` directory
+
+<br>
 
 ```
 cd Module_5_Comparative_Genomics
