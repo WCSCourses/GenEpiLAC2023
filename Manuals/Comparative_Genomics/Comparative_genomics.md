@@ -4,7 +4,7 @@
 
 # Comparative genomics - Paraguay 2023 <!-- omit in toc -->
 
-### Module Leads: Matt Holden <!-- omit in toc -->
+### Module Lead: Matt Holden <!-- omit in toc -->
 <br>
 
 # Table of contents <!-- omit in toc -->
