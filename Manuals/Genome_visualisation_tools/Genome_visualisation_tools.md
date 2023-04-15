@@ -139,8 +139,7 @@ The Navigator panel is fairly intuitive so open it up and give it a try.
 
 **What are Keys and Qualifiers?** See [Appendix IV](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/Genome_visualisation_tools/Appendix_Artemis_2023.pdf)
 
-Clearly there are many more features of Artemis which we will not have time to explain in detail. Before getting on with this next section it might be worth browsing
-the menus. Hopefully you will find most of them easy to understand.
+Clearly there are many more features of Artemis which we will not have time to explain in detail. Before getting on with this next section it might be worth browsing the menus. Hopefully you will find most of them easy to understand.
 
 ## [Artemis exercise 2](#artemis-exercise-2)
 
@@ -160,12 +159,10 @@ Click on the `View` menu and you will see various options for viewing the bases 
 
 **Plots/Graphs**
 
-Feature plots can be displayed by selecting a CDS feature then clicking `View > Feature Plots`. The window which appears shows plots predicting hydrophobicity,
-hydrophilicity and coiled-coil regions for the protein product of the selected CDS.
+Feature plots can be displayed by selecting a CDS feature then clicking `View > Feature Plots`. The window which appears shows plots predicting hydrophobicity, hydrophilicity and coiled-coil regions for the protein product of the selected CDS.
 
 **Load additional files**
-You should be able to see the results from Prosite searches, run on the translation of each CDS, as pale-green boxes on the grey DNA lines. The results from the Pfam
-protein motif searches are not yet shown, but can be viewed by loading the appropriate file. Click on `File > Read an Entry` and select the file PF.tab. Each Pfam match will appear as a coloured blue feature in the main display panel on the grey DNA lines. To see the details click the feature then click `View > Selection` or click `Edit > Selected Features in Editor`. Please ask if you are unsure about Prosite and Pfam.
+You should be able to see the results from Prosite searches, run on the translation of each CDS, as pale-green boxes on the grey DNA lines. The results from the Pfam protein motif searches are not yet shown, but can be viewed by loading the appropriate file. Click on `File > Read an Entry` and select the file PF.tab. Each Pfam match will appear as a coloured blue feature in the main display panel on the grey DNA lines. To see the details click the feature then click `View > Selection` or click `Edit > Selected Features in Editor`. Please ask if you are unsure about Prosite and Pfam.
 
 Further information on specific Prosite or Pfam entries can be found on the web at: http://ca.expasy.org/prosite and http://xfam.org/
 
@@ -215,8 +212,7 @@ look at several of these regions in more detail. Starting with the whole genome 
 
 We will now zoom back into the genome to look in more detail at the first of these two peaks. Using the left mouse button, highlight the anomalous region of the graph - this will also highlight the region in the main display. You can then use the right mouse button menu in the main display to `Zoom to selection` - you may need to zoom out from there. Remember that in order to see the CDS features lying within this region you will need to turn the annotation (S_typhi.tab) entry back on.
 
-The region you should be looking at is shown below and is a classical example of a *Salmonella* pathogenicity island (SPI). The definitions of what constitutes a
-pathogenicity island are quite diverse. However, below is a list of characteristics which are commonly seen within these regions, as described by Hacker et al., 1997.
+The region you should be looking at is shown below and is a classical example of a *Salmonella* pathogenicity island (SPI). The definitions of what constitutes a pathogenicity island are quite diverse. However, below is a list of characteristics which are commonly seen within these regions, as described by Hacker et al., 1997.
 
 1. Often inserted alongside stable RNAs
 
@@ -251,12 +247,9 @@ A new Artemis window will appear displaying only the region that you highlighted
 
 ![Artemis17](https://user-images.githubusercontent.com/65819144/231489908-12de90c2-48f5-456e-87d9-45e32754f16c.png)
 
-Note that the two entries on the grey "Entry" line are now denoted "no name". They represent the same information in the same order as the original Artemis window but
-simply have no assigned "Entry" names. As the sub-sequence is now viewed in a new Artemis session, this prevents the original files (S_typhi.dna and S_typhi.tab) from
-being over-written.
+Note that the two entries on the grey "Entry" line are now denoted "no name". They represent the same information in the same order as the original Artemis window but simply have no assigned "Entry" names. As the sub-sequence is now viewed in a new Artemis session, this prevents the original files (S_typhi.dna and S_typhi.tab) from being over-written.
 
-We will save the new files with relevant names to avoid confusion. So click on `File > Save An Entry As > New File`. Another menu will ask you to choose one of the entries listed. At this point they will both be called "no name". Left click on the top entry in the list. A window will appear asking you to give this file
-a name. Save this file as spi7.dna
+We will save the new files with relevant names to avoid confusion. So click on `File > Save An Entry As > New File`. Another menu will ask you to choose one of the entries listed. At this point they will both be called "no name". Left click on the top entry in the list. A window will appear asking you to give this file a name. Save this file as spi7.dna
 
 Do the same again for the second unnamed entry and save it as spi7.tab
 
@@ -312,4 +305,4 @@ Now open the EMBL format file that you have just created in Artemis.
 You will see that the colours of the features have now changed. This is because not all the qualifiers in the previous entry are accepted by the EMBL database, so some have not been saved in this format. This includes the "/colour" qualifier, so Artemis displays the features with default colours.
 
 When you download sequence files from EMBL and visualize them in Artemis you will notice that they are displayed using default colours. You can customize your own
-annotation files with the "/colour" qualifier and chosen number (Appendix VII), to differentiate features. To do this you can use the Feature Selector to select certain features and annotate them all using the "Edit", "Change Qualifiers of Selected" function.
+annotation files with the "/colour" qualifier and chosen number [Appendix VII]](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/Genome_visualisation_tools/Appendix_Artemis_2023.pdf), to differentiate features. To do this you can use the Feature Selector to select certain features and annotate them all using the "Edit", "Change Qualifiers of Selected" function.
