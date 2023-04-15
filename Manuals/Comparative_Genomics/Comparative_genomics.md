@@ -15,6 +15,7 @@
 - [The basics of `act`](#the-basics-of-act)
 - [Exercise](#exercise) 
 - [Things to try out in `act`](#things-to-try-out-in-act)
+- [More things to try out in `act`](#more-things-to-try-out-in-act)
 <br> 
 
 
