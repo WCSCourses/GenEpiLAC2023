@@ -16,6 +16,7 @@
 - [Exercise](#exercise) 
 - [Things to try out in `act`](#things-to-try-out-in-act)
 - [More things to try out in `act`](#more-things-to-try-out-in-act)
+- [Bonus Exercise](#bonus-exercise)
 <br> 
 
 
@@ -235,7 +236,9 @@ It is apparent that there is a backbone sequence shared with _E. coli_ K12, plus
 
 <br>
 
-# [Bonus Exercise](#bonus-exercise)
+# [Bonus Exercise](#bonus-exercise)
+
+<br> 
 
 In the the `Module_5_Comparative_Genomics` directory there is an additional directory that contains a bonus exercise. This exercise compares of the chromosomal structures of the Gram-positive pathogen, _Streptococcus pyogenes_ (also known as Group A _Streptococcus_, which is often abbreviated to GAS).
 
@@ -312,7 +315,9 @@ Use the *File manager* to drag and drop files into the `act' file window:
 
 
 
+
 ![act start up 1](act_start_1.png)
+
 
 
 
