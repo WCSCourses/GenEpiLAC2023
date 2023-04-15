@@ -38,7 +38,7 @@ More details on `act` can be found here: http://sanger-pathogens.github.io/Artem
 <br>
 
 * Become familiar with the basic functions of `act`
-* Explore a comparison of the chromosomes of _E. coli_ and _S. enterica_ serotype Typhi
+* Explore a comparison of the chromosomes of _Escherichia coli_ and _Salmonella enterica_ serotype Typhi
 
 
 <br>
