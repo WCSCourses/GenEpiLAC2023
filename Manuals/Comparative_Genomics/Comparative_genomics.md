@@ -235,3 +235,103 @@ It is apparent that there is a backbone sequence shared with _E. coli_ K12, plus
 
 <br>
 
+# [Bonus Exercise](#bonus-exercise)
+
+In the the `Module_5_Comparative_Genomics` directory there is an additional directory that contains a bonus exercise. This exercise compares of the chromosomal structures of the Gram-positive pathogen, _Streptococcus pyogenes_ (also known as Group A _Streptococcus_, which is often abbreviated to GAS).
+
+Move into the GAS_ACT directory by typing:
+
+```
+cd GAS_ACT
+```
+
+If you type `ls` you will be able to see the contents of the directory:
+
+
+![terminal view GAS](terminal_GAS.png)
+
+
+In the folder you will see a pdf file of a publication describing the genome of an _emm_ type 5 isolate of GAS, Manfredo (`Holden _et al_., 2007 https://journals.asm.org/doi/10.1128/JB.01227-06). In the publication the chromosome of Manfredo is compared to the chromosomes of 4 other GAS isolates (MGAS315, SSI-1, MGAS10394 and MGAS8232) and displayed in figure generated from `act` (Figure 2).
+
+
+
+![Manfredo ACT](manfredo_ACT.png)
+
+
+
+Also in the folder are files that can be loaded up in `act` to recreate the figure and explore further. 
+
+
+The files are: 
+
+- Chromosomal sequence and annotation files in embl format:
+  - Manfredo.embl
+  - MGAS315.embl
+  - SSI-1.embl
+  - MGAS10394.embl
+  - MGAS8232.embl
+- Prophage regions of the chromosomes in embl format:
+  - Manfredo_phage.tab
+  - MGAS315_phage.tab
+  - SSI-1_phage.tab
+  - MGAS10394_phage.tab
+  - MGAS8232_phage.tab
+- Pairwise `blastn` comparison files:
+  - MGAS315_vs_SSI-1.crunch
+  - SSI-1_vs_Manfredo.crunch
+  - Manfredo_vs_MGAS10394.crunch
+  - MGAS10394_vs_MGAS8232.crunch
+
+
+
+<br>
+
+If you have the `act` open from the previous exercise close it.
+
+
+Start `act` as before from the terminal window by typing ‘act &’
+
+
+Click *File* then *Open*
+
+
+You will then need to click the *more files* buttons 3 times to expand the number of sequence and comparison boxes in the `act` file window.
+
+
+Use the *File manager* to drag and drop files into the `act' file window:
+
+* Drag `MGAS315.embl` into the *Sequence file 1* box
+* Drag `MGAS315_vs_SSI-1.crunch` into the *Comparison file 1* box
+* Drag `SSI-1` into the *Sequence file 2* box
+* Drag `SSI-1_vs_Manfredo.crunch` into the *Comparison file 2* box
+* Drag `Manfredo.embl` into the *Sequence file 3* box
+* Drag `Manfredo_vs_MGAS10394.crunch` into the *Comparison file 3* box
+* Drag `MGAS10394.embl` into the *Sequence file 4* box
+* Drag `MGAS10394_vs_MGAS8232.crunch` into the *Comparison file 4* box
+* Drag `MGAS8232.embl` into the *Sequence file 5* box
+
+
+
+![act start up 1](act_start_1.png)
+
+
+
+Once you have filled all the boxes, click the *Apply* button.
+
+
+Once `act` has opened you can start customising the view and files loaded and explore the sequence and comparisons.
+
+Things to do:
+
+* Load up the prophage annotation files into the respective entries (*Remember, you will need to use the *File* menu and select the correct genome sequence before you can read in an entry*) 
+
+* Filter the blast matches in the comparison window to reduce the number and amount of matches displayed (*Remember, you can filter on blast match size or score or percent ID)
+
+* Zoom in and out to see the conservation of chromosome structure and regions of difference
+
+* Compare the prophage regions across the GAS isolates (To see these clearly you may need to deselect the embl entry under each individual entry.
+
+* Enjoy
+
+
+<br>
