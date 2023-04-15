@@ -255,7 +255,7 @@ Do the same again for the second unnamed entry and save it as spi7.tab
 
 ![Artemis18](https://user-images.githubusercontent.com/65819144/231491957-b4f46cac-9aeb-45a6-a8d1-ba2b6e821045.png)
 
-We are going to look at this region in more detail and to attempt to define the limits of the bacteriophage that lies within this region. Luckily for us all the phage-related genes within this region have been given a colour code number 12 (pink; for a list of the other numerical values that Artemis will display as colours for features see Appendix VII). We are going to use this information to select all the relevant phage genes using the Feature selector as shown below and then define the limits of the bacteriophage.
+We are going to look at this region in more detail and to attempt to define the limits of the bacteriophage that lies within this region. Luckily for us all the phage-related genes within this region have been given a colour code number 12 (pink; for a list of the other numerical values that Artemis will display as colours for features see [Appendix VII](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/Genome_visualisation_tools/Appendix_Artemis_2023.pdf). We are going to use this information to select all the relevant phage genes using the Feature selector as shown below and then define the limits of the bacteriophage.
 
 First we need to create a new entry (click `Create > New Entry`). Another entry will appear on the entry line called, you guessed it, "no name". We will eventually copy all our phage-related genes into here.
 
