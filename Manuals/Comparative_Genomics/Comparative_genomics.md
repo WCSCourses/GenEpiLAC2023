@@ -112,7 +112,7 @@ Alternatively you could select the files from the *Choose* option in the `act' f
 Once you have filled all the boxes, click the *Apply* button.
 
 
-![act start up 1](act_start_1.png)
+![act start up 2](act_start_2.png)
 
 <br>
 
