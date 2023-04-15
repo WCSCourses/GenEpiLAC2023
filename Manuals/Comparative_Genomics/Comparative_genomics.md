@@ -217,8 +217,8 @@ It is apparent that there is a backbone sequence shared with _E. coli_ K12, plus
 
 <br>
 
+# [More things to try out in `act`](#more-things-to-try-out-in-act)
 
-# [More things to try out in `act`](#more-things-to-try-out-in-act)
 <br>
 
 - Double click red boxes to centralise them.
