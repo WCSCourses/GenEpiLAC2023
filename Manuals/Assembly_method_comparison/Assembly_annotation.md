@@ -70,7 +70,7 @@ Having longer reads, that extend through some of the repeat regions that limit t
 
 <br>
 
-A popular approach to generate complete genomes has been to utilize the accuracy of short-read sequencing data and combine it with the long-range information of long-read sequencing data, in a hybrid assembly approach. This requires sequence data for an isolate to be sequenced using the two different sequencing technologies and then assembled using assembler program that is designed to handle the difference types of data and compare them to find overlaps to stitch the sequences together, accurately predict the sequence in the assembly.
+A popular approach to generate complete genomes has been to utilize the accuracy of short-read sequencing data and combine it with the long-range information of long-read sequencing data, in a hybrid assembly approach. This requires sequence data for an isolate to be sequenced using the two different sequencing technologies. This can then be assembled using assembler programs that are designed to handle the difference types of data and compare them to find overlaps to stitch the sequences together and accurately predict the sequence in the assembly.
 
 ## [What assemblies are best?](#what-assemblies-are-best?)
 
