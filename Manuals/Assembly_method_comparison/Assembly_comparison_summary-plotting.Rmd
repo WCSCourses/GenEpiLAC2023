@@ -51,7 +51,7 @@ Paraguay_assembly.stats %>%
   theme_bw() + theme(legend.position = 'none') + 
   theme.text.size + 
   labs(y="Method", x="# Contigs", title="# Contigs for each method")
-ggsave(paste0("Assembly.Methods.by.Contig.count.png"), units='mm', width=100, height=70, device='png', dpi=300)
+ggsave(paste0("Assembly.Methods.by.Contig.count.png"), units='mm', width=120, height=70, device='png', dpi=300)
 
 
 Paraguay_assembly.stats %>%
@@ -62,7 +62,7 @@ Paraguay_assembly.stats %>%
   theme_bw() + theme(legend.position = 'none') + 
   theme.text.size +
   labs(y="Method", x="N50", title="N50 for each method")
-ggsave(paste0("Assembly.Methods.by.N50.png"), units='mm', width=100, height=70, device='png', dpi=300)
+ggsave(paste0("Assembly.Methods.by.N50.png"), units='mm', width=120, height=70, device='png', dpi=300)
 
 Paraguay_assembly.stats %>%
   arrange(desc(`# misassemblies`)) %>%
@@ -72,7 +72,7 @@ Paraguay_assembly.stats %>%
   theme_bw() + theme(legend.position = 'none') + 
   theme.text.size +
   labs(y="Method", x="# Misassemblies", title="# Misassemblies for each method")
-ggsave(paste0("Assembly.Methods.by.Missassembly.count.png"), units='mm', width=100, height=70, device='png', dpi=300)
+ggsave(paste0("Assembly.Methods.by.Missassembly.count.png"), units='mm', width=120, height=70, device='png', dpi=300)
 
 ```
 
