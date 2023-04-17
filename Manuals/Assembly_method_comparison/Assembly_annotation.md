@@ -1,6 +1,9 @@
 <img src="https://coursesandconferences.wellcomeconnectingscience.org/wp-content/themes/wcc_courses_and_conferences/dist/assets/svg/logo.svg" width="200" height="200">
 
 
+[<<< Go back to Manual Contents Page](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/README.md)
+
+<br>
 
 # Genome Assembly and Analysis - Paraguay 2023 <!-- omit in toc -->
 
@@ -898,6 +901,12 @@ Compare the other regions containing MGEs.
 
 
 
+
+<br>
+
+<br>
+
+[<<< Go back to Manual Contents Page](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/README.md)
 
 <br>
 

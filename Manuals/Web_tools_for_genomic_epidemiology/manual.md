@@ -1,6 +1,11 @@
 <img src="https://coursesandconferences.wellcomeconnectingscience.org/wp-content/themes/wcc_courses_and_conferences/dist/assets/svg/logo.svg" width="200" height="200">
 
 
+[<<< Go back to Manual Contents Page](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/README.md)
+
+<br>
+
+
 # Web Tools for Genomic Epidemiology - Paraguay 2023 <!-- omit in toc -->
 
 ### Module Lead: Silvia Argimon & Julio Diaz Caballero <!-- omit in toc -->
@@ -220,3 +225,13 @@ Hipster colour palettes inspired by Wes Anderson movies
 1. Complete a workflow in data-flo (remove 1 or 2 adapters from current workflow)
 2. Create a microreact project using a csv and a tree (which can be downloaded from the Microreact project they created)
 3. Create a microreact project from a Google Spreadsheet
+
+
+<br>
+
+<br>
+
+
+[<<< Go back to Manual Contents Page](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/README.md)
+
+<br>

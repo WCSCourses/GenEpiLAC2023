@@ -1,5 +1,10 @@
 <img src="https://coursesandconferences.wellcomeconnectingscience.org/wp-content/themes/wcc_courses_and_conferences/dist/assets/svg/logo.svg" width="200" height="200">
 
+
+[<<< Go back to Manual Contents Page](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/README.md)
+
+<br>
+
 # Sequencing&QC - Paraguay 2023 <!-- omit in toc -->
 
 ## Table of contents <!-- omit in toc -->
@@ -388,3 +393,13 @@ In the folder with reports, run:
 See summarized report in a browser:
 
     firefox multiqc_report.html &
+
+
+<br>
+
+<br>
+
+
+[<<< Go back to Manual Contents Page](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/README.md)
+
+<br>

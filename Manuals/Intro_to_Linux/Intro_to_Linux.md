@@ -1,5 +1,10 @@
 <img src="https://coursesandconferences.wellcomeconnectingscience.org/wp-content/themes/wcc_courses_and_conferences/dist/assets/svg/logo.svg" width="200" height="200">
 
+
+[<<< Go back to Manual Contents Page](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/README.md)
+
+<br>
+
 # Introduction to Linux - Paraguay 2023 <!-- omit in toc -->
 
 ## Table of contents <!-- omit in toc -->
@@ -276,3 +281,9 @@ Command line shortcuts
 11. ............. command is used to count the total number of lines, words and characters in a file. 
 12. Which command would you use to know the location of your current working directory?
 
+<br>
+
+
+[<<< Go back to Manual Contents Page](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/README.md)
+
+<br>

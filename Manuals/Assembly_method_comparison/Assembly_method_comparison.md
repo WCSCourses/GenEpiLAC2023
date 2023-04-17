@@ -1,6 +1,11 @@
 <img src="https://coursesandconferences.wellcomeconnectingscience.org/wp-content/themes/wcc_courses_and_conferences/dist/assets/svg/logo.svg" width="200" height="200">
 
 
+
+[<<< Go back to Manual Contents Page](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/README.md)
+
+<br>
+
 # Assembly Method Comparisons - Paraguay 2023 <!-- omit in toc -->
 
 ### Module Leads: Matt Holden & Mat Beale <!-- omit in toc -->
@@ -325,3 +330,10 @@ Add your assembly metrics to the google sheet at https://docs.google.com/spreads
 
 ![assembly.googlesheet](assembly-metrics.googlesheet.png)
 
+
+<br>
+
+
+[<<< Go back to Manual Contents Page](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/README.md)
+
+<br>

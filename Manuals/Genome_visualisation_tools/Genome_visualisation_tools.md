@@ -1,5 +1,10 @@
 <img src="https://coursesandconferences.wellcomeconnectingscience.org/wp-content/themes/wcc_courses_and_conferences/dist/assets/svg/logo.svg" width="200" height="200">
 
+
+[<<< Go back to Manual Contents Page](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/README.md)
+
+<br>
+
 # Genome Visualisation tools - Paraguay 2023 <!-- omit in toc -->
 
 ## Table of contents <!-- omit in toc -->
@@ -306,3 +311,10 @@ You will see that the colours of the features have now changed. This is because 
 
 When you download sequence files from EMBL and visualize them in Artemis you will notice that they are displayed using default colours. You can customize your own
 annotation files with the "/colour" qualifier and chosen number [Appendix VII](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/Genome_visualisation_tools/Appendix_Artemis_2023.pdf), to differentiate features. To do this you can use the Feature Selector to select certain features and annotate them all using the "Edit", "Change Qualifiers of Selected" function.
+
+
+<br>
+
+[<<< Go back to Manual Contents Page](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/README.md)
+
+<br>
