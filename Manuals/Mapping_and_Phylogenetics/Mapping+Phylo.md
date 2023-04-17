@@ -523,7 +523,7 @@ Note: the `-c` option tells the program to use 4 CPUs. Note: the `-p` option tel
 This command can take a few minutes to run.
 
 ```
-run_gubbins -c 4 -p gubbins clean.full.aln
+run_gubbins.py -c 4 -p gubbins clean.full.aln
 ```
 
 ![run_gubbins_hanging](gubbins-run-hanging-screen.png)
@@ -628,7 +628,7 @@ In the command below, we:
 run_fastbaps -i gubbins.filtered_polymorphic_sites.fasta -o fastbaps.clusters --levels 2
 ```
 
-We can view the output using `head`
+We can view the output using `head` or `cat`
 
 ![fastbaps.command](run-fastbaps.png)
 
@@ -641,7 +641,7 @@ Now that we have clusters, let’s see how they look against the phylogenetic tr
 First, we'll need to make the `csv` file with our clusters compatible with `microreact`. We need to change the header of the first column from `Isolates` to `ID`. We'll use some simple code on the command line to do this:
 
 ```
-sed s/Isolates/ID/ fastbaps.clusters.csv > fastbaps.clusters.fixid.csv
+sed s/Isolates/ID/ fastbaps.clusters > fastbaps.clusters.fixid.csv
 
 head fastbaps.clusters.fixid.csv
 ```
