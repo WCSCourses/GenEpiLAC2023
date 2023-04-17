@@ -191,7 +191,7 @@ ARIMSS995-11_1.fastq.gz
 ARIMSS995-11_2.fastq.gz
 ```
 
-As we saw in the introduction, this is the format we will get from the Illumina sequencer. To have a better look at their structure, we will uncompressed them:
+As we saw in the introduction, this is the format we will get from the Illumina sequencer. To have a better look at their structure, we will uncompress them:
 ```
 gzip -d ARIMSS995-11_1.fastq.gz
 ```
