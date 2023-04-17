@@ -1,0 +1,78 @@
+---
+title: "R Notebook - Assembly metrics "
+output: html_notebook
+---
+
+
+```{r}
+#install.packages('googlesheets4')
+library(googlesheets4)
+library(tidyverse)
+library(ggstance)
+library(ggbeeswarm)
+
+# make some helpful shortcuts
+x.theme.axis.rotate <- theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+
+standard.textsize <- 10
+text.size.within <- (5/14)*(standard.textsize-4)
+panel.lab.size <- 10
+
+theme.text.size <- theme(text = element_text(size = standard.textsize))
+
+```
+
+
+/ 
+Import googlesheet 
+```{r}
+Paraguay_assembly.stats <- read_sheet("https://docs.google.com/spreadsheets/d/14HD7J1yyjgJAATjsHBSMbVS16jMsDYbaGWazVfjqRBc/edit?usp=sharing", sheet="Instructor_Testing")
+
+#Paraguay_assembly.stats <- read_sheet("https://docs.google.com/spreadsheets/d/14HD7J1yyjgJAATjsHBSMbVS16jMsDYbaGWazVfjqRBc/edit?usp=sharing", sheet="Student_Results")
+
+Paraguay_assembly.stats
+```
+\
+Create a variable 'method_full' that summarises the methods used
+```{r}
+Paraguay_assembly.stats <- Paraguay_assembly.stats %>%
+  mutate(method_full=paste0(`Assembler (Unicycler/Dragonflye)`, "__", `Assembly Type (short/long/hybrid)`, "__", `Number of long reads (if used)`))
+
+```
+
+\
+Do some basic plotting
+```{r}
+Paraguay_assembly.stats %>%
+  arrange(desc(`# contigs`)) %>%
+  mutate(method_full=factor(method_full, levels=unique(method_full))) %>%
+  ggplot(aes(y=method_full, x=`# contigs`, color=`Assembly Type (short/long/hybrid)`)) +
+  geom_quasirandom(width=0.4, alpha=0.75, groupOnX=F) +
+  theme_bw() + theme(legend.position = 'none') + 
+  theme.text.size + 
+  labs(y="Method", x="# Contigs", title="# Contigs for each method")
+ggsave(paste0("Assembly.Methods.by.Contig.count.png"), units='mm', width=150, height=100, device='png', dpi=400)
+
+
+Paraguay_assembly.stats %>%
+  arrange((`N50`)) %>%
+  mutate(method_full=factor(method_full, levels=unique(method_full))) %>%
+  ggplot(aes(y=method_full, x=`N50`, color=`Assembly Type (short/long/hybrid)`)) +
+  geom_quasirandom(width=0.4, alpha=0.75, groupOnX=F) +
+  theme_bw() + theme(legend.position = 'none') + 
+  theme.text.size +
+  labs(y="Method", x="N50", title="N50 for each method")
+ggsave(paste0("Assembly.Methods.by.N50.png"), units='mm', width=150, height=100, device='png', dpi=400)
+
+Paraguay_assembly.stats %>%
+  arrange(desc(`# misassemblies`)) %>%
+  mutate(method_full=factor(method_full, levels=unique(method_full))) %>%
+  ggplot(aes(y=method_full, x=`# misassemblies`, color=`Assembly Type (short/long/hybrid)`)) +
+  geom_quasirandom(width=0.4, alpha=0.75, groupOnX=F) +
+  theme_bw() + theme(legend.position = 'none') + 
+  theme.text.size +
+  labs(y="Method", x="# Misassemblies", title="# Misassemblies for each method")
+ggsave(paste0("Assembly.Methods.by.Missassembly.count.png"), units='mm', width=150, height=100, device='png', dpi=400)
+
+```
+
