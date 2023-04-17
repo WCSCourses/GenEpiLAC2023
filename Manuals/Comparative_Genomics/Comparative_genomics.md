@@ -21,7 +21,7 @@
 
 
 # [Introduction](#introduction)
-<br.
+<br>
 
 The `artemis` Comparison Tool (`act`) was designed to extract the additional information that can only be gained by comparing the growing number of sequences from closely related organisms (Carver _et al_., 2005). `act` is based on `artemis`, and so you will already be familiar with many of its core functions, and is essentially composed of three layers or windows. 
 
