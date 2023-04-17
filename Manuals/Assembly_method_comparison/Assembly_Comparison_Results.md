@@ -25,3 +25,18 @@
 ![Assembly.Methods.by.Missassembly.count](Assembly.Methods.by.Missassembly.count.png)
 
 
+<br>
+
+
+<br>
+
+
+<br>
+
+
+![Assembly.Type.by.N50](Assembly.Type.by.N50.png)
+
+<br>
+
+![Assembly.Type.+.readinput.by.N50](Assembly.Type.+.readinput.by.N50.png)
+

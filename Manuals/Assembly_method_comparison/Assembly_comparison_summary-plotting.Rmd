@@ -76,3 +76,29 @@ ggsave(paste0("Assembly.Methods.by.Missassembly.count.png"), units='mm', width=1
 
 ```
 
+\
+Do some more analyses by technique
+```{r}
+Paraguay_assembly.stats %>%
+  arrange((`N50`)) %>%
+  mutate(method_full=factor(`Assembly Type (short/long/hybrid)`, levels=unique(`Assembly Type (short/long/hybrid)`))) %>%
+  ggplot(aes(y=method_full, x=`N50`, color=`Assembler (Unicycler/Dragonflye)`)) +
+  geom_quasirandom(width=0.4, alpha=0.75, groupOnX=F) +
+  theme_bw() + theme(legend.position = 'bottom') + 
+  theme.text.size +
+  labs(y="Assembly Type", x="N50", title="N50 for each Assembly Type")
+ggsave(paste0("Assembly.Type.by.N50.png"), units='mm', width=120, height=60, device='png', dpi=300)
+
+
+Paraguay_assembly.stats %>%
+  arrange((`N50`)) %>%
+  mutate(method_full=factor(`Assembly Type (short/long/hybrid)`, levels=unique(`Assembly Type (short/long/hybrid)`))) %>%
+  ggplot(aes(y=method_full, x=`N50`, color=factor(`Number of long reads (if used)`))) +
+  geom_quasirandom(width=0.4, alpha=0.75, groupOnX=F) +
+  theme_bw() + theme(legend.position = 'bottom') + 
+  theme.text.size + 
+  facet_grid(`Assembler (Unicycler/Dragonflye)`~.) +
+  labs(y="Assembly Type", x="N50", title="N50 for each Assembly Type", color="# Long Reads")
+ggsave(paste0("Assembly.Type.+.readinput.by.N50.png"), units='mm', width=120, height=90, device='png', dpi=300)
+```
+
