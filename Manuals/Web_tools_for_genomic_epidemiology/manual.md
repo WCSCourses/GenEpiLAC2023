@@ -135,7 +135,17 @@ This will open a copy of this workflow in your dataflo account.
 
 <br>
 
-On a different browser tab, get your microreact `API access token` at **[https://microreact.org/my-account/settings](https://microreact.org/my-account/settings)** (you must already have created your microreact account). Edit the workflow to include your own microreact `API access token`.
+**On a different browser tab**, get your microreact `API access token` at **[https://microreact.org/my-account/settings](https://microreact.org/my-account/settings)** (you must already have created your microreact account).
+
+![](miroreact_token.png)
+
+<br>
+
+Edit the workflow to include your own microreact `API access token`.
+
+1. Click on `*acess token` in the `Create microreact project` box
+2. From the options on the right, select `Bind to value`
+3. Paste your `API access token` in the `VALUE` box
 
 ![](dataflo_key.png)
 
@@ -177,7 +187,7 @@ Open the Microreact link in the output from data-flo. It should look something l
 
 <br>
 
-Now change the colour column to “Hospital”. Click to the eye icon at the top left of the page. Change `Colour Column` to the appropriate value.
+Now change the colour column to “Hospital”. Click on the eye icon at the top left of the page. Select "Hospital from the `Colour Column` dropdown list.
 
 ![](microreact_colour.png)
 
@@ -193,6 +203,36 @@ Answer the following questions:
 
 > 1. What do the markers on the map represent?
 > 2. Which hospital reported the index (first) case? Tip: Click on the earliest sample on the timeline.
+
+Change the colour column to “Source”. Click on the eye icon at the top left of the page. Then select "Source" from the `Colour Column` dropdown list.
+
+![](microreact_source.png)
+
+<br>
+
+> 3. Can you confirm that the source of the outbreak is the contaminated water from Ñu Guasú Park?
+> 4. Why is it useful to include genomes from a previous outbreak in the analysis? Is the current outbreak related to the past outbreak from Jan-Feb 2020?
+
+Microreact assigns colours automatically to every column in your metadata table, but you can customise them. Let's change the colour column to “Household”. Click on the eye icon at the top left of the page. Then select "Household" from the `Colour Column` dropdown list.
+
+![](microreact_household.png)
+
+<br>
+
+Now Select "Categorical" from the `Colour Palette` option. Next Select "qualitative" from the `Palette type` dropdown list and "10" from the `Number of colours` dropdown list. Finally, select the second option from the list of palettes.
+
+![](microreact_palette.png)
+
+<br>
+
+Change the colour column back to “Hospital” and add the columns “Source” and “Household” as metadata blocks. For this, select the slider icon from top right of the map panel, then, click on the `Metadata blocks` button. Finally, select "Source" and "Household" from the list of options.  
+
+![](microreact_metadata_blocks.png)
+
+<br>
+
+> 5. Do any of the cases share a household? Taking into account the incubation period for cholera (a few hours to five days), does the data support intra-household transmission?
+
 
 # Resources
 
