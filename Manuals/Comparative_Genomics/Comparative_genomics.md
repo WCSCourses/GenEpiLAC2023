@@ -99,7 +99,7 @@ In the folder the files you will need for this exercise are:
 <br>
 
 
-Start `act` from the terminal window by typing ‘act &’
+Start `act` from the terminal window by typing `act &`
 
 
 Click *File* then *Open*
@@ -108,7 +108,7 @@ Click *File* then *Open*
 ![act start up 1](act_start_1.png)
 
 
-Use the *File manager* to drag and drop files into the `act' file window:
+Use the *File manager* to drag and drop files into the `act` file window:
 
 * Drag `EcK12.dna` into the *Sequence file 1* box
 * Drag `S_typhi.dna_vs_EcK12.dna.crunch` into the *Comparison file 1* box
