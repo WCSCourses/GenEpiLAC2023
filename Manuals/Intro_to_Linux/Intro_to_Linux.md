@@ -287,3 +287,7 @@ Command line shortcuts
 [<<< Go back to Manual Contents Page](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/README.md)
 
 <br>
+
+[>>> Go to Sequencing QC](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/Sequencing%26QC/Sequencing%26QC.md)
+
+<br>

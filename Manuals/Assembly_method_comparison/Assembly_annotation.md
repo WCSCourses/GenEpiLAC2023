@@ -906,6 +906,8 @@ Compare the other regions containing MGEs.
 
 <br>
 
+[>>> Go to Assembly Method Comparison Exercise](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/Assembly_method_comparison/Assembly_method_comparison.md)
+
 [<<< Go back to Manual Contents Page](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/README.md)
 
 <br>

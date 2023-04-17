@@ -403,3 +403,7 @@ See summarized report in a browser:
 [<<< Go back to Manual Contents Page](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/README.md)
 
 <br>
+
+[>>> Go to Genome visualisation tools](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/Genome_visualisation_tools/Genome_visualisation_tools.md)
+
+<br>

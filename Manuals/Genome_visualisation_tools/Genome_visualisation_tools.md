@@ -318,3 +318,5 @@ annotation files with the "/colour" qualifier and chosen number [Appendix VII](h
 [<<< Go back to Manual Contents Page](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/README.md)
 
 <br>
+
+[>>> Go to Artemis Appendices](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/Genome_visualisation_tools/Appendix_Artemis_2023.pdf)
