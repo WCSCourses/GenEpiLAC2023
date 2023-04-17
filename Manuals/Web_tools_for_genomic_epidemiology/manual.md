@@ -1,11 +1,6 @@
 <img src="https://coursesandconferences.wellcomeconnectingscience.org/wp-content/themes/wcc_courses_and_conferences/dist/assets/svg/logo.svg" width="200" height="200">
 
 
-[<<< Go back to Manual Contents Page](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/README.md)
-
-<br>
-
-
 # Web Tools for Genomic Epidemiology - Paraguay 2023 <!-- omit in toc -->
 
 ### Module Lead: Silvia Argimon & Julio Diaz Caballero <!-- omit in toc -->
@@ -99,9 +94,6 @@ Answer the following questions:
 > 1. What is the most common type of water source?
 > 2. Was it possible to collect a sample from all 13 sources? If not, what were the reasons?
 
-Data can be downloaded from the Epicollect5 project on the web. To download the data from this project, go to the **[epicollect link provided above](https://five.epicollect.net/project/asuncion-2023-cholera-outbreak)**, and select `VIEW DATA`. Thenz click on `Download` and select your format of choice.
-
-![](epicollect_download.png)
 
 ## 2. Merge data with Data-flo
 `https://data-flo.io/`
@@ -131,15 +123,33 @@ Open the data-flo workflow (**[https://data-flo.io/run?prnvpvmKzq8rDKbPD9ZXAs](h
 
 <br>
 
-Copy the workflow to your account.
+Copy the workflow to your own dataflo account.
+
+![](dataflo_copy.png)
+
+<br>
+
+This will open a copy of this workflow in your dataflo account.
 
 ![](dataflo_workflow.png)
 
 <br>
 
-Get your microreact `API access token` at **[https://microreact.org/my-account/settings](https://microreact.org/my-account/settings)** (you must already have created your microreact account). Edit the workflow to include your own microreact `API access token`.
+On a different browser tab, get your microreact `API access token` at **[https://microreact.org/my-account/settings](https://microreact.org/my-account/settings)** (you must already have created your microreact account). Edit the workflow to include your own microreact `API access token`.
 
 ![](dataflo_key.png)
+
+<br>
+
+Save your newly edited dataflo project by clicking on the `save` icon.
+
+![](dataflo_save.png)
+
+<br>
+
+Now lets go to the implementation page by clicking on the `ℹ` icon.
+
+![](dataflo_implementation.png)
 
 <br>
 
@@ -226,12 +236,6 @@ Hipster colour palettes inspired by Wes Anderson movies
 2. Create a microreact project using a csv and a tree (which can be downloaded from the Microreact project they created)
 3. Create a microreact project from a Google Spreadsheet
 
+4. Data can be downloaded from the Epicollect5 project on the web. To download the data from this project, go to the **[epicollect link provided above](https://five.epicollect.net/project/asuncion-2023-cholera-outbreak)**, and select `VIEW DATA`. Then click on `Download` and select your format of choice.
 
-<br>
-
-<br>
-
-
-[<<< Go back to Manual Contents Page](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/README.md)
-
-<br>
+![](epicollect_download.png)

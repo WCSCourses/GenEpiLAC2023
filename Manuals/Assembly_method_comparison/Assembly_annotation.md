@@ -827,9 +827,9 @@ In this region near at the right hand side of the assembly, we have the non-mapp
 
 Up until now we have compared the 16B assembly to only one other ST1 _S. aureus_ strain, MSSA476. We are now going introduce another strain to the comparison, MW2, and start looking at the genetic differences between the isolates that may impact on their biology. Although MW2 was isolated in a different country (USA), many thousands of miles away from 16B and MSSA476 (both UK), it still belongs to the same clone, and probably share a common ancestor tens rather than hundreds of years ago. A clinically important phenotypic difference between these isolates are their antibiotic resistances:
 
-- 16B – penicillin*R*, fusidic acid*R*, methicillin*R*, erythromycin*R*
-- MSSA476 – penicillin*R*, fusidic acid*R*
-- MW2 – penicillin*R*, methicillin*R*
+- 16B – penicillin<sup>R</sup>, fusidic acid<sup>R</sup>, methicillin<sup>R</sup>, erythromycin<sup>R</sup>
+- MSSA476 – penicillin<sup>R</sup>, fusidic acid<sup>R</sup>
+- MW2 – penicillin<sup>R</sup>, methicillin<sup>R</sup>
 
 As you will hopefully have just discovered, it is possible to use genome sequence data to find the genes responsible for antibiotic resistance. Examining the genetic context of these genes helps us to understand the mechanism that are driving the evolution of resistance in these _S. aureus_ isolates. In this next part of the Module you are going use the comparisons with MW2 and MSSA476 to identify regions of difference regions that distinguish the isolates, and explain the differences in the antibiotic resistance phenotypes.
 
