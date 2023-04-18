@@ -63,7 +63,7 @@ Add the project **Asuncion 2023 Cholera Outbreak** by typing into the search box
 
 <br>
 
-Using the map of the Ñu Guasú park provided, walk to the location of your collection point (water source). Locations are indicated by the red dots labelled a-j. You will not need internet access to collect data in the field.
+Using the map of the Ñu Guasú park provided, walk to the location of your collection point (water source). Locations are indicated by the black dots labelled a-j. You will not need internet access to collect data in the field.
 
 ![](location_map.png)
 
@@ -311,7 +311,7 @@ g. Your view will look like this:
 
 ![](microreact_bonus_view.png)
 
-h. You can add a Timeline by clicking on the `pencil` icon at the top left of the creen, and clicking on `Create New Timeline`
+h. You can add a Timeline by clicking on the `pencil` icon at the top left of the screen, and clicking on `Create New Timeline`
 
 ![](microreact_pencil_icon.png)
 
