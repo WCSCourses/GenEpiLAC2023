@@ -273,6 +273,7 @@ Hipster colour palettes inspired by Wes Anderson movies
 ## Bonus activities
 
 1. Download data from the Epicollect5 project on the web.
+
   a. Go to the **[epicollect link provided above](https://five.epicollect.net/project/asuncion-2023-cholera-outbreak)**.
   b. Select `VIEW DATA`.
 
@@ -284,6 +285,7 @@ Hipster colour palettes inspired by Wes Anderson movies
 
 2. Complete a workflow in data-flo (remove 1 or 2 adapters from current workflow)
 3. Create a microreact project using a metadata in csv format and a phylogenetic tree.
+
   a. Click on the menu icon at the top left of the screen
 
   ![](microreact_menu_icon.png)
