@@ -189,6 +189,13 @@ dragonflye --cpus 4 --ram 8 --reads S_aureus_JKD6159_ONT_R10.4_guppy_v6.1.7__fil
 
 <br>
 
+After using `dragonflye` in the conda environment, we need to deactivate the environment to be able to use other tools again 
+
+```
+conda deactivate
+```
+
+<br>
 
 
 ## Hybrid assembly (Dragonflye)
@@ -227,6 +234,14 @@ dragonflye --cpus 4 --ram 8 --reads S_aureus_JKD6159_ONT_R10.4_guppy_v6.1.7__fil
 ```
 
 ![dragonflye.hybrid.running](Dragonflye-hybrid.running.png)
+
+<br>
+
+After using `dragonflye` in the conda environment, we need to deactivate the environment to be able to use other tools again 
+
+```
+conda deactivate
+```
 
 <br>
 
