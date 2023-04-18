@@ -510,7 +510,7 @@ Click `continue` to view the tree
 We can use `gubbins` to infer recombining sites by looking for increased SNP density that occurs in specific ancestral nodes
 
 ```
-run_gubbins -h
+run_gubbins.py -h
 ```
 
 ![gubbins.1](gubbins-help.png)
