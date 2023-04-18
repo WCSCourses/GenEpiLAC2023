@@ -366,3 +366,7 @@ h. Select the plus icon at the bottom right, and click on `Add URLs`
 i. Paste the url from step *f* and select `Data (CSV or TSV)` under `File kind`. Finally click on `CONTINUE` to see your microreact.
 
 ![](bonus_add_files.png)
+
+j. You should get a screen like this!
+
+![](bonus_final_mr.png)
