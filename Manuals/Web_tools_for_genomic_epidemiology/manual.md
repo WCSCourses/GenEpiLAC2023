@@ -157,7 +157,7 @@ Save your newly edited dataflo project by clicking on the `save` icon.
 
 <br>
 
-Now lets go to the implementation page by clicking on the `ℹ` icon.
+Now lets go to the implementation page by clicking on the `i` icon.
 
 ![](dataflo_implementation.png)
 
@@ -272,10 +272,41 @@ Hipster colour palettes inspired by Wes Anderson movies
 
 ## Bonus activities
 
-1. Complete a workflow in data-flo (remove 1 or 2 adapters from current workflow)
-2. Create a microreact project using a csv and a tree (which can be downloaded from the Microreact project they created)
-3. Create a microreact project from a Google Spreadsheet
+1. Download data from the Epicollect5 project on the web.
+  a. Go to the **[epicollect link provided above](https://five.epicollect.net/project/asuncion-2023-cholera-outbreak)**.
+  b. Select `VIEW DATA`.
 
-4. Data can be downloaded from the Epicollect5 project on the web. To download the data from this project, go to the **[epicollect link provided above](https://five.epicollect.net/project/asuncion-2023-cholera-outbreak)**, and select `VIEW DATA`. Then click on `Download` and select your format of choice.
+  ![](epicollect_view_data.png)
 
-![](epicollect_download.png)
+  c. Click on `Download` and select your format of choice.
+
+  ![](epicollect_download.png)
+
+2. Complete a workflow in data-flo (remove 1 or 2 adapters from current workflow)
+3. Create a microreact project using a metadata in csv format and a phylogenetic tree.
+  a. Click on the menu icon at the top left of the screen
+
+  ![](microreact_menu_icon.png)
+
+  b. Click on `Upload`
+
+  ![](microreact_upload_option.png)
+
+  c. Click on the `+` symbol at the bottom right of the screen.
+
+  ![](microreact_plus_icon.png)
+
+  d. Select `Browse Files`
+
+  ![](microreact_browse_files.png)
+
+  e. Choose the files `tree.nwk` and `epi_data.csv`, and click on the `Open` button.
+  f. Click on `Continue` in the next prompts.
+  f. Your view will look like this:
+
+  ![](microreact_bonus_view.png)
+
+  g. You can add a Timeline by selecting
+
+
+4. Create a microreact project from a Google Spreadsheet
