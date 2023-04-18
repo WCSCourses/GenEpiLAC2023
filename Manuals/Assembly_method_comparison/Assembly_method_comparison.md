@@ -159,7 +159,7 @@ unicycler -t 4 -1 S_aureus_JKD6159_Illumina.ds500000-reads_1.fastq.gz -2 S_aureu
 To get `dragonflye` running in the virtual machine, it has been installed using a tool called `mamba` (similar to `conda`). We need to 'activate' `mamba` to make `dragonflye` available:
 
 ```
-mamba activate dragonflye
+conda activate dragonflye
 ```
 
 <br>
@@ -199,7 +199,7 @@ When `Dragonflye` is supplied with both long and short reads, it performs a long
 As above, to get `dragonflye` working, we need to activate the mambo environment:
 
 ```
-mamba activate dragonflye
+conda activate dragonflye
 ```
 
 <br>
