@@ -272,56 +272,97 @@ Hipster colour palettes inspired by Wes Anderson movies
 
 ## Bonus activities
 
-1. Download data from the Epicollect5 project on the web.
+### 1. Download data from the Epicollect5 project on the web.
 
-  a. Go to the **[epicollect link provided above](https://five.epicollect.net/project/asuncion-2023-cholera-outbreak)**.
+a. Go to the **[epicollect link provided above](https://five.epicollect.net/project/asuncion-2023-cholera-outbreak)**.
 
-  b. Select `VIEW DATA`.
+b. Select `VIEW DATA`.
 
-  ![](epicollect_view_data.png)
+![](epicollect_view_data.png)
 
-  c. Click on `Download` and select your format of choice.
+c. Click on `Download` and select your format of choice.
 
   ![](epicollect_download.png)
 
-2. Complete a workflow in data-flo (remove 1 or 2 adapters from current workflow)
-3. Create a microreact project using a metadata in csv format and a phylogenetic tree.
+### 2. Create a microreact project using a metadata in csv format and a phylogenetic tree.
 
-  a. Click on the menu icon at the top left of the screen
+a. Click on the menu icon at the top left of the screen
 
-  ![](microreact_menu_icon.png)
+![](microreact_menu_icon.png)
 
-  b. Click on `Upload`
+b. Click on `Upload`
 
-  ![](microreact_upload_option.png)
+![](microreact_upload_option.png)
 
-  c. Click on the `+` symbol at the bottom right of the screen.
+c. Click on the `+` symbol at the bottom right of the screen.
 
-  ![](microreact_plus_icon.png)
+![](microreact_plus_icon.png)
 
-  d. Select `Browse Files`
+d. Select `Browse Files`
 
-  ![](microreact_browse_files.png)
+![](microreact_browse_files.png)
 
-  e. Choose the files `tree.nwk` and `epi_data.csv`, and click on the `Open` button (These files were downloaded in the [dataflo](#merge-data-with-data-flo) section).
+e. Choose the files `tree.nwk` and `epi_data.csv`, and click on the `Open` button (These files were downloaded in the [dataflo](#merge-data-with-data-flo) section).
 
-  f. Click on `Continue` in the next prompts.
+f. Click on `Continue` in the next prompts.
 
-  g. Your view will look like this:
+g. Your view will look like this:
 
-  ![](microreact_bonus_view.png)
+![](microreact_bonus_view.png)
 
-  h. You can add a Timeline by clicking on the `pencil` icon at the top left of the creen, and clicking on `Create New Timeline`
+h. You can add a Timeline by clicking on the `pencil` icon at the top left of the creen, and clicking on `Create New Timeline`
 
-  ![](microreact_pencil_icon.png)
+![](microreact_pencil_icon.png)
 
-  i. Then position the new panel by dragging the pointer to the bottom panel.
+i. Then position the new panel by dragging the pointer to the bottom panel.
 
-  ![](microreact_bottom_panel.png)
+![](microreact_bottom_panel.png)
 
-  j. Finally, select "One column: Formatted Values" from the `Temporal Data Type` dropdown list, and "Collection Date" from the `Temporal Data Column` dropdown list. Click on `CLOSE`
+j. Finally, select "One column: Formatted Values" from the `Temporal Data Type` dropdown list, and "Collection Date" from the `Temporal Data Column` dropdown list. Click on `CLOSE`
 
-  ![](microreact_temp_data_type.png)
+![](microreact_temp_data_type.png)
 
 
-4. Create a microreact project from a Google Spreadsheet
+## 3. Create a microreact project from a Google Spreadsheet
+
+a. Open this **[Google spreadsheet](https://docs.google.com/spreadsheets/d/1DN6fyhHmmkgEU0Ml7Ep_y_2l_JpQZkBfmXZzEwRs70Y/edit?usp=sharing)**
+
+![](bonus_original_spreadsheet.png)
+
+b. Make a copy of this in your own Google account by selecting `Make a copy` from the `File` menu item. When prompted, click on `Make a copy`. This will open a separate tab where the copy will be available.
+
+![](bonus_make_copy.png)
+
+![](bonus_copy.png)
+
+c. Set access to shareable by clicking on the `Share` button at the top right of the screen. A dialogue screen will popoup, here, click on the `Restricted` button, select `Anyone with the link`, and click on `Done`
+
+![](bonus_share.png)
+
+d. Now to publish the google spreadsheet click on the `File` menu item, select `Share`, and click on `Publish on web`
+
+![](bonus_publish.png)
+
+e. In the popup message click on `Web page`, and select `Comma-separated values (.csv)`. Also, make sure the `Automatically republish when changes are made` option is turned on under the `Published content and settings` section
+
+![](bonus_csv.png)
+
+![](bonus_auto_publish.png)
+
+f. Confirm your choices in the popup message clicking on `OK`. This will provide more details about your Google spreadsheet, copy the url.
+
+![](bonus_publish_sure.png)
+
+![](bonus_link.png)
+
+g. Go to **[microreact.org](https://microreact.org)**, and select `Upload` from the main menu.
+
+![](bonus_upload.png)
+
+h. Select the plus icon at the bottom right, and click on `Add URLs`
+
+![](bonus_add_url.png)
+
+i. Paste the url from step *f* and select `Data (CSV or TSV)` under `File kind`. Finally click on `CONTINUE` to see your microreact.
+
+![](bonus_add_files.png)
