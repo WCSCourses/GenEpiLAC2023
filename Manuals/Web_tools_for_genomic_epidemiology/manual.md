@@ -32,9 +32,9 @@ The **[Centre for Genomic Pathogen Surveillance](https://www.pathogensurveillanc
 # Introduction
 Aim:  To use web and mobile tools for the collection of epi data in the field, its integration with lab and bioinformatics data, and to finally visualise it together to detect a putative outbreak.
 
-*Note: This exercise is a work of fiction. Any resemblance to a real cholera outbreak is purely coincidental.*
+*Note: This exercise is a work of fiction. Any resemblance to a real outbreak is purely coincidental.*
 
-During January and February 2023, fifty-eight patients reported to eight hospitals in Asunción with acute watery diarrhoea and vomiting. *Vibrio cholerae* was isolated from the stool samples of fourty patients (all belong to serotype Inaba), and one colony from each confirmed case was sequenced on Illumina MiSeq. An epidemiological investigation revealed that more than half of the culture-confirmed cases regularly visited the Ñu Guazú Park, where water fountains and other water sources are accessible, and which is crossed by the Arroyo Itay. This suggested that the outbreak could be caused by contaminated water in the park. The epidemiological and demographic data is summarised on the file epi_data.csv.
+During January and February 2023, fifty-eight patients reported to eight hospitals in Asunción with acute watery diarrhoea and vomiting. *Shigella sonnei* was isolated from the stool samples of fourty patients (all belong to CTX-M-27 producing S. sonnei ST152), and one colony from each confirmed case was sequenced on Illumina MiSeq. An epidemiological investigation revealed that more than half of the culture-confirmed cases regularly visited the Ñu Guazú Park, where water fountains and other water sources are accessible, and which is crossed by the Arroyo Itay. This suggested that the outbreak could be caused by contaminated water in the park. The epidemiological and demographic data is summarised on the file epi_data.csv.
 
 A team of disease detectives will be deployed around Ñu Guazú Park today to investigate the potential source of the outbreak using Epicollect5, data-flo, and Microreact, free mobile and web applications developed by the Centre for Genomic Pathogen Surveillance for easy data collection, integration and visualisation.
 
@@ -57,7 +57,7 @@ Open the **Epicollect5** app on your mobile phone.
 
 <br>
 
-Add the project **Asuncion 2023 Cholera Outbreak** by typing into the search box --you will need to be connected to WiFi.
+Add the project **Asuncion 2023 S sonnei Outbreak** by typing into the search box --you will need to be connected to WiFi.
 
 ![](epicollect_search.jpeg)
 
@@ -70,7 +70,7 @@ Using the map of the Ñu Guasú park provided, walk to the location of your coll
 
 <br>
 
-Open the **Asuncion 2023 Cholera Outbreak** project and add an entry. Follow the form to collect a water sample and associated metadata.
+Open the **Asuncion 2023 S sonnei Outbreak** project and add an entry. Follow the form to collect a water sample and associated metadata.
 
 ![](epicollect_add_entry.jpeg)
 
@@ -88,7 +88,7 @@ One of the pair members only. **Upload your entry (and image)** to the Epicollec
 
 Submit your water sample to the instructor, which will be sent to the reference lab for culture confirmation.
 
-Once all entries are uploaded by the disease detectives we will take a look at the data together on **[https://five.epicollect.net/project/asuncion-2023-cholera-outbreak](https://five.epicollect.net/project/asuncion-2023-cholera-outbreak)**
+Once all entries are uploaded by the disease detectives we will take a look at the data together on **[https://five.epicollect.net/project/asuncion-2023-s-sonnei-outbreak](https://five.epicollect.net/project/asuncion-2023-s-sonnei-outbreak)**
 
 Answer the following questions:
 
@@ -101,7 +101,7 @@ Answer the following questions:
 
 *Note: you need to sign-up for data-flo and Microreact. See instructions in the [Resources](#resources) section. Creating your own account will allow you to manage and edit your projects.*
 
-The reference lab has sent you the culture results on an Excel file called [`lab_results.xlsx`](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Modules/Web_tools_for_genomic_epidemiology/lab_results.xlsx). The lab reported that **2 out of 13** water samples from Ñu Guasú park were positive for *Vibrio cholerae*. **This immediately prompted the closure of the 2 water sources.**
+The reference lab has sent you the culture results on an Excel file called [`lab_results.xlsx`](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Modules/Web_tools_for_genomic_epidemiology/lab_results.xlsx). The lab reported that **2 out of 13** water samples from Ñu Guasú park were positive for *S. sonnei*. **This immediately prompted the closure of the 2 water sources.**
 
 > Does this confirm that the source of the outbreak was contaminated water from Ñu Guasú park?
 
@@ -164,7 +164,7 @@ Now lets go to the implementation page by clicking on the `i` icon.
 
 <br>
 
-To run the workflow paste the url of the Epicollect5 project (**[https://five.epicollect.net/project/asuncion-2023-cholera-outbreak](https://five.epicollect.net/project/asuncion-2023-cholera-outbreak)**) and upload the files.
+To run the workflow paste the url of the Epicollect5 project (**[https://five.epicollect.net/project/asuncion-2023-s-sonnei-outbreak](https://five.epicollect.net/project/asuncion-2023-s-sonnei-outbreak)**) and upload the files.
 
 ![](dataflo_run.png)
 
@@ -232,7 +232,7 @@ Change the colour column back to “Hospital” and add the columns “Source”
 
 <br>
 
-> 5. Do any of the cases share a household? Taking into account the incubation period for cholera (a few hours to five days), does the data support intra-household transmission?
+> 5. Do any of the cases share a household? Taking into account the incubation period for S. sonnei (a few hours to five days), does the data support intra-household transmission?
 
 
 # Resources
@@ -275,7 +275,7 @@ Hipster colour palettes inspired by Wes Anderson movies
 
 ### 1. Download data from the Epicollect5 project on the web.
 
-a. Go to the **[epicollect link provided above](https://five.epicollect.net/project/asuncion-2023-cholera-outbreak)**.
+a. Go to the **[epicollect link provided above](https://five.epicollect.net/project/asuncion-2023-s-sonnei-outbreak)**.
 
 b. Select `VIEW DATA`.
 
