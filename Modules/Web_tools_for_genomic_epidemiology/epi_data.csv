@@ -1,41 +1,41 @@
-﻿id,City,Hospital,Collection Date,Serotype,Source,Sex,Age,Household
-CNRVC170168,Asunción,"Centro Medico San Agustin, asuncion, paraguay",12/02/2023,Inaba,Clinical,M,25,NA
-CNRVC170170,Asunción,"hospital materno infantil loma pyta, asuncion, paraguay",28/01/2023,Inaba,Clinical,M,38,2
-CNRVC170173,Asunción,"Hospital Universitario Universidad Catolica asuncion, paraguay",11/01/2023,Inaba,Clinical,F,19,NA
-CNRVC170174,Asunción,"hospital materno infantil loma pyta, asuncion, paraguay",17/02/2023,Inaba,Clinical,M,16,2
-CNRVC170175,Asunción,"Hospital San Jorge, asuncion, paraguay",15/02/2023,Inaba,Clinical,M,21,NA
-CNRVC170176,Asunción,"Centro Medico San Agustin, asuncion, paraguay",03/01/2023,Inaba,Clinical,F,33,NA
-CNRVC170177,Asunción,Hospital Materno Infantil Santisima Trinidad,24/02/2022,Inaba,Clinical,F,20,NA
-CNRVC170178,Asunción,Hospital Materno Infantil Santisima Trinidad,04/01/2022,Inaba,Clinical,M,19,NA
-CNRVC170179,Asunción,Hospital Materno Infantil Santisima Trinidad,13/02/2022,Inaba,Clinical,M,26,NA
-CNRVC170180,Asunción,Hospital Materno Infantil Santisima Trinidad,05/02/2022,Inaba,Clinical,M,35,NA
-CNRVC170182,Asunción,"Hospital Universitario Universidad Catolica asuncion, paraguay",14/01/2023,Inaba,Clinical,F,21,NA
-CNRVC170183,Asunción,Sanatorio Britanico,20/01/2023,Inaba,Clinical,M,20,NA
-CNRVC170184,Asunción,"hospital materno infantil loma pyta, asuncion, paraguay",06/02/2023,Inaba,Clinical,F,45,NA
-CNRVC170185,Asunción,"Sanatorio Americano, asuncion, paraguay",04/02/2023,Inaba,Clinical,M,3,3
-CNRVC170186,Asunción,Hospital Materno Infantil Santisima Trinidad,14/01/2023,Inaba,Clinical,F,19,NA
-CNRVC170187,Asunción,Sanatorio Britanico,16/02/2023,Inaba,Clinical,M,38,NA
-CNRVC170188,Asunción,Hospital Materno Infantil Santisima Trinidad,31/01/2023,Inaba,Clinical,M,28,3
-CNRVC170189,Asunción,Hospital Materno Infantil Santisima Trinidad,03/02/2023,Inaba,Clinical,F,27,3
-CNRVC170190,Asunción,"Sanatorio Americano, asuncion, paraguay",04/02/2023,Inaba,Clinical,F,5,3
-CNRVC170191,Asunción,"Hospital General de Luque, asuncion, paraguay",20/01/2023,Inaba,Clinical,M,25,NA
-CNRVC170192,Asunción,"Sanatorio Americano, asuncion, paraguay",04/02/2023,Inaba,Clinical,F,9,3
-CNRVC170193,Asunción,"Centro Medico San Agustin, asuncion, paraguay",19/02/2023,Inaba,Clinical,M,29,NA
-CNRVC170194,Asunción,"Hospital Universitario Universidad Catolica asuncion, paraguay",12/02/2023,Inaba,Clinical,F,49,4
-CNRVC170195,Asunción,Sanatorio Britanico,19/01/2023,Inaba,Clinical,M,30,NA
-CNRVC170196,Asunción,"Hospital General de Luque, asuncion, paraguay",18/02/2023,Inaba,Clinical,M,15,NA
-CNRVC170197,Asunción,"Centro Medico San Agustin, asuncion, paraguay",10/02/2023,Inaba,Clinical,F,47,NA
-CNRVC170198,Asunción,"hospital materno infantil loma pyta, asuncion, paraguay",31/01/2023,Inaba,Clinical,F,13,NA
-CNRVC170199,Asunción,Sanatorio Britanico,24/01/2023,Inaba,Clinical,M,21,NA
-CNRVC170200,Asunción,"Hospital General de Luque, asuncion, paraguay",07/02/2023,Inaba,Clinical,F,31,NA
-CNRVC170201,Asunción,"Centro Medico San Agustin, asuncion, paraguay",15/02/2023,Inaba,Clinical,M,19,NA
-CNRVC170202,Asunción,"hospital materno infantil loma pyta, asuncion, paraguay",30/01/2023,Inaba,Clinical,F,39,NA
-CNRVC170203,Asunción,"Hospital General de Luque, asuncion, paraguay",17/01/2023,Inaba,Clinical,M,14,NA
-CNRVC170204,Asunción,"Hospital Universitario Universidad Catolica asuncion, paraguay",22/02/2023,Inaba,Clinical,M,10,4
-CNRVC170205,Asunción,"hospital materno infantil loma pyta, asuncion, paraguay",10/02/2023,Inaba,Clinical,F,19,NA
-CNRVC170206,Asunción,"Centro Medico San Agustin, asuncion, paraguay",12/01/2022,Inaba,Clinical,F,21,NA
-CNRVC170207,Asunción,"Hospital San Jorge, asuncion, paraguay",19/01/2022,Inaba,Clinical,F,20,NA
-CNRVC170208,Asunción,"hospital materno infantil loma pyta, asuncion, paraguay",16/01/2023,Inaba,Clinical,M,24,NA
-CNRVC170240,Asunción,"Centro Medico San Agustin, asuncion, paraguay",08/01/2023,Inaba,Clinical,M,32,1
-CNRVC170241,Asunción,"Centro Medico San Agustin, asuncion, paraguay",05/01/2023,Inaba,Clinical,F,34,1
-CNRVC170242,Asunción,"Centro Medico San Agustin, asuncion, paraguay",08/01/2023,Inaba,Clinical,M,4,1
+﻿id,City,Hospital,Collection Date,ST,Source,Sex,Age,Household
+CNRVC170168,Asunción,"Centro Medico San Agustin, asuncion, paraguay",12/02/2023,152,Clinical,M,25,NA
+CNRVC170170,Asunción,"hospital materno infantil loma pyta, asuncion, paraguay",28/01/2023,152,Clinical,M,38,2
+CNRVC170173,Asunción,"Hospital Universitario Universidad Catolica asuncion, paraguay",11/01/2023,152,Clinical,F,19,NA
+CNRVC170174,Asunción,"hospital materno infantil loma pyta, asuncion, paraguay",17/02/2023,152,Clinical,M,16,2
+CNRVC170175,Asunción,"Hospital San Jorge, asuncion, paraguay",15/02/2023,152,Clinical,M,21,NA
+CNRVC170176,Asunción,"Centro Medico San Agustin, asuncion, paraguay",03/01/2023,152,Clinical,F,33,NA
+CNRVC170177,Asunción,Hospital Materno Infantil Santisima Trinidad,24/02/2022,152,Clinical,F,20,NA
+CNRVC170178,Asunción,Hospital Materno Infantil Santisima Trinidad,04/01/2022,152,Clinical,M,19,NA
+CNRVC170179,Asunción,Hospital Materno Infantil Santisima Trinidad,13/02/2022,152,Clinical,M,26,NA
+CNRVC170180,Asunción,Hospital Materno Infantil Santisima Trinidad,05/02/2022,152,Clinical,M,35,NA
+CNRVC170182,Asunción,"Hospital Universitario Universidad Catolica asuncion, paraguay",14/01/2023,152,Clinical,F,21,NA
+CNRVC170183,Asunción,Sanatorio Britanico,20/01/2023,152,Clinical,M,20,NA
+CNRVC170184,Asunción,"hospital materno infantil loma pyta, asuncion, paraguay",06/02/2023,152,Clinical,F,45,NA
+CNRVC170185,Asunción,"Sanatorio Americano, asuncion, paraguay",04/02/2023,152,Clinical,M,3,3
+CNRVC170186,Asunción,Hospital Materno Infantil Santisima Trinidad,14/01/2023,152,Clinical,F,19,NA
+CNRVC170187,Asunción,Sanatorio Britanico,16/02/2023,152,Clinical,M,38,NA
+CNRVC170188,Asunción,Hospital Materno Infantil Santisima Trinidad,31/01/2023,152,Clinical,M,28,3
+CNRVC170189,Asunción,Hospital Materno Infantil Santisima Trinidad,03/02/2023,152,Clinical,F,27,3
+CNRVC170190,Asunción,"Sanatorio Americano, asuncion, paraguay",04/02/2023,152,Clinical,F,5,3
+CNRVC170191,Asunción,"Hospital General de Luque, asuncion, paraguay",20/01/2023,152,Clinical,M,25,NA
+CNRVC170192,Asunción,"Sanatorio Americano, asuncion, paraguay",04/02/2023,152,Clinical,F,9,3
+CNRVC170193,Asunción,"Centro Medico San Agustin, asuncion, paraguay",19/02/2023,152,Clinical,M,29,NA
+CNRVC170194,Asunción,"Hospital Universitario Universidad Catolica asuncion, paraguay",12/02/2023,152,Clinical,F,49,4
+CNRVC170195,Asunción,Sanatorio Britanico,19/01/2023,152,Clinical,M,30,NA
+CNRVC170196,Asunción,"Hospital General de Luque, asuncion, paraguay",18/02/2023,152,Clinical,M,15,NA
+CNRVC170197,Asunción,"Centro Medico San Agustin, asuncion, paraguay",10/02/2023,152,Clinical,F,47,NA
+CNRVC170198,Asunción,"hospital materno infantil loma pyta, asuncion, paraguay",31/01/2023,152,Clinical,F,13,NA
+CNRVC170199,Asunción,Sanatorio Britanico,24/01/2023,152,Clinical,M,21,NA
+CNRVC170200,Asunción,"Hospital General de Luque, asuncion, paraguay",07/02/2023,152,Clinical,F,31,NA
+CNRVC170201,Asunción,"Centro Medico San Agustin, asuncion, paraguay",15/02/2023,152,Clinical,M,19,NA
+CNRVC170202,Asunción,"hospital materno infantil loma pyta, asuncion, paraguay",30/01/2023,152,Clinical,F,39,NA
+CNRVC170203,Asunción,"Hospital General de Luque, asuncion, paraguay",17/01/2023,152,Clinical,M,14,NA
+CNRVC170204,Asunción,"Hospital Universitario Universidad Catolica asuncion, paraguay",22/02/2023,152,Clinical,M,10,4
+CNRVC170205,Asunción,"hospital materno infantil loma pyta, asuncion, paraguay",10/02/2023,152,Clinical,F,19,NA
+CNRVC170206,Asunción,"Centro Medico San Agustin, asuncion, paraguay",12/01/2022,152,Clinical,F,21,NA
+CNRVC170207,Asunción,"Hospital San Jorge, asuncion, paraguay",19/01/2022,152,Clinical,F,20,NA
+CNRVC170208,Asunción,"hospital materno infantil loma pyta, asuncion, paraguay",16/01/2023,152,Clinical,M,24,NA
+CNRVC170240,Asunción,"Centro Medico San Agustin, asuncion, paraguay",08/01/2023,152,Clinical,M,32,1
+CNRVC170241,Asunción,"Centro Medico San Agustin, asuncion, paraguay",05/01/2023,152,Clinical,F,34,1
+CNRVC170242,Asunción,"Centro Medico San Agustin, asuncion, paraguay",08/01/2023,152,Clinical,M,4,1
