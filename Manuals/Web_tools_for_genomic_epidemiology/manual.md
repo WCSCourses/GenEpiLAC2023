@@ -275,6 +275,7 @@ Hipster colour palettes inspired by Wes Anderson movies
 1. Download data from the Epicollect5 project on the web.
 
   a. Go to the **[epicollect link provided above](https://five.epicollect.net/project/asuncion-2023-cholera-outbreak)**.
+
   b. Select `VIEW DATA`.
 
   ![](epicollect_view_data.png)
@@ -303,20 +304,22 @@ Hipster colour palettes inspired by Wes Anderson movies
   ![](microreact_browse_files.png)
 
   e. Choose the files `tree.nwk` and `epi_data.csv`, and click on the `Open` button (These files were downloaded in the [dataflo](#merge-data-with-data-flo) section).
+
   f. Click on `Continue` in the next prompts.
-  f. Your view will look like this:
+
+  g. Your view will look like this:
 
   ![](microreact_bonus_view.png)
 
-  g. You can add a Timeline by clicking on the `pencil` icon at the top left of the creen, and clicking on `Create New Timeline`
+  h. You can add a Timeline by clicking on the `pencil` icon at the top left of the creen, and clicking on `Create New Timeline`
 
   ![](microreact_pencil_icon.png)
 
-  h. Then position the new panel by dragging the pointer to the bottom panel.
+  i. Then position the new panel by dragging the pointer to the bottom panel.
 
   ![](microreact_bottom_panel.png)
 
-  i. Finally, select "One column: Formatted Values" from the `Temporal Data Type` dropdown list, and "Collection Date" from the `Temporal Data Column` dropdown list. Click on `CLOSE`
+  j. Finally, select "One column: Formatted Values" from the `Temporal Data Type` dropdown list, and "Collection Date" from the `Temporal Data Column` dropdown list. Click on `CLOSE`
 
   ![](microreact_temp_data_type.png)
 
