@@ -143,7 +143,7 @@ This will open a copy of this workflow in your dataflo account.
 
 Edit the workflow to include your own microreact `API access token`.
 
-1. Click on `*acess token` in the `Create microreact project` box
+1. Click on `*access token` in the `Create microreact project` box
 2. From the options on the right, select `Bind to value`
 3. Paste your `API access token` in the `VALUE` box
 
@@ -300,13 +300,23 @@ Hipster colour palettes inspired by Wes Anderson movies
 
   ![](microreact_browse_files.png)
 
-  e. Choose the files `tree.nwk` and `epi_data.csv`, and click on the `Open` button.
+  e. Choose the files `tree.nwk` and `epi_data.csv`, and click on the `Open` button (These files were downloaded in the [dataflo](#merge-data-with-data-flo) section).
   f. Click on `Continue` in the next prompts.
   f. Your view will look like this:
 
   ![](microreact_bonus_view.png)
 
-  g. You can add a Timeline by selecting
+  g. You can add a Timeline by clicking on the `pencil` icon at the top left of the creen, and clicking on `Create New Timeline`
+
+  ![](microreact_pencil_icon.png)
+
+  h. Then position the new panel by dragging the pointer to the bottom panel.
+
+  ![](microreact_bottom_panel.png)
+
+  i. Finally, select "One column: Formatted Values" from the `Temporal Data Type` dropdown list, and "Collection Date" from the `Temporal Data Column` dropdown list. Click on `CLOSE`
+
+  ![](microreact_temp_data_type.png)
 
 
 4. Create a microreact project from a Google Spreadsheet
