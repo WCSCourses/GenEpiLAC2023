@@ -37,6 +37,8 @@
 
 ![Assembly.Type.by.N50](Assembly.Type.by.N50.png)
 
+<img src=Assembly.Type.by.N50.png width="50%" height="50%">
+
 <br>
 
 ![Assembly.Type.+.readinput.by.N50](Assembly.Type.+.readinput.by.N50.png)
