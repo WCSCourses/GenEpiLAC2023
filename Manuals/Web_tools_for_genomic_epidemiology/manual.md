@@ -34,9 +34,9 @@ Aim:  To use web and mobile tools for the collection of epi data in the field, i
 
 *Note: This exercise is a work of fiction. Any resemblance to a real outbreak is purely coincidental.*
 
-During January and February 2023, fifty-eight patients reported to eight hospitals in Asunción with acute watery diarrhoea and vomiting. *Shigella sonnei* was isolated from the stool samples of fourty patients (all belong to CTX-M-27 producing *S. sonnei* ST152), and one colony from each confirmed case was sequenced on Illumina MiSeq. An epidemiological investigation revealed that more than half of the culture-confirmed cases regularly visited the Ñu Guazú Park, where water fountains and other water sources are accessible, and which is crossed by the Arroyo Itay. This suggested that the outbreak could be caused by contaminated water in the park. The epidemiological and demographic data is summarised on the file epi_data.csv.
+During January and February 2023, fifty-eight patients reported to eight hospitals in Asunción with acute watery diarrhoea and vomiting. *Shigella sonnei* was isolated from the stool samples of fourty patients (all belong to CTX-M-27 producing *S. sonnei* ST152), and one colony from each confirmed case was sequenced on Illumina MiSeq. An epidemiological investigation revealed that more than half of the culture-confirmed cases regularly visited the Ñu Guazú Park, where water fountains and other water sources are accessible, and which is crossed by the Arroyo Itay. This suggested that these infections could be related to contaminated water in the park. The epidemiological and demographic data is summarised on the file epi_data.csv.
 
-A team of disease detectives will be deployed around Ñu Guazú Park today to investigate the potential source of the outbreak using Epicollect5, data-flo, and Microreact, free mobile and web applications developed by the Centre for Genomic Pathogen Surveillance for easy data collection, integration and visualisation.
+A team of disease detectives will be deployed around Ñu Guazú Park today to investigate the potential source of these infections using Epicollect5, data-flo, and Microreact, free mobile and web applications developed by the Centre for Genomic Pathogen Surveillance for easy data collection, integration and visualisation.
 
 # Learning Outcomes
 At the end of this session the participants will be able to:
@@ -72,7 +72,7 @@ Using the map of the Ñu Guasú park provided, walk to the location of your coll
 
 Open the **Asuncion 2023 S sonnei Outbreak** project and add an entry. Follow the form to collect a water sample and associated metadata.
 
-![](epicollect_add_entry.jpg)
+![](epicollect_add_entry2.jpeg)
 
 <br>
 
