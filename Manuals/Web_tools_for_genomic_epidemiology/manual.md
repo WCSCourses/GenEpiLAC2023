@@ -132,7 +132,7 @@ Copy the workflow to your own dataflo account.
 
 This will open a copy of this workflow in your dataflo account.
 
-![](dataflo_workflow.png)
+![](dataflo_workflow.PNG)
 
 <br>
 
