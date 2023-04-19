@@ -51,12 +51,12 @@
 
 ## Results by Student
 
-<img src=Student.by.N50.png width="75%" height="50%">
+<img src=Student.by.N50.png width="70%" height="50%">
 
 
 <br>
 
-<img src=Student.by.Contig.count.png width="75%" height="50%">
+<img src=Student.by.Contig.count.png width="70%" height="50%">
 
 <br>
 
