@@ -53,7 +53,7 @@ The disease detectives will work in pairs, and will be provided with a **collect
 Make sure your phone is connected to WiFi.
 Open the **Epicollect5** app on your mobile phone.
 
-![](epicollect_logo.jpeg =250x250)
+![ mypic](epicollect_logo.jpeg){:height="100px" width="100px"}
 
 <br>
 
