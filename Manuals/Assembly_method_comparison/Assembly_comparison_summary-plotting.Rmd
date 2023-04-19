@@ -119,7 +119,7 @@ Paraguay_assembly.stats %>%
   geom_text(aes((N50+150000), `student_method`,label=`Student Name`), size=3) +
   labs(y="Student", x="N50", title="N50 for each Student")
 
-ggsave(paste0("Student.by.N50.png"), units='mm', width=120, height=150, device='png', dpi=300)
+ggsave(paste0("Student.by.N50.png"), units='mm', width=120, height=150, device='png', dpi=900)
 
 
 Paraguay_assembly.stats %>%
@@ -134,7 +134,7 @@ Paraguay_assembly.stats %>%
   geom_text(aes((`# contigs`+3), `student_method`,label=`Student Name`)) +
   labs(y="Student", x="# Contigs", title="# Contigs for each Student")
 
-ggsave(paste0("Student.by.Contig.count.png"), units='mm', width=120, height=150, device='png', dpi=300)
+ggsave(paste0("Student.by.Contig.count.png"), units='mm', width=120, height=150, device='png', dpi=900)
 
 ```
 
