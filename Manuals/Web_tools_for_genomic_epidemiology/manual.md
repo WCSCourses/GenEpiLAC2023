@@ -328,7 +328,7 @@ j. Finally, select "One column: Formatted Values" from the `Temporal Data Type` 
 
 a. Open this **[Google spreadsheet](https://docs.google.com/spreadsheets/d/1DN6fyhHmmkgEU0Ml7Ep_y_2l_JpQZkBfmXZzEwRs70Y/edit?usp=sharing)**
 
-![](bonus_original_spreadsheet.png)
+![](bonus_original_spreadsheet.PNG)
 
 b. Make a copy of this in your own Google account by selecting `Make a copy` from the `File` menu item. When prompted, click on `Make a copy`. This will open a separate tab where the copy will be available.
 
