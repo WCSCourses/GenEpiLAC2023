@@ -33,6 +33,7 @@
 
 <br>
 
+## Results by Assembler and input
 
 ![Assembly.Type.by.N50](Assembly.Type.by.N50.png)
 
@@ -40,3 +41,19 @@
 
 ![Assembly.Type.+.readinput.by.N50](Assembly.Type.+.readinput.by.N50.png)
 
+
+<br>
+
+<br>
+
+## Results by Student
+
+![Student.N50](Student.by.N50.png)
+
+<br>
+
+![Student.Contigs](Student.by.Contig.count.png)
+
+<br>
+
+<br>

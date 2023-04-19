@@ -36,7 +36,8 @@ Paraguay_assembly.stats
 Create a variable 'method_full' that summarises the methods used
 ```{r}
 Paraguay_assembly.stats <- Paraguay_assembly.stats %>%
-  mutate(method_full=paste0(`Assembler (Unicycler/Dragonflye)`, "__", `Assembly Type (short/long/hybrid)`, "__", `Number of long reads (if used)`))
+  mutate(method_full=paste0(`Assembler (Unicycler/Dragonflye)`, "__", `Assembly Type (short/long/hybrid)`, "__", `Number of long reads (if used)`)) %>%
+  mutate(student_method=paste0(`Student Name`, "_", method_full))
 
 ```
 
@@ -109,17 +110,31 @@ Plot N50 by person
 Paraguay_assembly.stats %>%
   arrange((`N50`)) %>%
   #filter(method_full=="Unicycler__hybrid__10000") %>%
-  mutate(method_full=factor(`Student Name`, levels=unique(`Student Name`))) %>%
-  ggplot(aes(y=`Student Name`, x=`N50`, fill=`Student Name`)) +
+  mutate(`student_method`=factor(`student_method`, levels=unique(`student_method`))) %>%
+  ggplot(aes(y=`student_method`, x=`N50`, fill=`Student Name`)) +
   #geom_quasirandom(width=0.4, alpha=0.75, groupOnX=F) +
   geom_barh(width=0.5, stat='identity') + 
   theme_bw() + theme(legend.position = 'none') + 
   theme.text.size + 
-  geom_text(aes((N50+150000), `Student Name`,label=`Student Name`)) +
+  geom_text(aes((N50+150000), `student_method`,label=`Student Name`), size=3) +
   labs(y="Student", x="N50", title="N50 for each Student")
 
+ggsave(paste0("Student.by.N50.png"), units='mm', width=120, height=150, device='png', dpi=300)
 
-ggsave(paste0("Student.by.N50.png"), units='mm', width=120, height=70, device='png', dpi=300)
+
+Paraguay_assembly.stats %>%
+  arrange(desc(`# contigs`)) %>%
+  #filter(method_full=="Unicycler__hybrid__10000") %>%
+  mutate(student_method=factor(`student_method`, levels=unique(`student_method`))) %>%
+  ggplot(aes(y=`student_method`, x=`# contigs`, fill=`Student Name`)) +
+  #geom_quasirandom(width=0.4, alpha=0.75, groupOnX=F) +
+  geom_barh(width=0.5, stat='identity') + 
+  theme_bw() + theme(legend.position = 'none') + 
+  theme.text.size + 
+  geom_text(aes((`# contigs`+3), `student_method`,label=`Student Name`)) +
+  labs(y="Student", x="# Contigs", title="# Contigs for each Student")
+
+ggsave(paste0("Student.by.Contig.count.png"), units='mm', width=120, height=150, device='png', dpi=300)
 
 ```
 
