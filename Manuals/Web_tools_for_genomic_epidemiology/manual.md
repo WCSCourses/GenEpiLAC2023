@@ -291,15 +291,15 @@ c. Click on `Download` and select your format of choice.
 
 a. Click on the menu icon at the top left of the screen
 
- <img src="microreact_menu_icon.png" width=50% height=50%>
+ <img src="microreact_menu_icon.png" width=30% height=30%>
 
 b. Click on `Upload`
 
- <img src="microreact_upload_option.png" width=50% height=50%>
+ <img src="microreact_upload_option.png" width=30% height=30%>
 
 c. Click on the `+` symbol at the bottom right of the screen.
 
- <img src="microreact_plus_icon.png" width=50% height=50%>
+ <img src="microreact_plus_icon.png" width=30% height=30%>
 
 d. Select `Browse Files`
 
@@ -344,7 +344,7 @@ c. Set access to shareable by clicking on the `Share` button at the top right of
 
 d. Now to publish the google spreadsheet click on the `File` menu item, select `Share`, and click on `Publish on web`
 
-<img src=bonus_publish.png" width=30% height=30%>
+<img src="bonus_publish.png" width=30% height=30%>
 
 e. In the popup message click on `Web page`, and select `Comma-separated values (.csv)`. Also, make sure the `Automatically republish when changes are made` option is turned on under the `Published content and settings` section
 
@@ -360,7 +360,7 @@ f. Confirm your choices in the popup message clicking on `OK`. This will provide
 
 g. Go to **[microreact.org](https://microreact.org)**, and select `Upload` from the main menu.
 
-<img src="bonus_upload.png" width=30% height=30%>
+<img src="bonus_upload.png" width=10% height=10%>
 
 h. Select the plus icon at the bottom right, and click on `Add URLs`
 
