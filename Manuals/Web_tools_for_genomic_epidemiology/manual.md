@@ -330,46 +330,46 @@ j. Finally, select "One column: Formatted Values" from the `Temporal Data Type` 
 
 a. Open this **[Google spreadsheet](https://docs.google.com/spreadsheets/d/1DN6fyhHmmkgEU0Ml7Ep_y_2l_JpQZkBfmXZzEwRs70Y/edit?usp=sharing)**
 
-<img src="bonus_original_spreadsheet.PNG" width=50% height=50%>
+<img src="bonus_original_spreadsheet.png" width=50% height=50%>
 
 b. Make a copy of this in your own Google account by selecting `Make a copy` from the `File` menu item. When prompted, click on `Make a copy`. This will open a separate tab where the copy will be available.
 
-<img src="bonus_make_copy.png" width=50% height=50%>
+<img src="bonus_make_copy.png" width=30% height=30%>
 
-<img src="bonus_copy.png" width=50% height=50%>
+<img src="bonus_copy.png" width=30% height=30%>
 
 c. Set access to shareable by clicking on the `Share` button at the top right of the screen. A dialogue screen will popoup, here, click on the `Restricted` button, select `Anyone with the link`, and click on `Done`
 
-<img src="bonus_share.png" width=50% height=50%>
+<img src="bonus_share.png" width=30% height=30%>
 
 d. Now to publish the google spreadsheet click on the `File` menu item, select `Share`, and click on `Publish on web`
 
-<img src=bonus_publish.png" width=50% height=50%>
+<img src=bonus_publish.png" width=30% height=30%>
 
 e. In the popup message click on `Web page`, and select `Comma-separated values (.csv)`. Also, make sure the `Automatically republish when changes are made` option is turned on under the `Published content and settings` section
 
-<img src="bonus_csv.png" width=50% height=50%>
+<img src="bonus_csv.png" width=30% height=30%>
 
-<img src="bonus_auto_publish.png" width=50% height=50%>
+<img src="bonus_auto_publish.png" width=30% height=30%>
 
 f. Confirm your choices in the popup message clicking on `OK`. This will provide more details about your Google spreadsheet, copy the url.
 
-<img src="bonus_publish_sure.png" width=50% height=50%>
+<img src="bonus_publish_sure.png" width=30% height=30%>
 
-<img src="bonus_link.png" width=50% height=50%>
+<img src="bonus_link.png" width=30% height=30%>
 
 g. Go to **[microreact.org](https://microreact.org)**, and select `Upload` from the main menu.
 
-<img src="bonus_upload.png" width=50% height=50%>
+<img src="bonus_upload.png" width=30% height=30%>
 
 h. Select the plus icon at the bottom right, and click on `Add URLs`
 
-<img src="bonus_add_url.png" width=50% height=50%>
+<img src="bonus_add_url.png" width=30% height=30%>
 
 i. Paste the url from step *f* and select `Data (CSV or TSV)` under `File kind`. Finally click on `CONTINUE` to see your microreact.
 
-<img src="bonus_add_files.png" width=50% height=50%>
+<img src="bonus_add_files.png" width=30% height=30%>
 
 j. You should get a screen like this!
 
-<img src=bonus_final_mr.png" width=50% height=50%>
+<img src="bonus_final_mr.png" width=30% height=30%>
