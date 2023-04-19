@@ -65,8 +65,7 @@ Add the project **Asuncion 2023 S sonnei Outbreak** by typing into the search bo
 
 Using the map of the Ñu Guasú park provided, walk to the location of your collection point (water source). Locations are indicated by the black dots labelled a-j. You will not need internet access to collect data in the field.
 
-![](location_map.png)
-
+!<img src="location_map.png" width=50% height=50%>
 
 <br>
 
