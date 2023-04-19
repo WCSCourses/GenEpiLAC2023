@@ -291,7 +291,7 @@ c. Click on `Download` and select your format of choice.
 
 a. Click on the menu icon at the top left of the screen
 
- <img src="microreact_menu_icon.png" width=20% height=20%>
+ <img src="microreact_menu_icon.png" width=40% height=40%>
 
 b. Click on `Upload`
 
