@@ -279,7 +279,7 @@ a. Go to the **[epicollect link provided above](https://five.epicollect.net/proj
 
 b. Select `VIEW DATA`.
 
-![](epicollect_view_data.png)
+![](epicollect_view_data.PNG)
 
 c. Click on `Download` and select your format of choice.
 
