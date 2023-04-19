@@ -249,7 +249,7 @@ To test Epicollect5 on your phone, open the application and click on the pre-loa
 ## Sign-in to Microreact
 Head over to **[https://microreact.org/my-account](https://microreact.org/my-account)**, and sign up using your email address or any other authenticating option
 
-!<img src="microreact_signup.png" width=50% height=50%>
+!<img src="microreact_signup.png" width=30% height=30%>
 
 ## Web colours
 Web colours are used on web pages, such as the microreact.org projects, and are usually specified in hexadecimal format preceded by ​​a number sign (or hashtag sign if you were born before the Jurassic period). For example, `#FFFFFF` is the hexadecimal code (or hex code) for the colour “white”, `#000000` is the hex code for the colour “black”, and  `#FF00FF` is the hex code for the colour “magenta”. For more information on the format of the hexadecimal code see Wikipedia page **[https://en.wikipedia.org/wiki/Web_colors](https://en.wikipedia.org/wiki/Web_colors)**
@@ -291,15 +291,15 @@ c. Click on `Download` and select your format of choice.
 
 a. Click on the menu icon at the top left of the screen
 
- !<img src="(microreact_menu_icon.png" width=50% height=50%>
+ !<img src="microreact_menu_icon.png" width=50% height=50%>
 
 b. Click on `Upload`
 
- !<img src="(microreact_upload_option.png" width=50% height=50%>
+ !<img src="microreact_upload_option.png" width=50% height=50%>
 
 c. Click on the `+` symbol at the bottom right of the screen.
 
- !<img src="(microreact_plus_icon.png" width=50% height=50%>
+ !<img src="microreact_plus_icon.png" width=50% height=50%>
 
 d. Select `Browse Files`
 
@@ -344,7 +344,7 @@ c. Set access to shareable by clicking on the `Share` button at the top right of
 
 d. Now to publish the google spreadsheet click on the `File` menu item, select `Share`, and click on `Publish on web`
 
-![](bonus_publish.png" width=50% height=50%>
+!<img src=bonus_publish.png" width=50% height=50%>
 
 e. In the popup message click on `Web page`, and select `Comma-separated values (.csv)`. Also, make sure the `Automatically republish when changes are made` option is turned on under the `Published content and settings` section
 
