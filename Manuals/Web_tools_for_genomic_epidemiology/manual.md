@@ -72,7 +72,7 @@ Using the map of the Ñu Guasú park provided, walk to the location of your coll
 
 Open the **Asuncion 2023 S sonnei Outbreak** project and add an entry. Follow the form to collect a water sample and associated metadata.
 
-![](epicollect_add_entry2.jpeg)
+![](epicollect_add_entry.jpg)
 
 <br>
 
