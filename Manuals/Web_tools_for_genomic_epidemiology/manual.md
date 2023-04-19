@@ -32,7 +32,7 @@ The **[Centre for Genomic Pathogen Surveillance](https://www.pathogensurveillanc
 # Introduction
 Aim:  To use web and mobile tools for the collection of epi data in the field, its integration with lab and bioinformatics data, and to finally visualise it together to detect a putative outbreak.
 
-*Note: This exercise is a work of fiction. Any resemblance to a real outbreak is purely coincidental.*
+*Note: This exercise is a work of fiction. Any resemblance to a real life situation is purely coincidental.*
 
 During January and February 2023, fifty-eight patients reported to eight hospitals in Asunción with acute watery diarrhoea and vomiting. *Shigella sonnei* was isolated from the stool samples of fourty patients (all belong to CTX-M-27 producing *S. sonnei* ST152), and one colony from each confirmed case was sequenced on Illumina MiSeq. An epidemiological investigation revealed that more than half of the culture-confirmed cases regularly visited the Ñu Guazú Park, where water fountains and other water sources are accessible, and which is crossed by the Arroyo Itay. This suggested that these infections could be related to contaminated water in the park. The epidemiological and demographic data is summarised on the file epi_data.csv.
 
