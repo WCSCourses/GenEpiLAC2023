@@ -145,9 +145,9 @@ ls -l
 The folder contains:
 
 - three pairs of sequencing reads :
-  - `16B_1.fastq.gz`, `16B_2.fastq.gz`
-  - `MSSA476_1.fastq.gz`, `MSSA476_2.fastq.gz`
-  - `MW2_1.fastq.gz`, `MW2_2.fastq.gz`
+  - `16B_1.fastq`, `16B_2.fastq`
+  - `MSSA476_1.fastq`, `MSSA476_2.fastq`
+  - `MW2_1.fastq`, `MW2_2.fastq`
 - fasta format files for the chromosomes of MW2 and MSSA476 (`MW2.dna` and `MSSA476.dna`)
 - EMBL format files of the annotation of the chromosomes of MW2 and MSSA476 (`MW2.embl` and `MSSA476.embl`) 
 - EMBL format files of mobile genetic elements of the chromosomes of MW2 and MSSA476 (`MW2_MGEs.tab` and `MSSA476_MGEs.tab`) 
