@@ -82,7 +82,7 @@ Return to the Epidemic Intelligence Center (i.e. the classroom).
 
 One of the pair members only. **Upload your entry (and image)** to the Epicollect5 server --make sure you are connected to the WiFi.
 
-<img src="epicollect_upload_data.jpeg" width=50% height=50%>
+<img src="epicollect_upload_data.jpeg" width=30% height=30%>
 
 <br>
 
