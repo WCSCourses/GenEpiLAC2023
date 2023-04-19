@@ -131,8 +131,9 @@ Paraguay_assembly.stats %>%
   geom_barh(width=0.5, stat='identity') + 
   theme_bw() + theme(legend.position = 'none') + 
   theme.text.size + 
-  geom_text(aes((`# contigs`+10), `student_method`,label=`Student Name`), size=2.5) +
-  labs(y="Student", x="# Contigs", title="# Contigs for each Student")
+  geom_text(aes((`# contigs`+20), `student_method`,label=`Student Name`), size=2.5) +
+  labs(y="Student", x="# Contigs", title="# Contigs for each Student") +
+  coord_cartesian(xlim=c(1,500)) #+ scale_x_log10()  
 
 ggsave(paste0("Student.by.Contig.count.png"), units='mm', width=110, height=140, device='png', dpi=900)
 
