@@ -291,7 +291,7 @@ c. Click on `Download` and select your format of choice.
 
 a. Click on the menu icon at the top left of the screen
 
- <img src="microreact_menu_icon.png" width=10% height=10%>
+ <img src="microreact_menu_icon.png" width=20% height=20%>
 
 b. Click on `Upload`
 
@@ -311,7 +311,7 @@ f. Click on `Continue` in the next prompts.
 
 g. Your view will look like this:
 
-<img src="microreact_bonus_view.png" width=50% height=50%>
+<img src="microreact_bonus_view.png" width=30% height=30%>
 
 h. You can add a Timeline by clicking on the `pencil` icon at the top left of the screen, and clicking on `Create New Timeline`
 
