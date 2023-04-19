@@ -65,7 +65,7 @@ Add the project **Asuncion 2023 S sonnei Outbreak** by typing into the search bo
 
 Using the map of the Ñu Guasú park provided, walk to the location of your collection point (water source). Locations are indicated by the black dots labelled a-j. You will not need internet access to collect data in the field.
 
-!<img src="location_map.png" width=50% height=50%>
+<img src="location_map.png" width=50% height=50%>
 
 <br>
 
@@ -82,7 +82,7 @@ Return to the Epidemic Intelligence Center (i.e. the classroom).
 
 One of the pair members only. **Upload your entry (and image)** to the Epicollect5 server --make sure you are connected to the WiFi.
 
-!<img src="epicollect_upload_data.jpeg" width=50% height=50%>
+<img src="epicollect_upload_data.jpeg" width=50% height=50%>
 
 <br>
 
@@ -120,25 +120,25 @@ We will combine data from these different sources with a data-flo workflow that 
 
 Open the data-flo workflow (**[https://data-flo.io/run?prnvpvmKzq8rDKbPD9ZXAs](https://data-flo.io/run?prnvpvmKzq8rDKbPD9ZXAs)**)
 
-!<img src="dataflo_2023.png" width=50% height=50%>
+<img src="dataflo_2023.png" width=50% height=50%>
 
 <br>
 
 Copy the workflow to your own dataflo account.
 
-!<img src="dataflo_copy.png" width=50% height=50%>
+<img src="dataflo_copy.png" width=50% height=50%>
 
 <br>
 
 This will open a copy of this workflow in your dataflo account.
 
-!<img src="dataflo_workflow.PNG" width=50% height=50%>
+<img src="dataflo_workflow.PNG" width=50% height=50%>
 
 <br>
 
 **On a different browser tab**, get your microreact `API access token` at **[https://microreact.org/my-account/settings](https://microreact.org/my-account/settings)** (you must already have created your microreact account).
 
-!<img src="miroreact_token.png" width=50% height=50%>
+<img src="miroreact_token.png" width=50% height=50%>
 
 <br>
 
@@ -148,31 +148,31 @@ Edit the workflow to include your own microreact `API access token`.
 2. From the options on the right, select `Bind to value`
 3. Paste your `API access token` in the `VALUE` box
 
-!<img src="dataflo_key.png" width=50% height=50%>
+<img src="dataflo_key.png" width=50% height=50%>
 
 <br>
 
 Save your newly edited dataflo project by clicking on the `save` icon.
 
-!<img src="dataflo_save.png" width=50% height=50%>
+<img src="dataflo_save.png" width=50% height=50%>
 
 <br>
 
 Now lets go to the implementation page by clicking on the `i` icon.
 
-!<img src="dataflo_implementation.png" width=50% height=50%>
+<img src="dataflo_implementation.png" width=50% height=50%>
 
 <br>
 
 To run the workflow paste the url of the Epicollect5 project (**[https://five.epicollect.net/project/asuncion-2023-s-sonnei-outbreak](https://five.epicollect.net/project/asuncion-2023-s-sonnei-outbreak)**) and upload the files.
 
-!<img src="dataflo_run2.png" width=50% height=50%>
+<img src="dataflo_run2.png" width=50% height=50%>
 
 <br>
 
 Click on **`Run`**. The Outputs box now shows the url of a Microreact project created by data-flo.
 
-!<img src="dataflo_result.png" width=50% height=50%>
+<img src="dataflo_result.png" width=50% height=50%>
 
 Before you open the Microreact project answer the following questions:
 
@@ -184,20 +184,20 @@ Before you open the Microreact project answer the following questions:
 
 Open the Microreact link in the output from data-flo. It should look something like this:
 
-!<img src="microreact_link.png" width=50% height=50%>
+<img src="microreact_link.png" width=50% height=50%>
 
 <br>
 
 Now change the colour column to “Hospital”. Click on the eye icon at the top left of the page. Select "Hospital from the `Colour Column` dropdown list.
 
-!<img src="microreact_colour.png" width=50% height=50%>
+<img src="microreact_colour.png" width=50% height=50%>
 
 
 <br>
 
 Scale the markers on the map by clicking on the sliders icoc, then in the opening options click on `Markers`. Finally, toggle the `Scale markers` option on.
 
-!<img src="microreact_markers.png" width=50% height=50%>
+<img src="microreact_markers.png" width=50% height=50%>
 
 
 <br>
@@ -209,7 +209,7 @@ Answer the following questions:
 
 Change the colour column to “Source”. Click on the eye icon at the top left of the page. Then select "Source" from the `Colour Column` dropdown list.
 
-!<img src="microreact_source.png" width=50% height=50%>
+<img src="microreact_source.png" width=50% height=50%>
 
 <br>
 
@@ -218,19 +218,19 @@ Change the colour column to “Source”. Click on the eye icon at the top left 
 
 Microreact assigns colours automatically to every column in your metadata table, but you can customise them. Let's change the colour column to “Household”. Click on the eye icon at the top left of the page. Then select "Household" from the `Colour Column` dropdown list.
 
-!<img src="microreact_household.png" width=50% height=50%>
+<img src="microreact_household.png" width=50% height=50%>
 
 <br>
 
 Now Select "Categorical" from the `Colour Palette` option. Next Select "qualitative" from the `Palette type` dropdown list and "10" from the `Number of colours` dropdown list. Finally, select the second option from the list of palettes.
 
-!<img src="microreact_palette.png" width=50% height=50%>
+<img src="microreact_palette.png" width=50% height=50%>
 
 <br>
 
 Change the colour column back to “Hospital” and add the columns “Source” and “Household” as metadata blocks. For this, select the slider icon from top right of the map panel, then, click on the `Metadata blocks` button. Finally, select "Source" and "Household" from the list of options.  
 
-!<img src="microreact_metadata_blocks.png" width=50% height=50%>
+<img src="microreact_metadata_blocks.png" width=50% height=50%>
 
 <br>
 
@@ -291,19 +291,19 @@ c. Click on `Download` and select your format of choice.
 
 a. Click on the menu icon at the top left of the screen
 
- <img src="microreact_menu_icon.png" width=30% height=30%>
+ <img src="microreact_menu_icon.png" width=10% height=10%>
 
 b. Click on `Upload`
 
- <img src="microreact_upload_option.png" width=30% height=30%>
+ <img src="microreact_upload_option.png" width=10% height=10%>
 
 c. Click on the `+` symbol at the bottom right of the screen.
 
- <img src="microreact_plus_icon.png" width=30% height=30%>
+ <img src="microreact_plus_icon.png" width=10% height=10%>
 
 d. Select `Browse Files`
 
- <img src="microreact_browse_files.png" width=50% height=50%>
+ <img src="microreact_browse_files.png" width=20% height=20%>
 
 e. Choose the files `tree.nwk` and `epi_data.csv`, and click on the `Open` button (These files were downloaded in the [dataflo](#merge-data-with-data-flo) section).
 
