@@ -14,16 +14,18 @@
 ## Class Results
 
 
-![Assembly.Methods.by.Contig.count](Assembly.Methods.by.Contig.count.png)
+<img src=Assembly.Methods.by.Contig.count.png width="75%" height="75%">
+
 
 <br>
 
-![Assembly.Methods.by.N50](Assembly.Methods.by.N50.png)
+
+<img src=Assembly.Methods.by.N50.png width="75%" height="75%">
+
 
 <br>
 
-![Assembly.Methods.by.Missassembly.count](Assembly.Methods.by.Missassembly.count.png)
-
+<img src=Assembly.Methods.by.Missassembly.count.png width="75%" height="75%">
 
 <br>
 
@@ -35,13 +37,12 @@
 
 ## Results by Assembler and input
 
-![Assembly.Type.by.N50](Assembly.Type.by.N50.png)
-
-<img src=Assembly.Type.by.N50.png width="50%" height="50%">
+<img src=Assembly.Type.by.N50.png width="75%" height="75%">
 
 <br>
 
-![Assembly.Type.+.readinput.by.N50](Assembly.Type.+.readinput.by.N50.png)
+
+<img src=Assembly.Type.+.readinput.by.N50.png width="75%" height="75%">
 
 
 <br>
@@ -50,11 +51,12 @@
 
 ## Results by Student
 
-![Student.N50](Student.by.N50.png)
+<img src=Student.by.N50.png width="75%" height="75%">
+
 
 <br>
 
-![Student.Contigs](Student.by.Contig.count.png)
+<img src=Student.by.Contig.count.png width="75%" height="75%">
 
 <br>
 
