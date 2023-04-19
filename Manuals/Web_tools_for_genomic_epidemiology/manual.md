@@ -164,7 +164,7 @@ Now lets go to the implementation page by clicking on the `i` icon.
 
 <br>
 
-To run the workflow paste the url of the Epicollect5 project (**[https://five.epicollect.net/project/asuncion-2023-s-sonnei-outbreak](https://five.epicollect.net/project/asuncion-2023-s-sonnei-outbreak)**) and upload the files, found ([`here`](https://drive.google.com/drive/folders/1KMbks4oWsFRlB2Qt48MkZnTMLJTUB13f?usp=share_link)).
+To run the workflow paste the url of the Epicollect5 project (**[https://five.epicollect.net/project/asuncion-2023-s-sonnei-outbreak](https://five.epicollect.net/project/asuncion-2023-s-sonnei-outbreak)**) and upload the files, found [`here`](https://drive.google.com/drive/folders/1KMbks4oWsFRlB2Qt48MkZnTMLJTUB13f?usp=share_link).
 
 <img src="dataflo_run2.png" width=50% height=50%>
 
