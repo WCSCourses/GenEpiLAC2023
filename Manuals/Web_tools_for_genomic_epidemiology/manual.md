@@ -74,6 +74,9 @@ Open the **Asuncion 2023 S sonnei Outbreak** project and add an entry. Follow th
 
 ![](epicollect_add_entry.jpeg)
 
+![]<img src="epicollect_add_entry.jpeg" width=50% height=50%>
+
+
 <br>
 
 Your team will collect only one water sample, but both of you can collect the associated data on Epicollect5. However, *make sure that only one of you uploads the data later on to avoid duplications.*
