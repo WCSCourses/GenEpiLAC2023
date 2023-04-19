@@ -26,9 +26,9 @@ theme.text.size <- theme(text = element_text(size = standard.textsize))
 / 
 Import googlesheet 
 ```{r}
-Paraguay_assembly.stats <- read_sheet("https://docs.google.com/spreadsheets/d/14HD7J1yyjgJAATjsHBSMbVS16jMsDYbaGWazVfjqRBc/edit?usp=sharing", sheet="Instructor_Testing")
+#Paraguay_assembly.stats <- read_sheet("https://docs.google.com/spreadsheets/d/14HD7J1yyjgJAATjsHBSMbVS16jMsDYbaGWazVfjqRBc/edit?usp=sharing", sheet="Instructor_Testing")
 
-#Paraguay_assembly.stats <- read_sheet("https://docs.google.com/spreadsheets/d/14HD7J1yyjgJAATjsHBSMbVS16jMsDYbaGWazVfjqRBc/edit?usp=sharing", sheet="Student_Results")
+Paraguay_assembly.stats <- read_sheet("https://docs.google.com/spreadsheets/d/14HD7J1yyjgJAATjsHBSMbVS16jMsDYbaGWazVfjqRBc/edit?usp=sharing", sheet="Student_Results")
 
 Paraguay_assembly.stats
 ```
