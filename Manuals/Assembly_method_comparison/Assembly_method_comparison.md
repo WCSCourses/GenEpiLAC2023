@@ -352,6 +352,30 @@ When all results are uploaded, we will put summary plots [here](https://github.c
 
 <br>
 
+<br>
+
+## Bonus - comparing SNPs between assemblies
+### (Untested - might not work as planned)
+
+We can also compare SNPs between our new assembly and the reference using a tool called `mummer`/`nucmer`.
+
+To create a comparison between the reference genome and one of our new assemblies, first perform a rapid contig alignment using `nucmer`:
+
+```
+nucmer --prefix=dragonflye.long_vs_ref S_aureus_JKD6159.fasta S_aureus_JKD6159.dragonflye.long/contigs.fa
+```
+Then extract the snps using the `show-snps` command:
+```
+show-snps -Clr dragonflye.long_vs_ref.delta > dragonflye.long_vs_ref.snps
+```
+You can examine the SNPs identified using `less`:
+
+![nucmer.show.snps](nucmer-show-snps.less.png)
+
+<br>
+
+<br>
+
 
 [<<< Go back to Manual Contents Page](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Manuals/README.md)
 
