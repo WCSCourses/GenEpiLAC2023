@@ -116,7 +116,7 @@ Paraguay_assembly.stats %>%
   geom_barh(width=0.5, stat='identity') + 
   theme_bw() + theme(legend.position = 'none') + 
   theme.text.size + 
-  geom_text(aes((N50+150000), `student_method`,label=`Student Name`), size=3) +
+  geom_text(aes((N50+150000), `student_method`,label=`Student Name`), size=2.5) +
   labs(y="Student", x="N50", title="N50 for each Student")
 
 ggsave(paste0("Student.by.N50.png"), units='mm', width=110, height=140, device='png', dpi=900)
@@ -131,7 +131,7 @@ Paraguay_assembly.stats %>%
   geom_barh(width=0.5, stat='identity') + 
   theme_bw() + theme(legend.position = 'none') + 
   theme.text.size + 
-  geom_text(aes((`# contigs`+10), `student_method`,label=`Student Name`)) +
+  geom_text(aes((`# contigs`+10), `student_method`,label=`Student Name`), size=2.5) +
   labs(y="Student", x="# Contigs", title="# Contigs for each Student")
 
 ggsave(paste0("Student.by.Contig.count.png"), units='mm', width=110, height=140, device='png', dpi=900)
