@@ -71,7 +71,7 @@ Using the map of the Ñu Guasú park provided, walk to the location of your coll
 
 Open the **Asuncion 2023 S sonnei Outbreak** project and add an entry. Follow the form to collect a water sample and associated metadata.
 
-<img src="epicollect_add_entry.jpg" width=50% height=50%>
+<img src="epicollect_add_entry.jpg" width=40% height=40%>
 
 
 <br>
@@ -82,7 +82,7 @@ Return to the Epidemic Intelligence Center (i.e. the classroom).
 
 One of the pair members only. **Upload your entry (and image)** to the Epicollect5 server --make sure you are connected to the WiFi.
 
-![](epicollect_upload_data.jpeg)
+!<img src="epicollect_upload_data.jpeg" width=50% height=50%>
 
 <br>
 
@@ -120,25 +120,25 @@ We will combine data from these different sources with a data-flo workflow that 
 
 Open the data-flo workflow (**[https://data-flo.io/run?prnvpvmKzq8rDKbPD9ZXAs](https://data-flo.io/run?prnvpvmKzq8rDKbPD9ZXAs)**)
 
-![](dataflo_2023.png)
+!<img src="dataflo_2023.png" width=50% height=50%>
 
 <br>
 
 Copy the workflow to your own dataflo account.
 
-![](dataflo_copy.png)
+!<img src="dataflo_copy.png" width=50% height=50%>
 
 <br>
 
 This will open a copy of this workflow in your dataflo account.
 
-![](dataflo_workflow.PNG)
+!<img src="dataflo_workflow.PNG" width=50% height=50%>
 
 <br>
 
 **On a different browser tab**, get your microreact `API access token` at **[https://microreact.org/my-account/settings](https://microreact.org/my-account/settings)** (you must already have created your microreact account).
 
-![](miroreact_token.png)
+!<img src="miroreact_token.png" width=50% height=50%>
 
 <br>
 
@@ -148,31 +148,31 @@ Edit the workflow to include your own microreact `API access token`.
 2. From the options on the right, select `Bind to value`
 3. Paste your `API access token` in the `VALUE` box
 
-![](dataflo_key.png)
+!<img src="dataflo_key.png" width=50% height=50%>
 
 <br>
 
 Save your newly edited dataflo project by clicking on the `save` icon.
 
-![](dataflo_save.png)
+!<img src="dataflo_save.png" width=50% height=50%>
 
 <br>
 
 Now lets go to the implementation page by clicking on the `i` icon.
 
-![](dataflo_implementation.png)
+!<img src="dataflo_implementation.png" width=50% height=50%>
 
 <br>
 
 To run the workflow paste the url of the Epicollect5 project (**[https://five.epicollect.net/project/asuncion-2023-s-sonnei-outbreak](https://five.epicollect.net/project/asuncion-2023-s-sonnei-outbreak)**) and upload the files.
 
-![](dataflo_run2.png)
+!<img src="dataflo_run2.png" width=50% height=50%>
 
 <br>
 
 Click on **`Run`**. The Outputs box now shows the url of a Microreact project created by data-flo.
 
-![](dataflo_result.png)
+!<img src="dataflo_result.png" width=50% height=50%>
 
 Before you open the Microreact project answer the following questions:
 
@@ -184,19 +184,21 @@ Before you open the Microreact project answer the following questions:
 
 Open the Microreact link in the output from data-flo. It should look something like this:
 
-![](microreact_link.png)
+!<img src="microreact_link.png" width=50% height=50%>
 
 <br>
 
 Now change the colour column to “Hospital”. Click on the eye icon at the top left of the page. Select "Hospital from the `Colour Column` dropdown list.
 
-![](microreact_colour.png)
+!<img src="microreact_colour.png" width=50% height=50%>
+
 
 <br>
 
 Scale the markers on the map by clicking on the sliders icoc, then in the opening options click on `Markers`. Finally, toggle the `Scale markers` option on.
 
-![](microreact_markers.png)
+!<img src="microreact_markers.png" width=50% height=50%>
+
 
 <br>
 
@@ -207,7 +209,7 @@ Answer the following questions:
 
 Change the colour column to “Source”. Click on the eye icon at the top left of the page. Then select "Source" from the `Colour Column` dropdown list.
 
-![](microreact_source.png)
+!<img src="microreact_source.png" width=50% height=50%>
 
 <br>
 
@@ -216,19 +218,19 @@ Change the colour column to “Source”. Click on the eye icon at the top left 
 
 Microreact assigns colours automatically to every column in your metadata table, but you can customise them. Let's change the colour column to “Household”. Click on the eye icon at the top left of the page. Then select "Household" from the `Colour Column` dropdown list.
 
-![](microreact_household.png)
+!<img src="microreact_household.png" width=50% height=50%>
 
 <br>
 
 Now Select "Categorical" from the `Colour Palette` option. Next Select "qualitative" from the `Palette type` dropdown list and "10" from the `Number of colours` dropdown list. Finally, select the second option from the list of palettes.
 
-![](microreact_palette.png)
+!<img src="microreact_palette.png" width=50% height=50%>
 
 <br>
 
 Change the colour column back to “Hospital” and add the columns “Source” and “Household” as metadata blocks. For this, select the slider icon from top right of the map panel, then, click on the `Metadata blocks` button. Finally, select "Source" and "Household" from the list of options.  
 
-![](microreact_metadata_blocks.png)
+!<img src="microreact_metadata_blocks.png" width=50% height=50%>
 
 <br>
 
@@ -247,7 +249,7 @@ To test Epicollect5 on your phone, open the application and click on the pre-loa
 ## Sign-in to Microreact
 Head over to **[https://microreact.org/my-account](https://microreact.org/my-account)**, and sign up using your email address or any other authenticating option
 
-![](microreact_signup.png)
+!<img src="microreact_signup.png" width=50% height=50%>
 
 ## Web colours
 Web colours are used on web pages, such as the microreact.org projects, and are usually specified in hexadecimal format preceded by ​​a number sign (or hashtag sign if you were born before the Jurassic period). For example, `#FFFFFF` is the hexadecimal code (or hex code) for the colour “white”, `#000000` is the hex code for the colour “black”, and  `#FF00FF` is the hex code for the colour “magenta”. For more information on the format of the hexadecimal code see Wikipedia page **[https://en.wikipedia.org/wiki/Web_colors](https://en.wikipedia.org/wiki/Web_colors)**
@@ -279,29 +281,29 @@ a. Go to the **[epicollect link provided above](https://five.epicollect.net/proj
 
 b. Select `VIEW DATA`.
 
-![](epicollect_view_data.PNG)
+!<img src="epicollect_view_data.PNG" width=50% height=50%>
 
 c. Click on `Download` and select your format of choice.
 
-  ![](epicollect_download.png)
+ !<img src="epicollect_download.png" width=50% height=50%>
 
 ### 2. Create a microreact project using a metadata in csv format and a phylogenetic tree.
 
 a. Click on the menu icon at the top left of the screen
 
-![](microreact_menu_icon.png)
+ !<img src="(microreact_menu_icon.png" width=50% height=50%>
 
 b. Click on `Upload`
 
-![](microreact_upload_option.png)
+ !<img src="(microreact_upload_option.png" width=50% height=50%>
 
 c. Click on the `+` symbol at the bottom right of the screen.
 
-![](microreact_plus_icon.png)
+ !<img src="(microreact_plus_icon.png" width=50% height=50%>
 
 d. Select `Browse Files`
 
-![](microreact_browse_files.png)
+ !<img src="microreact_browse_files.png" width=50% height=50%>
 
 e. Choose the files `tree.nwk` and `epi_data.csv`, and click on the `Open` button (These files were downloaded in the [dataflo](#merge-data-with-data-flo) section).
 
@@ -309,64 +311,64 @@ f. Click on `Continue` in the next prompts.
 
 g. Your view will look like this:
 
-![](microreact_bonus_view.png)
+!<img src="microreact_bonus_view.png" width=50% height=50%>
 
 h. You can add a Timeline by clicking on the `pencil` icon at the top left of the screen, and clicking on `Create New Timeline`
 
-![](microreact_pencil_icon.png)
+!<img src="microreact_pencil_icon.png" width=50% height=50%>
 
 i. Then position the new panel by dragging the pointer to the bottom panel.
 
-![](microreact_bottom_panel.png)
+!<img src="microreact_bottom_panel.png" width=50% height=50%>
 
 j. Finally, select "One column: Formatted Values" from the `Temporal Data Type` dropdown list, and "Collection Date" from the `Temporal Data Column` dropdown list. Click on `CLOSE`
 
-![](microreact_temp_data_type.png)
+!<img src="microreact_temp_data_type.png" width=50% height=50%>
 
 
 ## 3. Create a microreact project from a Google Spreadsheet
 
 a. Open this **[Google spreadsheet](https://docs.google.com/spreadsheets/d/1DN6fyhHmmkgEU0Ml7Ep_y_2l_JpQZkBfmXZzEwRs70Y/edit?usp=sharing)**
 
-![](bonus_original_spreadsheet.PNG)
+!<img src="bonus_original_spreadsheet.PNG" width=50% height=50%>
 
 b. Make a copy of this in your own Google account by selecting `Make a copy` from the `File` menu item. When prompted, click on `Make a copy`. This will open a separate tab where the copy will be available.
 
-![](bonus_make_copy.png)
+!<img src="bonus_make_copy.png" width=50% height=50%>
 
-![](bonus_copy.png)
+!<img src="bonus_copy.png" width=50% height=50%>
 
 c. Set access to shareable by clicking on the `Share` button at the top right of the screen. A dialogue screen will popoup, here, click on the `Restricted` button, select `Anyone with the link`, and click on `Done`
 
-![](bonus_share.png)
+!<img src="bonus_share.png" width=50% height=50%>
 
 d. Now to publish the google spreadsheet click on the `File` menu item, select `Share`, and click on `Publish on web`
 
-![](bonus_publish.png)
+![](bonus_publish.png" width=50% height=50%>
 
 e. In the popup message click on `Web page`, and select `Comma-separated values (.csv)`. Also, make sure the `Automatically republish when changes are made` option is turned on under the `Published content and settings` section
 
-![](bonus_csv.png)
+!<img src="bonus_csv.png" width=50% height=50%>
 
-![](bonus_auto_publish.png)
+!<img src="bonus_auto_publish.png" width=50% height=50%>
 
 f. Confirm your choices in the popup message clicking on `OK`. This will provide more details about your Google spreadsheet, copy the url.
 
-![](bonus_publish_sure.png)
+!<img src="bonus_publish_sure.png" width=50% height=50%>
 
-![](bonus_link.png)
+!<img src="bonus_link.png" width=50% height=50%>
 
 g. Go to **[microreact.org](https://microreact.org)**, and select `Upload` from the main menu.
 
-![](bonus_upload.png)
+!<img src="bonus_upload.png" width=50% height=50%>
 
 h. Select the plus icon at the bottom right, and click on `Add URLs`
 
-![](bonus_add_url.png)
+!<img src="bonus_add_url.png" width=50% height=50%>
 
 i. Paste the url from step *f* and select `Data (CSV or TSV)` under `File kind`. Finally click on `CONTINUE` to see your microreact.
 
-![](bonus_add_files.png)
+!<img src="bonus_add_files.png" width=50% height=50%>
 
 j. You should get a screen like this!
 
