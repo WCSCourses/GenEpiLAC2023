@@ -101,11 +101,11 @@ Answer the following questions:
 
 *Note: you need to sign-up for data-flo and Microreact. See instructions in the [Resources](#resources) section. Creating your own account will allow you to manage and edit your projects.*
 
-The reference lab has sent you the culture results on an Excel file called [`lab_results.xlsx`](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Modules/Web_tools_for_genomic_epidemiology/lab_results.xlsx). The lab reported that **2 out of 13** water samples from Ñu Guasú park were positive for *S. sonnei*. **This immediately prompted the closure of the 2 water sources.**
+The reference lab has sent you the culture results on an Excel file called ([`lab_results.xlsx`](https://drive.google.com/drive/folders/1KMbks4oWsFRlB2Qt48MkZnTMLJTUB13f?usp=share_link)). The lab reported that **2 out of 13** water samples from Ñu Guasú park were positive for *S. sonnei*. **This immediately prompted the closure of the 2 water sources.**
 
 > Does this confirm that the source of the outbreak was contaminated water from Ñu Guasú park?
 
-One colony from each source was sequenced on Illumina MiSeq by the reference lab. A maximum likelihood phylogenetic tree ([`tree.nwk`](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Modules/Web_tools_for_genomic_epidemiology/tree.nwk)) was inferred from the genomes of the 34 clinical samples and 2 environmental (water) samples. Six genomes from a previous outbreak (Jan-Feb 2020) were also included in the tree inference and their associated data added to the [`epi_data.csv`](https://github.com/WCSCourses/GenEpiLAC2023/blob/main/Modules/Web_tools_for_genomic_epidemiology/epi_data.csv) file.
+One colony from each source was sequenced on Illumina MiSeq by the reference lab. A maximum likelihood phylogenetic tree ([`tree.nwk`](https://drive.google.com/drive/folders/1KMbks4oWsFRlB2Qt48MkZnTMLJTUB13f?usp=share_link)) was inferred from the genomes of the 34 clinical samples and 2 environmental (water) samples. Six genomes from a previous outbreak (Jan-Feb 2020) were also included in the tree inference and their associated data added to the ([`epi_data.csv`](https://drive.google.com/drive/folders/1KMbks4oWsFRlB2Qt48MkZnTMLJTUB13f?usp=share_link)) file.
 
 The disease detectives now have the information needed for the investigation in the following formats:
 
