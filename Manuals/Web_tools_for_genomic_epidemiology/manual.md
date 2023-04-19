@@ -166,7 +166,7 @@ Now lets go to the implementation page by clicking on the `i` icon.
 
 To run the workflow paste the url of the Epicollect5 project (**[https://five.epicollect.net/project/asuncion-2023-s-sonnei-outbreak](https://five.epicollect.net/project/asuncion-2023-s-sonnei-outbreak)**) and upload the files.
 
-![](dataflo_run.png)
+![](dataflo_run2.png)
 
 <br>
 
