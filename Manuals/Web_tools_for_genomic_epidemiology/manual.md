@@ -295,7 +295,7 @@ a. Click on the menu icon at the top left of the screen
 
 b. Click on `Upload`
 
- <img src="microreact_upload_option.png" width=10% height=10%>
+ <img src="microreact_upload_option.png" width=30% height=30%>
 
 c. Click on the `+` symbol at the bottom right of the screen.
 
