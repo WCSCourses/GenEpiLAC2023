@@ -114,7 +114,7 @@ The disease detectives now have the information needed for the investigation in 
 *  `lab_results.xlsx` Culture and serotyping results
 *  `tree.nwk` Phylogenetic tree of 34 clinical cases, 2 culture-positive water samples, and 6 cases from previous outbreak
 
-The files are located in the VM folder **FOLDER NAME**.
+The files are located in **[this google drive link](https://drive.google.com/drive/folders/1KMbks4oWsFRlB2Qt48MkZnTMLJTUB13f?usp=share_link)**.
 
 We will combine data from these different sources with a data-flo workflow that takes the files above and the data from the Epicollect project as input, and creates as an output a Microreact project where the data can be visualised.
 
